@@ -1,0 +1,48 @@
+[
+  {
+    "entity": {
+      "name": "Pyramid001",
+      "transform": {
+        "pos": "0.0 0.0 0.0",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "render": {
+        "mesh": "data/meshes/prefab1_Pyramid001.mesh",
+        "material": "data/materials/wood.material",
+        "color": "0.603922 0.603922 0.898039 1.0"
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "GeoSphere001",
+      "transform": {
+        "pos": "20.0 10.0 0.0",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "render": {
+        "mesh": "data/meshes/prefab1_GeoSphere001.mesh",
+        "color": "0.223529 0.0313726 0.533333 1.0"
+      },
+      "collider": {
+        "shape": "sphere",
+        "radius": "1.0",
+        "isDynamic": true,
+        "density": 1.0
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Teapot001",
+      "transform": {
+        "pos": "-20.0 0.0 0.0",
+        "rotation": "0.0 0.707107 0.0 -0.707107"
+      },
+      "render": {
+        "mesh": "data/meshes/prefab1_Teapot001.mesh",
+        "color": "0.839216 0.894118 0.6 1.0"
+      }
+    }
+  }
+]

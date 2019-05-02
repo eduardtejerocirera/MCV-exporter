@@ -1,0 +1,6 @@
+{
+	"vs_fx" : "data/shaders/objs.fx",
+	"vdecl" : "PosNUv",
+	"vs" : "VS_noUv",
+  "ps": "PS"
+}

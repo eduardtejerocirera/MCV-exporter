@@ -1,0 +1,98 @@
+[
+  {},
+  {
+    "entity": {
+      "name": "Player",
+      "transform": {},
+      "input_handler": {},
+      "character_controller": {},
+      "shooter": {},
+      "eject_manager": {},
+      "wall_manager": {},
+      "shoot_manager": {},
+      "health_manager": {},
+      "msg_logger": true,
+      "player_death": {},
+      "minion_manager": {
+        "total_minions": 150,
+        "initial_minions": 150,
+        "recover_rate": 1
+      },
+      "minion_bar": {},
+      "send_minions":{},
+      
+      "armature": {
+        "src": "data/skeletons/dp/dp.skeleton"
+      },
+      "xragdoll": {},
+      "fsm" :
+      {
+        "file" : "data/fsm/character2.fsm",
+        "autoplay" : true
+      },
+      "fsm_player_input" : {},
+      "render": {
+        "meshes": [
+          {
+            "mesh": "data/skeletons/dp/Face.mesh",
+            "color": "0.8 0.8 0.8 1.0",
+            "materials": [
+              "data/materials/F00_000_Face_00_SKIN.material",
+              "data/materials/F00_000_EyeExtra_01_EYE.material",
+              "data/materials/F00_000_FaceMouth_00_FACE.material",
+              "data/materials/F00_000_EyeWhite_00_EYE.material",
+              "data/materials/F00_000_FaceEyeline_00_FACE.material",
+              "data/materials/F00_000_FaceEyelash_00_FACE.material",
+              "data/materials/F00_000_FaceBrow_00_FACE.material",
+              "data/materials/F00_000_EyeIris_00_EYE.material",
+              "data/materials/F00_000_EyeHighlight_00_EYE.material"
+            ]
+
+            
+          },
+          {
+            "mesh": "data/skeletons/dp/Body.mesh",
+            "color": "0.8 0.8 0.8 1.0",
+            "materials": [
+              "data/materials/F00_002_Body_00_SKIN.material",
+              "data/materials/F00_002_Onepice_01_CLOTH.material",
+              "data/materials/F00_002_Shoes_01_CLOTH.material",
+              "data/materials/F00_000_HairBack_00_HAIR.material"
+            ]
+          },
+          {
+            "mesh": "data/skeletons/dp/Hair.mesh",
+            "color": "0.8 0.8 0.8 1.0",
+            "materials": [
+              "data/materials/F00_000_Hair_00_HAIR_01.material",
+              "data/materials/F00_000_Hair_00_HAIR_02.material",
+              "data/materials/F00_000_Hair_00_HAIR_03.material"
+            ]
+          },
+          {
+            "mesh": "data/skeletons/dp/Skirt.mesh",
+            "color": "0.8 0.8 0.8 1.0",
+            "materials": [
+              "data/materials/F00_002_Onepice_01_CLOTH.material"
+            ]
+          },
+          {
+            "mesh": "data/skeletons/dp/Hat.mesh",
+            "color": "0.8 0.8 0.8 1.0",
+            "materials": [
+              "data/materials/MaterialHat.material"
+            ]
+          }
+        ]
+      },
+      "collider": {
+        "shape": "capsule",
+        "controller": true,
+        "radius": 0.5,
+        "height": 1,
+        "group": "player"
+      },
+      "melee_task":{}
+    }
+  }
+]

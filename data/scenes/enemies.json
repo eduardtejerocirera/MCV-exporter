@@ -1,0 +1,41 @@
+[
+  {
+    "entity":
+    {
+      "name": "Group Of enemies",
+      "transform": {}
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Dummy001"
+      ,
+      "transform":
+      {
+        "pos": "10 0 0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "prefab": "data/scenes/enemy.json"
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Dummy001"
+      ,
+      "transform":
+      {
+        "pos": "-10 0 0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "prefab": "data/scenes/enemy.json"
+    }
+  }
+]

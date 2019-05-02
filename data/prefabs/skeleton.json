@@ -1,0 +1,13 @@
+[
+	{
+	    "entity": {
+	      "transform": {
+	        "pos": "2 0 0"
+	      },
+	      "name": "skeleton",
+	      "skeleton": {
+	        "src" : "data/skeletons/player/player.skeleton"
+	      }
+		}
+	}
+]

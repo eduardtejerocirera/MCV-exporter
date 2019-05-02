@@ -1,0 +1,16 @@
+[
+	{
+		"entity" : {
+			"transform" : {
+				"pos" : "0 0 0"
+			},		
+			"name" : "Infinite Plane",
+			"collider" : {
+				"shape" : "plane",
+				"normal" : "0 1 0",
+				"distance" : 0,
+        "group" : "floor"
+			}
+		}
+	}
+]

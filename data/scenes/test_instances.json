@@ -1,0 +1,33 @@
+[
+  {
+    "entity": {
+      "name": "test_instances",
+      "transform": {
+        "pos": "0 0 0"
+      },
+      "render" : {
+        "meshes": [
+          {
+            "mesh": "data/meshes/figures_GeoSphere002.instanced_mesh",
+            "instances_group" : 0,
+            "materials":
+            [
+              "data/textures/rustediron2/rustediron2_instanced.material",
+              "data/textures/sculptedfloorboards4/sculptedfloorboards4_instanced.material"
+            ]
+          }
+          ,
+          {
+            "mesh": "data/meshes/figures_GeoSphere002.instanced_mesh",
+            "instances_group" : 1,
+            "materials":
+            [
+              "data/textures/sculptedfloorboards4/sculptedfloorboards4_instanced.material",
+              "data/textures/rustediron2/rustediron2_instanced.material"
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,161 @@
+{
+    "states": [
+        {
+            "animation": "idle",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "name": "idle",
+            "stopable": true,
+            "type": "cycle"
+        },
+        {
+            "animation": "walk",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "name": "run",
+            "stopable": true,
+            "type": "cycle"
+        },
+        {
+            "animation": "idle_jump",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "name": "jump",
+            "stopable": false,
+            "type": "action"
+        },
+        {
+            "animation": "run_jump",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "name": "jumpstart",
+            "stopable": false,
+            "type": "action"
+        },
+        {
+            "name": "jumpends",
+            "type": "noop"
+        },
+        {
+            "animation": "run_jump_idle",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "name": "jumpend",
+            "stopable": false,
+            "type": "action"
+        },
+        {
+            "animation": "run_jump_run",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "name": "jumpend",
+            "stopable": false,
+            "type": "action"
+        }
+    ],
+    "transitions": [
+        {
+            "operator": "greater",
+            "source": "idle",
+            "target": "run",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "operator": "equals",
+            "source": "run",
+            "target": "idle",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "operator": "equal",
+            "source": "idle",
+            "target": "jump",
+            "type": "checkVariable",
+            "variable": {
+                "name": "jump",
+                "type": "boolean",
+                "value": true
+            }
+        },
+        {
+            "source": "jump",
+            "target": "idle",
+            "type": "endsTransition"
+        },
+        {
+            "source": "jumpstart",
+            "target": "jumpends",
+            "type": "endsTransition"
+        },
+        {
+            "operator": "equals",
+            "source": "jumpends",
+            "target": "jumpend",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "operator": "greater",
+            "source": "jumpends",
+            "target": "jumpend",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "source": "jumpend",
+            "target": "idle",
+            "type": "endsTransition"
+        },
+        {
+            "source": "jumpend",
+            "target": "run",
+            "type": "endsTransition"
+        },
+        {
+            "operator": "equal",
+            "source": "run",
+            "target": "jumpstart",
+            "type": "checkVariable",
+            "variable": {
+                "name": "jump",
+                "type": "boolean",
+                "value": true
+            }
+        }
+    ],
+    "variables": [
+        {
+            "name": "speed",
+            "type": "float",
+            "value": 0.0
+        },
+        {
+            "name": "jump",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "name": "dir",
+            "type": "vec3",
+            "value": "0 0 0"
+        }
+    ]
+}

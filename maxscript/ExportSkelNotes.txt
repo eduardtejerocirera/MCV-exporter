@@ -1,0 +1,30 @@
+=== SKELETON
+- Enter skel in mode T or find a scene with it
+  - Select the root bone and Menu | Export As | Cal Skeleton (.CSF)
+    - Choose all the bones
+    - Next next next..
+
+=== MESHES
+- Ensure you have exported the SKELETON
+- Enter skel in mode T or find a scene with it
+  - Select the mesh object in max
+  - Menu | Export As | Cal Mesh (CMF)
+    - Choose The (.CSF) file previously exported
+    - Set Max Number Of: from 999 to 4
+    - Accept Weight Threshold 0.01
+    - Next 
+    - Say NO to Automatically create progressive meshes
+    - Say NO to next question
+    - Done
+    
+=== ANIMATIONS
+- Ensure you have exported the SKELETON
+- Enter skel in animation mode, NOT in mode T
+  - Select the skeleton object in max
+  - Menu | Export As | Cal Animation (CAF)
+    - Choose The (.CSF) file previously exported
+    - Click on all the bones which are going to be exported in the clip
+    - Start/End Frame
+    - Done
+
+

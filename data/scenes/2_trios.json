@@ -1,0 +1,68 @@
+[
+  {
+    "entity": {
+      "name": "Trio1",
+      "prefab": "data/prefabs/trio.json",
+      "transform": {
+        "pos": "0 0 20"
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Trio2",
+      "prefab": "data/prefabs/trio.json",
+      "transform": {
+        "pos": "0 0 -20"
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "ball",
+      "transform": {
+        "pos": "20.0 30.0 0.0",
+        "rotation": "0.0 0.0 0.0 1.0"
+      },
+      "render": {
+        "mesh": "data/meshes/prefab1_GeoSphere001.mesh",
+        "color": "0.223529 0.0313726 0.533333 1.0"
+      },
+      "collider": {
+        "shape": "sphere",
+        "radius": 4.0,
+        "isDynamic": true,
+        "density": 1.0
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "trigger",
+      "transform": {
+        "pos": "20.0 2.0 0.0",
+        "rotation": "0.0 0.0 0.0 1.0"
+      },
+      "collider": {
+        "shape": "box",
+        "halfExtent": "2.0 2.0 2.0",
+        "isDynamic": false,
+        "isTrigger": true
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "floor",
+      "transform": {
+        "pos": "0.0 0.0 0.0",
+        "rotation": "0.0 0.0 0.0 1.0"
+      },
+      "collider": {
+        "shape": "plane",
+        "planeNormal": "0.0 1.0 0.0",
+        "planeDistance": 0.0
+      }
+    }
+  }
+]

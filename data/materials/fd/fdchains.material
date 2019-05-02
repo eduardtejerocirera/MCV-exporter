@@ -1,0 +1,13 @@
+{
+  "technique": "objs_skin.tech",
+  "shadows": true,
+  "textures":
+  {
+    "albedo":   "data/textures/fd/fdchains_albedo.dds",
+    "normal":   "data/textures/fd/fdchains_normal.dds",
+    "roughness":"data/textures/fd/fdchains_roughness.dds",
+    "metallic": "data/textures/fd/fdchains_metallic.dds",
+    "emissive": "data/textures/fd/fdchains_emissive.dds",
+    "ao":       "data/textures/fd/fdchains_ao.dds"
+  }
+}

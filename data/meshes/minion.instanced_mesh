@@ -1,0 +1,5 @@
+{
+  "instanced_mesh" : "data/meshes/minion.mesh",
+  "instances_type" : "Instance",
+  "num_instances_reserved" : 300
+}

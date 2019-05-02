@@ -1,0 +1,204 @@
+{
+    "states": [
+        {
+            "animation": "idle",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "default": true,
+            "id": "n0",
+            "name": "idle",
+            "pos": [
+                1000.9628295898438,
+                285.5918884277344
+            ],
+            "shape": "ellipse",
+            "stopable": true,
+            "type": "cycle"
+        },
+        {
+            "animation": "walk",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "id": "n1",
+            "name": "run",
+            "pos": [
+                1137.9581298828125,
+                285.5918884277344
+            ],
+            "shape": "ellipse",
+            "stopable": true,
+            "type": "cycle"
+        },
+        {
+            "animation": "idle_jump",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "id": "n2",
+            "name": "jump",
+            "pos": [
+                881.0816040039063,
+                285.5918884277344
+            ],
+            "shape": "ellipse",
+            "stopable": false,
+            "type": "action"
+        },
+        {
+            "animation": "run_jump",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "id": "n4",
+            "name": "jumpstart",
+            "pos": [
+                1279.43359375,
+                285.5918884277344
+            ],
+            "shape": "ellipse",
+            "stopable": false,
+            "type": "action"
+        },
+        {
+            "id": "n5",
+            "name": "jumpends",
+            "pos": [
+                1425.388916015625,
+                285.5918884277344
+            ],
+            "shape": "ellipse",
+            "type": "noop"
+        },
+        {
+            "animation": "run_jump_idle",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "id": "n6",
+            "name": "jumpend",
+            "pos": [
+                1000.9628295898438,
+                173.61468505859375
+            ],
+            "shape": "ellipse",
+            "stopable": false,
+            "type": "action"
+        },
+        {
+            "animation": "run_jump_run",
+            "blendIn": 0.3,
+            "blendOut": 0.3,
+            "id": "n7",
+            "name": "jumpend",
+            "pos": [
+                1137.9581298828125,
+                380.1518859863281
+            ],
+            "shape": "ellipse",
+            "stopable": false,
+            "type": "action"
+        }
+    ],
+    "transitions": [
+        {
+            "operator": "greater",
+            "source": "idle",
+            "target": "run",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "operator": "equals",
+            "source": "run",
+            "target": "idle",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "operator": "equal",
+            "source": "idle",
+            "target": "jump",
+            "type": "checkVariable",
+            "variable": {
+                "name": "jump",
+                "type": "boolean",
+                "value": true
+            }
+        },
+        {
+            "source": "jump",
+            "target": "idle",
+            "type": "endsTransition"
+        },
+        {
+            "source": "jumpstart",
+            "target": "jumpends",
+            "type": "endsTransition"
+        },
+        {
+            "operator": "equals",
+            "source": "jumpends",
+            "target": "jumpend",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "operator": "greater",
+            "source": "jumpends",
+            "target": "jumpend",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "source": "jumpend",
+            "target": "idle",
+            "type": "endsTransition"
+        },
+        {
+            "source": "jumpend",
+            "target": "run",
+            "type": "endsTransition"
+        },
+        {
+            "operator": "equal",
+            "source": "run",
+            "target": "jumpstart",
+            "type": "checkVariable",
+            "variable": {
+                "name": "jump",
+                "type": "boolean",
+                "value": true
+            }
+        }
+    ],
+    "variables": [
+        {
+            "name": "speed",
+            "type": "float",
+            "value": 0.0
+        },
+        {
+            "name": "jump",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "name": "dir",
+            "type": "vec3",
+            "value": "0 0 0"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "technique": "objs_skin.tech",
+  "shadows": true,
+  "textures":
+  {
+    "albedo": "data/textures/F00_000_Hair_00_03.dds"
+    ,
+    "normal": "data/textures/F00_000_Hair_00_nml.dds"
+  }
+}

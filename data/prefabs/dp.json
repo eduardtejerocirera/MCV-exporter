@@ -1,0 +1,200 @@
+[
+    {
+        "entity": {
+            "name": "Player",
+            "transform": {
+                "pos": "0 15 0"
+            },
+            "collider": {
+                "shape": "capsule",
+                "controller": true,
+                "radius": 0.5,
+                "height": 1,
+                "group": "player"
+            },
+            "render": {
+                "mesh": "data/meshes/level_princess_attack.mesh",
+                "material": "data/materials/princess.material",
+                "color": "1.0 1.0 1.0 1.0",
+                "xmeshes": [
+                    {
+                        "mesh": "data/meshes/level_princess_attack.mesh",
+                        "material": "data/materials/princess.material",
+                        "color": "1.0 1.0 1.0 1.0"
+                    },
+                    {
+                        "mesh": "data/meshes/dp_Face.mesh",
+                        "color": "0.8 0.8 0.8 1.0",
+                        "xmaterials": [
+                            "data/materials/F00_000_Face_00_SKIN.material",
+                            "data/materials/F00_000_EyeExtra_01_EYE.material",
+                            "data/materials/F00_000_FaceMouth_00_FACE.material",
+                            "data/materials/F00_000_EyeWhite_00_EYE.material",
+                            "data/materials/F00_000_FaceEyeline_00_FACE.material",
+                            "data/materials/F00_000_FaceEyelash_00_FACE.material",
+                            "data/materials/F00_000_FaceBrow_00_FACE.material",
+                            "data/materials/F00_000_EyeIris_00_EYE.material",
+                            "data/materials/F00_000_EyeHighlight_00_EYE.material"
+                        ]
+                    },
+                    {
+                        "mesh": "data/meshes/dp_Body.mesh",
+                        "color": "0.8 0.8 0.8 1.0",
+                        "xmaterials": [
+                            "data/materials/F00_002_Body_00_SKIN.material",
+                            "data/materials/F00_002_Onepice_01_CLOTH.material",
+                            "data/materials/F00_002_Shoes_01_CLOTH.material",
+                            "data/materials/F00_000_HairBack_00_HAIR.material"
+                        ]
+                    },
+                    {
+                        "mesh": "data/meshes/dp_Hair.mesh",
+                        "color": "0.8 0.8 0.8 1.0",
+                        "xmaterials": [
+                            "data/materials/F00_000_Hair_00_HAIR_01.material",
+                            "data/materials/F00_000_Hair_00_HAIR_02.material",
+                            "data/materials/F00_000_Hair_00_HAIR_03.material"
+                        ]
+                    },
+                    {
+                        "mesh": "data/meshes/dp_Skirt.mesh",
+                        "color": "0.8 0.8 0.8 1.0",
+                        "xmaterials": [
+                            "data/materials/F00_002_Onepice_01_CLOTH.material"
+                        ]
+                    },
+                    {
+                        "mesh": "data/meshes/dp_Hat.mesh",
+                        "color": "0.8 0.8 0.8 1.0",
+                        "xmaterials": []
+                    }
+                ]
+            },
+            "input_handler": {},
+            "character_controller": {},
+            "shooter": {},
+            "minion_manager": {
+                "total_minions": 150,
+                "initial_minions": 150,
+                "recover_rate": 1
+            },
+            "eject_manager": {},
+            "wall_manager": {},
+            "shoot_manager": {},
+            "health_manager": {},
+            "msg_logger": true,
+            "player_death": {},
+            "armature": {
+                "src": "data/skeletons/dp/dp.skeleton"
+            },
+            "xragdoll": {}
+        }
+    },
+    {
+        "entity": {
+            "hierarchy": {
+                "parent": "Player"
+            },
+            "name": "Face",
+            "transform": {
+                "pos": "0.0 0.0 -0.00129342",
+                "rotation": "0.0 0.0 0.0 -1.0"
+            },
+            "render": {
+                "mesh": "data/meshes/dp_Face.mesh",
+                "color": "0.8 0.8 0.8 1.0",
+                "xmaterials": [
+                    "data/materials/F00_000_Face_00_SKIN.material",
+                    "data/materials/F00_000_EyeExtra_01_EYE.material",
+                    "data/materials/F00_000_FaceMouth_00_FACE.material",
+                    "data/materials/F00_000_EyeWhite_00_EYE.material",
+                    "data/materials/F00_000_FaceEyeline_00_FACE.material",
+                    "data/materials/F00_000_FaceEyelash_00_FACE.material",
+                    "data/materials/F00_000_FaceBrow_00_FACE.material",
+                    "data/materials/F00_000_EyeIris_00_EYE.material",
+                    "data/materials/F00_000_EyeHighlight_00_EYE.material"
+                ]
+            }
+        }
+    },
+    {
+        "entity": {
+            "hierarchy": {
+                "parent": "Player"
+            },
+            "name": "Body",
+            "transform": {
+                "pos": "0.0 0.0 -0.00129342",
+                "rotation": "0.0 0.0 0.0 -1.0"
+            },
+            "render": {
+                "mesh": "data/meshes/dp_Body.mesh",
+                "color": "0.8 0.8 0.8 1.0",
+                "xmaterials": [
+                    "data/materials/F00_002_Body_00_SKIN.material",
+                    "data/materials/F00_002_Onepice_01_CLOTH.material",
+                    "data/materials/F00_002_Shoes_01_CLOTH.material",
+                    "data/materials/F00_000_HairBack_00_HAIR.material"
+                ]
+            }
+        }
+    },
+    {
+        "entity": {
+            "hierarchy": {
+                "parent": "Player"
+            },
+            "name": "Hair",
+            "transform": {
+                "pos": "0.0 0.0 -0.00129342",
+                "rotation": "0.0 0.0 0.0 -1.0"
+            },
+            "render": {
+                "mesh": "data/meshes/dp_Hair.mesh",
+                "color": "0.8 0.8 0.8 1.0",
+                "xmaterials": [
+                    "data/materials/F00_000_Hair_00_HAIR_01.material",
+                    "data/materials/F00_000_Hair_00_HAIR_02.material",
+                    "data/materials/F00_000_Hair_00_HAIR_03.material"
+                ]
+            }
+        }
+    },
+    {
+        "entity": {
+            "hierarchy": {
+                "parent": "Player"
+            },
+            "name": "Skirt",
+            "transform": {
+                "pos": "0.0 0.0 -0.00129342",
+                "rotation": "0.0 0.0 0.0 -1.0"
+            },
+            "render": {
+                "mesh": "data/meshes/dp_Skirt.mesh",
+                "color": "0.8 0.8 0.8 1.0",
+                "xmaterials": [
+                    "data/materials/F00_002_Onepice_01_CLOTH.material"
+                ]
+            }
+        }
+    },
+    {
+        "entity": {
+            "hierarchy": {
+                "parent": "Player"
+            },
+            "name": "Hat",
+            "transform": {
+                "pos": "-0.0106197 1.67992 0.0101972",
+                "rotation": "-0.771934 0.183964 -0.282065 -0.53918",
+                "scale":"0.01 0.01 0.01"
+            },
+            "render": {
+                "mesh": "data/meshes/dp_Hat.mesh",
+                "color": "0.8 0.8 0.8 1.0",
+                "xmaterials": []
+            }
+        }
+    }
+]

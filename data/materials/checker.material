@@ -1,0 +1,8 @@
+{
+	"technique" : "data/techniques/objs.tech",
+	"shadows": false,
+	"textures":
+	{
+		"albedo" : "data/textures/checker.dds"
+	}
+}

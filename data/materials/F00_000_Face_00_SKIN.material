@@ -1,0 +1,10 @@
+{
+    "technique": "objs_skin.tech",
+  "shadows": true,
+  "textures":
+  {
+    "albedo": "data/textures/F00_000_Face_00.dds"
+    ,
+    "normal": "data/textures/F00_000_Face_00_nml.dds"
+  }
+}

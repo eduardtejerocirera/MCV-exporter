@@ -1,0 +1,41 @@
+{
+  "update": [
+    "splash",
+    "intro",
+    "main_menu",
+    "gameplay",
+    "editor",
+    "pause",
+    "credits",
+    "input_1",
+    "physics",
+    "entities",
+    "boids",
+    "checkpoints",
+    "sample_objs",
+    "camera_manager",
+    "camera_mixer",
+    "render",
+    "logic_manager",
+    "test_instancing",
+    "test_cameras"
+  ],
+  "render_debug": [
+    "splash",
+    "intro",
+    "main_menu",
+    "gameplay",
+    "editor",
+    "pause",
+    "credits",
+    "render",
+    "entities",
+    "physics",
+    "sample_objs",
+    "camera_mixer",
+    "camera_manager",
+    "checkpoints",
+    "logic_manager",
+	"boids"
+  ]
+}

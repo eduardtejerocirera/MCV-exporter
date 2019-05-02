@@ -1,0 +1,30 @@
+{
+  "name":"dp",
+  "anims": [
+    { "name": "dp_idle" },
+    { "name": "dp_idle_jump" },
+    { "name": "dp_walk_f" },
+    { "name": "dp_walk_b" },
+    { "name": "dp_walk_l" },
+    { "name": "dp_walk_r" },
+    { "name": "dp_run_f" },
+    { "name": "dp_run_b" },
+    { "name": "dp_run_l" },
+    { "name": "dp_run_r" },
+    { "name": "dp_run_jump" },
+    { "name": "dp_run_jump_run" },
+    { "name": "dp_run_jump_idle" },
+    { "name": "dp_skill_wall" },
+    { "name": "dp_skill_kick" },
+    { "name": "dp_skill_recall" },
+    { "name": "dp_skill_attack_1" },
+    { "name": "dp_skill_attack_2" },
+    { "name": "dp_skill_attack_3" }
+  ],
+  "xmeshes": [
+    "cara"
+  ],
+  "unused_anims": [
+  ],
+  "bone_ids_to_debug" : [2, 3]
+}

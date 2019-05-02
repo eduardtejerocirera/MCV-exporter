@@ -1,0 +1,32 @@
+{
+    "name":"dp",
+    "meshes":[ 
+        "Body",
+        "Face",
+        "Hair",
+        "Hat",
+        "Skirt"
+    ],
+    "anims":[
+        { "name": "idle" },
+        { "name": "jump" },
+        { "name": "walk_f" },
+        { "name": "walk_b" },
+        { "name": "walk_l" },
+        { "name": "walk_r" },
+        { "name": "run_f" },
+        { "name": "run_b" },
+        { "name": "run_l" },
+        { "name": "run_r" },
+        { "name": "run_jump" },
+        { "name": "run_jump_run" },
+        { "name": "run_jump_idle" },
+        { "name": "skill_wall" },
+        { "name": "skill_kick" },
+        { "name": "skill_recall" },
+        { "name": "skill_attack_1" },
+        { "name": "skill_attack_2" },
+        { "name": "skill_attack_3" }
+    ],
+    "extra":[ "Face"]
+}

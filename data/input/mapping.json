@@ -1,0 +1,206 @@
+[
+  ["--------------------------------------------- OTHERS ----------------------------------------------"],
+  {
+    "name":"keyboard_Q",
+    "check":"any",
+    "buttons":["q"]
+  },
+  {
+    "name":"melee",
+    "check":"any",
+    "buttons":["e"]
+  },
+  {
+    "name" : "walk",
+    "check" : "any",
+    "buttons" : ["w"]
+  },
+  {
+    "name" : "jump",
+    "check" : "any",
+    "buttons" : ["space"]
+  },
+  ["--------------------------------------------- BASICS ----------------------------------------------"],
+  {
+    "name" : "accept",
+    "check" : "any",
+    "buttons" : ["gamepad_a", "return"]
+  },
+  {
+    "name" : "confirm",
+    "check" : "any",
+    "buttons" : ["gamepad_a", "return"]
+  },
+  {
+    "name" : "cancel",
+    "check" : "any",
+    "buttons" : ["gamepad_b", "back"]
+  },
+  {
+    "name" : "back",
+    "check" : "any",
+    "buttons" : ["gamepad_b", "back"]
+  },
+  ["------------------------------------------- MOVEMENT ---------------------------------------------"],
+  {
+    "name":"forward",
+    "check":"any",
+    "buttons":["w"]
+  },
+  {
+    "name":"left",
+    "check":"any",
+    "buttons":["a"]
+  },
+  {
+    "name":"backward",
+    "check":"any",
+    "buttons":["s"]
+  },
+  {
+    "name":"right",
+    "check":"any",
+    "buttons":["d"]
+  },
+  {
+    "name":"jump",
+    "check":"any",
+    "buttons":["space", "gamepad_a"]
+  },
+  {
+    "name":"jump",
+    "check":"any",
+    "buttons":["space", "gamepad_a"]
+  },
+  {
+    "name":"crouch",
+    "check":"any",
+    "buttons":["ctrl", "gamepad_a"]
+  },
+  {
+    "name":"run",
+    "check":"any",
+    "buttons":["shift"],
+    "description":"is not needed to add gamepad mapping because provably will do this depending on axis value"
+  },
+
+
+  ["-------------------------------------------- CHARACTER SKILLS ---------------------------------------"],
+  {
+    "name":"aim",
+    "check":"any",
+    "buttons":["mouse_right","gamepad_ltrigger"]
+  },
+  {
+    "name":"shoot",
+    "check":"any",
+    "buttons":["gamepad_rtrigger", "t", "mouse_left"]
+  },
+  {
+    "name":"create_wall",
+    "check":"any",
+    "buttons":["i", "gamepad_lbutton"]
+  },
+  {
+    "name":"whistle",
+    "check":"any",
+    "buttons":["c", "gamepad_y"]
+  },
+
+
+  {
+    "name":"grab",
+    "check":"any",
+    "buttons":["g"]
+  },  
+  {
+    "name":"grab_forward",
+    "check":"any",
+    "buttons":["up"]
+  },
+  {
+    "name":"grab_left",
+    "check":"any",
+    "buttons":["left"]
+  },
+  {
+    "name":"grab_backward",
+    "check":"any",
+    "buttons":["down"]
+  },
+  {
+    "name":"grab_right",
+    "check":"any",
+    "buttons":["right"]
+  },
+
+
+  ["--------------------------------------------- DEBUG ---------------------------------------"],
+  {
+    "name":"dbg_debug_gs",
+    "check":"any",
+    "buttons":["escape"]
+  },
+  {
+    "name":"dbg_toggle_debug_camera",
+    "check":"any",
+    "buttons":["f1"]
+  }, 
+  {
+    "name":"dbg_toggle_cursor",
+    "check":"any",
+    "buttons":["f2"]
+  },
+  {
+    "name":"dbg_prev_gs",
+    "check":"all",
+    "buttons":["control","f3"]
+  },
+  {
+    "name":"dbg_next_gs",
+    "check":"all",
+    "buttons":["control","f4"]
+  },
+  {
+    "name":"dbg_reset_gs",
+    "check":"all",
+    "buttons":["control","f5"]
+  },
+  {
+    "name":"dbg_prev_checkpoint",
+    "check":"any",
+    "buttons":["f3"]
+  },
+  {
+    "name":"dbg_next_checkpoint",
+    "check":"any",
+    "buttons":["f4"]
+  },
+  {
+    "name":"dbg_reset_checkpoint",
+    "check":"any",
+    "buttons":["f5"]
+  },
+  {
+    "name":"dbg_open_file",
+    "check":"all",
+    "buttons":["control","o"]
+  },
+  ["--------------------------------------------- DEBUG SKILLS ---------------------------------------"],
+  {
+    "name":"dbg_spawn",
+    "check":"any",
+    "buttons":["gamepad_dpad_right", "m"]
+  },
+  {
+    "name":"dbg_despawn",
+    "check":"any",
+    "buttons":["gamepad_dpad_left", "n"]
+  },
+  {
+    "name":"dbg_fill_minions",
+    "check":"any",
+    "buttons":["l"]
+  }
+
+]

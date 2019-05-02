@@ -1,0 +1,34 @@
+[
+  {
+    "entity": {
+      "name": "test_grabbable",
+      "transform": {
+        "pos": "0 0 0",
+        "rotation":"0 0 0 1"
+      },
+      "grabbable":{},
+      "collider": {
+        "shape": "capsule",
+        "controller": true,
+        "radius": 0.5,
+        "height": 1,
+        "group": "enemy"
+      },
+      "render": {
+        "mesh": "data/skeletons/Bip001/fdbody_low.mesh",
+        "materials": [
+          "data/materials/fd/fdbody.material",
+          "data/materials/fd/fdchains.material"            
+        ],
+        "color": "1.0 1.0 1.0 1.0"
+      },
+      "armature": {
+        "src": "data/skeletons/Bip001/Bip001.skeleton"
+      },
+      "character_controller": {},
+      "msg_logger": true,
+      "targetable":{}
+    }
+  }
+
+]

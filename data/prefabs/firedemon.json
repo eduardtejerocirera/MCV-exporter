@@ -1,0 +1,22 @@
+[{
+    "entity": {
+        "name": "Enemy2",
+        "prefab": "data/prefabs/enemy.json",
+        "transform": {},
+        "bt_basic_melee": {
+            "waypoints": [
+                "10 0 10",
+                "-10 0 10",
+                "-10 0 -10",
+                "10 0 -10"
+            ]
+        },
+        "fsm": {
+            "file": "data/fsm/firedemon.fsm",
+            "autoplay": true
+        },
+        "melee_task":{
+            "damage":5
+        }
+    }
+}]

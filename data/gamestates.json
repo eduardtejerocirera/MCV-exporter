@@ -1,0 +1,13 @@
+{
+	"start" : "gs_gameplay",
+	"gamestates" : {
+		"gs_splash" 	: ["logic_manager", "splash"],
+		"gs_intro" 		: ["logic_manager", "intro"],
+		"gs_main_menu" 	: ["logic_manager", "main_menu"],
+		"gs_gameplay" 	: ["logic_manager", "gameplay", "boot", "boids", "camera_manager"],
+		"gs_editor"		: ["logic_manager", "editor"  , "boot", "boids", "camera_manager", "open_file", "checkpoints" ],
+		"gs_pause"		: ["logic_manager", "pause"   , "boot", "boids", "camera_manager"],
+		"gs_credits"	: ["logic_manager", "credits"],
+		"gs_gametesting": ["boot","sample_objs","physics","test_cameras","test_instancing"]
+	}
+}

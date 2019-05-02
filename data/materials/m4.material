@@ -1,0 +1,12 @@
+{
+  "technique": "data/techniques/objs.tech"
+  ,
+  "shadows": true
+  ,
+  "textures":
+  {
+    "albedo": "data/textures/defaults/null_albedo.dds"
+    ,
+    "normal": "data/textures/defaults/null_normal.dds"
+  }
+}

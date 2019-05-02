@@ -1,0 +1,179 @@
+{
+    "start":"locomotion",
+    "states": [
+        {
+            "id": "n0",
+            "name": "jump",
+            "pos": [
+                129.6076202392578,
+                92.27024841308594
+            ],
+            "shape": "ellipse",
+            "type": "jumpAction"
+        },
+        {
+            "id": "n2",
+            "name": "wall",
+            "pos": [
+                143.3401336669922,
+                294.58905029296875
+            ],
+            "shape": "ellipse",
+            "type": "wallAction"
+        },
+        {
+            "anims": [
+                "fd_attack_1",
+                "fd_attack_2"
+            ],
+            "id": "n3",
+            "name": "attack",
+            "pos": [
+                184.81211853027344,
+                137.3394775390625
+            ],
+            "shape": "ellipse",
+            "type": "attackAction"
+        },
+        {
+            "id": "n4",
+            "name": "recall",
+            "pos": [
+                184.81211853027344,
+                240.2210693359375
+            ],
+            "shape": "ellipse",
+            "type": "recallAction"
+        },
+        {
+            "anims": [
+                {
+                    "name": "fd_idle",
+                    "pos": "0.0 0.0"
+                },
+                {
+                    "name": "fd_walk_f",
+                    "pos": "0.0 0.3"
+                },
+                {
+                    "name": "fd_walk_b",
+                    "pos": "0.0 -.3"
+                },
+                {
+                    "name": "fd_run_f",
+                    "pos": "0.0 0.95"
+                },
+                {
+                    "name": "fd_run_b",
+                    "pos": "0.0 -.95"
+                }
+            ],
+            "id": "n5",
+            "name": "locomotion",
+            "pos": [
+                47.773948669433594,
+                196.73147583007813
+            ],
+            "shape": "ellipse",
+            "type": "locomotionAction"
+        }
+    ],
+    "transitions": [
+        {
+            "operator": "equal",
+            "source": "locomotion",
+            "target": "jump",
+            "type": "checkVariable",
+            "variable": {
+                "name": "jump",
+                "type": "boolean",
+                "value": true
+            }
+        },
+        {
+            "source": "jump",
+            "target": "locomotion",
+            "type": "checkAnimationEnds"
+        },
+        {
+            "operator": "equal",
+            "source": "locomotion",
+            "target": "wall",
+            "type": "checkVariable",
+            "variable": {
+                "name": "wall",
+                "type": "boolean",
+                "value": true
+            }
+        },
+        {
+            "operator": "equal",
+            "source": "locomotion",
+            "target": "attack",
+            "type": "checkVariable",
+            "variable": {
+                "name": "attack",
+                "type": "boolean",
+                "value": true
+            }
+        },
+        {
+            "operator": "equal",
+            "source": "locomotion",
+            "target": "recall",
+            "type": "checkVariable",
+            "variable": {
+                "name": "recall",
+                "type": "boolean",
+                "value": true
+            }
+        },
+        {
+            "source": "wall",
+            "target": "locomotion",
+            "type": "checkAnimationEnds"
+        },
+        {
+            "source": "attack",
+            "target": "locomotion",
+            "type": "checkAnimationEnds"
+        },
+        {
+            "source": "recall",
+            "target": "locomotion",
+            "type": "checkAnimationEnds"
+        }
+    ],
+    "variables": [
+        {
+            "name": "speed",
+            "type": "float",
+            "value": 0.0
+        },
+        {
+            "name": "jump",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "name": "velocity",
+            "type": "vec2",
+            "value": "0 0"
+        },
+        {
+            "name": "wall",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "name": "attack",
+            "type": "boolean",
+            "value": false
+        },
+        {
+            "name": "recall",
+            "type": "boolean",
+            "value": false
+        }
+    ]
+}

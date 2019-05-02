@@ -1,0 +1,28 @@
+[{
+    "entity": {
+      "name": "Portcullis",
+      "transform": {
+        "pos": "40.0607 11.4913 -15.1012",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "4.73174 8.23436 0.802611",
+            "offset": {
+              "pos": "0.0 8.23436 0.0"
+            }
+          }
+        ],
+        "dynamic": true
+      },
+      "render": {
+        "mesh": "data/meshes/190223_Mapa11_Portcullis.mesh",
+        "color": "0.878431 0.776471 0.341176 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      }
+    }
+  }]

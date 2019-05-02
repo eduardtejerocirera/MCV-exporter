@@ -1,0 +1,129 @@
+{
+  "ui": {
+    "vs_fx": "data/shaders/ui.fx",
+    "vdecl": "PosUvColor",
+    "blend": "combinative"
+  },
+  "objs": {
+    "vs_fx": "data/shaders/pbr.fx",
+    "vdecl": "PosNUvT"
+  },
+  "objs_instanced": {
+    "vs_fx": "data/shaders/pbr.fx",
+    "vs" : "VS_instanced",
+    "vdecl": "PosNUvT_x_Instance"
+  },
+  "objs_skin": {
+    "vs_fx": "data/shaders/pbr.fx",
+    "vs": "VS_skin",
+    "vdecl": "PosNUvTanSkin"
+  },
+  "debug_color": {
+    "vs_fx": "data/shaders/basics.fx",
+    "vdecl": "PosColor"
+  },
+  "debug_pos": {
+    "vs_fx": "data/shaders/basics.fx",
+    "vs": "VS_Pos",
+    "vdecl": "Pos",
+    "rs": "wireframe"
+  },
+  "debug_pos_skin": {
+    "vs_fx": "data/shaders/basics.fx",
+    "vs": "VS_skin",
+    "vdecl": "PosNUvTanSkin",
+    "rs": "wireframe"
+  },
+  "debug_pos_instanced": {
+    "vs_fx": "data/shaders/basics.fx",
+    "vs": "VS_PosInstanced",
+    "vdecl": "Pos_x_Instance",
+    "rs": "wireframe"
+  },
+  "debug_line": {
+    "vs_fx": "data/shaders/basics.fx",
+    "vs": "VS_DebugLine",
+    "vdecl": "PosColor"
+  },
+  "shadows_instanced": {
+    "vs_fx": "data/shaders/shadows.fx",
+    "vs" : "VS_instanced",
+    "vdecl": "Pos_x_Instance",
+    "ps": "",
+    "rs": "shadows"
+  },
+  "shadows": {
+    "vs_fx": "data/shaders/shadows.fx",
+    "vdecl": "Pos",
+    "ps": "",
+    "rs": "shadows"
+  },
+  "shadows_skin": {
+    "vs_fx": "data/shaders/shadows.fx",
+    "vs": "VS_skin",
+    "vdecl": "PosNUvTanSkin",
+    "ps": "",
+    "rs": "shadows"
+  },
+  "gbuffer_resolve" : {
+    "vs_fx": "data/shaders/screen_quad.fx",
+    "vdecl": "PosColor",
+    "ps_fx": "data/shaders/pbr.fx",
+    "ps" : "PS_GBuffer_Resolve",
+    "z" : "disable_all"
+  },
+  "presentation" : {
+    "vs_fx": "data/shaders/screen_quad.fx",
+    "vdecl": "PosColor",
+    "ps_fx": "data/shaders/presentation.fx",
+    "z" : "disable_all"
+  },
+  "pbr_ambient" : {
+    "vs_fx": "data/shaders/screen_quad.fx",
+    "vdecl": "PosColor",
+    "ps_fx": "data/shaders/pbr.fx",
+    "ps" : "PS_Ambient",
+    "z": "disable_all",
+    "envmap": "data/textures/cubemaps/env.dds",
+    "irradiance": "data/textures/cubemaps/irradiance.dds"
+  },
+  "pbr_skybox" : {
+    "vs_fx": "data/shaders/pbr.fx",
+    "vs" : "VS_skybox",
+    "vdecl": "PosColor",
+    "ps_fx": "data/shaders/pbr.fx",
+    "ps" : "PS_skybox",
+    "z": "test_equal"
+  },
+  "pbr_point_lights": {
+    "vs_fx": "data/shaders/pbr.fx",
+    "vs": "VS_pass",
+    "ps": "PS_point_lights",
+    "vdecl": "Pos",
+    "z": "inverse_test_no_write",
+    "rs": "reverse_culling",
+    "blend": "additive"
+  },
+  "pbr_dir_lights": {
+    "vs_fx": "data/shaders/pbr.fx",
+    "vs": "VS_pass",
+    "ps": "PS_dir_lights",
+    "vdecl": "Pos",
+    "z": "inverse_test_no_write",
+    "rs": "reverse_culling",
+    "blend": "additive"
+  },
+  "pbr_decals" : {
+    "vs_fx": "data/shaders/pbr_decals.fx",
+    "vdecl": "PosNUvT_x_InstanceColor",
+    "blend" : "combinative_gbuffer",
+    "rs": "reverse_culling",
+    "z" : "inverse_test_no_write"
+  },
+  "water" : {
+    "vs_fx": "data/shaders/water.fx",
+    "vdecl": "PosNUvT",
+    "noise" : "data/textures/noise_cloud2.dds"
+  }
+}
+

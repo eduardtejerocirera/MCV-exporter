@@ -1,0 +1,29 @@
+[
+    {"entity":{
+        "name": "Camera_Default",
+        "prefab":"data/prefabs/camera.json"
+    }},
+    {"entity":{
+        "name": "Camera_Player_Orbit",
+        "prefab":"data/prefabs/camera.json",
+        "camera_3rd_person" : {
+            "target" : "Player",
+            "curve" : "data/curves/camera_3rd_person.curve",
+            "ratio" : 0.0,
+            "offset" : "0 1.5 0",
+            "pitchSensitivity" : 2,
+            "yawSensitivity" : 5
+        }
+    }},
+    {"entity":{
+        "name": "Camera_Player_Aim",
+        "prefab":"data/prefabs/camera.json"
+    }},
+    {"entity":{
+        "name": "Camera_Debug",
+        "prefab":"data/prefabs/camera.json",
+        "culling": {},
+        "camera_flyover" : {}, 
+        "sensor" : {}   
+    }}
+]

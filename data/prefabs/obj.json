@@ -1,0 +1,35 @@
+[
+	{
+		"entity": {
+			"transform": {
+				"pos": "0 0 1"
+			},
+			"name": "John",
+			"render": {
+				"color": "1 0 0 1"
+			},
+			"circular_controller": {
+				"speed": 10
+			}
+		}
+	},
+	{
+		"entity": {
+			"name": "Peter",
+			"transform": {
+				"pos": "1 0 1"
+			},
+			"render": {}
+		}
+	},
+	{
+		"entity": {
+			"name": "Player",
+			"transform": {
+				"pos": "0 0 0"
+			},
+			"render": {}
+		}
+	}
+	
+]

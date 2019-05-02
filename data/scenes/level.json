@@ -1,0 +1,1309 @@
+[
+  {
+    "entity": {
+      "name": "Suelo",
+      "transform": {
+        "pos": "0.0 0.0 0.0",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "trimesh",
+            "collision_mesh": "data/meshes/level_Suelo.col_mesh",
+            "group": "floor"
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_Suelo.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/floor.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Paredes",
+      "transform": {
+        "pos": "0.0 0.0 0.0",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "trimesh",
+            "collision_mesh": "data/meshes/level_Paredes.col_mesh"
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_Paredes.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/pearl.material"
+        ]
+      }
+    }
+  },
+  {
+    "xentity":
+    {
+      "name": "Magma"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "render": {
+        "mesh": "data/meshes/level_Magma.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/default.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "triggerLava",
+      "transform": {
+        "pos": "75.1239 2.17181 -10.0506",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "12.0998 1.9525 4.27301",
+            "offset": {
+              "pos": "0.0 1.9525 0.0"
+            },
+            "trigger": true
+          }
+        ]
+      },
+      "damage_on_contact": {
+        "damage": 1000
+      }
+    }
+  },
+  {
+    "/*COMMENTED*/": {
+      "name": "lava_helper",
+      "transform": {
+        "pos": "75.1239 7.0 -10.0506",
+        "scale": "4 3 6"
+      },
+      "render": {
+        "mesh": "data/meshes/Box001.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/minion.material",
+          "data/materials/minion.material",
+          "data/materials/minion.material",
+          "data/materials/minion.material",
+          "data/materials/minion.material",
+          "data/materials/minion.material"
+        ]
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "2 1.5 3"
+
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "triggerEnd",
+      "transform": {
+        "pos": "19.7132 10.1721 -69.9988",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "sphere",
+            "radius": 4.76515,
+            "trigger": true
+          }
+        ]
+      },
+
+      "checkpoint": {
+        "index": 4
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "triggerPreHall",
+      "transform": {
+        "pos": "100.76 8.988 -12.058",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "sphere",
+            "radius": 1,
+            "trigger": true
+          }
+        ]
+      },
+      "checkpoint": {
+        "index": 1
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "triggerPre2ndEnemy",
+      "transform": {
+        "pos": "100.414 10.079 -60.59",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "sphere",
+            "radius": 1,
+            "trigger": true
+          }
+        ]
+      },
+      "checkpoint": {
+        "index": 2
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "triggerPreBoss",
+      "transform": {
+        "pos": "76.888 9.44 -70.982",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "sphere",
+            "radius": 1,
+            "trigger": true
+          }
+        ]
+      },
+      "checkpoint": {
+        "index": 3
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "triggerStart",
+      "transform": {
+        "pos": "0.230997 2.91986 0.131652",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "sphere",
+            "radius": 1,
+            "trigger": true
+          }
+        ]
+      },
+      "checkpoint": {
+        "index": 0
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Portcullis",
+      "transform": {
+        "pos": "40.0607 12.0 -15.1012",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "lock": "1 0 1 1 1 1",
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "4.73174 8.23436 0.802611",
+            "offset": {
+              "pos": "0.0 0.0 0.0"
+            }
+          }
+        ],
+        "dynamic": true
+      },
+      "render": {
+        "mesh": "data/meshes/level_Portcullis.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      },
+      "mover": { "move_vector": "0 10 0" }
+    }
+  },
+  {
+    "entity": {
+      "name": "Portcullis001",
+      "transform": {
+        "pos": "100.219 12 -25",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "lock": "1 0 1 1 1 1",
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "4.73174 8.23436 0.802611",
+            "offset": {
+              "pos": "0.0 0.0 0.0"
+            }
+          }
+        ],
+        "dynamic": true
+      },
+      "render": {
+        "mesh": "data/meshes/level_Portcullis001.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Portcullis003",
+      "transform": {
+        "pos": "100.219 30 -45.3238",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "xcollider": {
+        "lock": "1 0 1 1 1 1",
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "4.73174 8.23436 0.802611",
+            "offset": {
+              "pos": "0.0 0.0 0.0"
+            }
+          }
+        ],
+        "dynamic": true
+      },
+      "render": {
+        "mesh": "data/meshes/level_Portcullis003.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Lampara",
+      "transform": {
+        "pos": "110.499 15.1711 -35.5488",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "xcollider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_Lampara.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "columna",
+      "transform": {
+        "pos": "35.0464 2.82592 -65.2182",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.1 5.85 1.1",
+            "offset": {
+              "pos": "0.0 5.85 0.0"
+            }
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_columna.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/pearl.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "columna001",
+      "transform": {
+        "pos": "35.0464 2.82592 -75.3003",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.1 5.85 1.1",
+            "offset": {
+              "pos": "0.0 5.85 0.0"
+            }
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_columna001.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/pearl.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "columna002",
+      "transform": {
+        "pos": "45.0874 2.82592 -75.3003",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.1 5.85 1.1",
+            "offset": {
+              "pos": "0.0 5.85 0.0"
+            }
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_columna002.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/pearl.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "columna003",
+      "transform": {
+        "pos": "45.0874 2.82592 -65.2573",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.1 5.85 1.1",
+            "offset": {
+              "pos": "0.0 5.85 0.0"
+            }
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_columna003.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/pearl.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "columna004",
+      "transform": {
+        "pos": "95.1893 12.9286 -75.3003",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.1 5.85 1.1",
+            "offset": {
+              "pos": "0.0 5.85 0.0"
+            }
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_columna004.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/pearl.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "columna005",
+      "transform": {
+        "pos": "105.232 12.9286 -75.3003",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.1 5.85 1.1",
+            "offset": {
+              "pos": "0.0 5.85 0.0"
+            }
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_columna005.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/pearl.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Pedestal",
+      "transform": {
+        "pos": "105.331 13.1509 -80.9629",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.0 2.0 1.0",
+            "offset": {
+              "pos": "0.0 2.0 0.0"
+            }
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_Pedestal.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/pearl.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Pedestal001",
+      "transform": {
+        "pos": "95.2107 13.1509 -80.9629",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.0 2.0 1.0",
+            "offset": {
+              "pos": "0.0 2.0 0.0"
+            }
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_Pedestal001.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/pearl.material"
+        ]
+      }
+    }
+  },
+  {
+    "xentity":
+    {
+      "name": "Switch"
+      ,
+      "transform":
+      {
+        "pos": "46.7846 6.32605 -14.8618"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.0 1.0 0.4"
+
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/Box001.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/switch.material",
+          "data/materials/switch.material",
+          "data/materials/switch.material",
+          "data/materials/switch.material",
+          "data/materials/switch.material",
+          "data/materials/switch.material"
+        ]
+      },
+      "tint": { "tint": "0.0 1.0 0.0 1.0" }
+    }
+  },
+  {
+    "entity": {
+      "name": "triggerswitch",
+      "transform": {
+        "pos": "46.7693 6.31528 -14.6862",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.0 1.0 0.35",
+
+            "trigger": true
+          }
+        ]
+      },
+      "switch": {
+        "targets": [
+          { "target": "Portcullis" },
+          { "target": "Switch" }
+        ]
+      }
+
+    }
+  },
+  {
+    "xentity":
+    {
+      "name": "Parte de Arriba Lampara"
+      ,
+      "transform":
+      {
+        "pos": "110.499 15.1711 -35.5488"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "xcollider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_Parte de Arriba Lampara.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/m4.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Lampara001",
+      "transform": {
+        "pos": "100.51 15.1711 -35.5488",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "xcollider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_Lampara001.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Parte de Arriba Lampara001",
+      "transform": {
+        "pos": "100.51 15.1711 -35.5488",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "xcollider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_Parte de Arriba Lampara001.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Lampara002",
+      "transform": {
+        "pos": "90.4637 15.1711 -35.5488",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "xcollider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_Lampara002.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Parte de Arriba Lampara002",
+      "transform": {
+        "pos": "90.4637 15.1711 -35.5488",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "xcollider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_Parte de Arriba Lampara002.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "xtriggerlampara",
+      "transform": {
+        "pos": "110.533 20.217 -35.5605",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "xcollider": {
+        "shapes": [
+          {
+            "shape": "sphere",
+            "radius": 2.0,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "triggerlampara001",
+      "transform": {
+        "pos": "100.584 20.217 -35.5605",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "xcollider": {
+        "shapes": [
+          {
+            "shape": "sphere",
+            "radius": 2.0,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "triggerlampara002",
+      "transform": {
+        "pos": "90.4167 20.2173 -35.5605",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "xcollider": {
+        "shapes": [
+          {
+            "shape": "sphere",
+            "radius": 2.0,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "xentity": {
+      "name": "minion",
+      "transform": {
+        "pos": "-3.8197 0.0933905 10.0722",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "sphere",
+            "radius": 0.2
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_minion.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/m4.material"
+        ]
+      }
+    }
+  },
+  {
+    "xentity": {
+      "name": "enemy_attack",
+      "transform": {
+        "pos": "6.66976 4.20005e-07 9.6086",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_enemy_attack.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/enemy.material"
+        ]
+      }
+    }
+  },
+  {
+    "xentity": {
+      "name": "enemy_charge",
+      "transform": {
+        "pos": "5.1111 4.20005e-07 9.6086",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_enemy_charge.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/enemy.material"
+        ]
+      }
+    }
+  },
+  {
+    "xentity": {
+      "name": "enemy_damaged",
+      "transform": {
+        "pos": "3.14453 4.20005e-07 9.6086",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_enemy_damaged.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/enemy.material"
+        ]
+      }
+    }
+  },
+  {
+    "xentity": {
+      "name": "enemy_patrulla",
+      "transform": {
+        "pos": "1.80122 4.20005e-07 9.6086",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_enemy_patrulla.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/enemy.material"
+        ]
+      }
+    }
+  },
+  {
+    "xentity": {
+      "name": "princess_attack",
+      "transform": {
+        "pos": "-1.14525 -0.00999957 10.0075",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_princess_attack.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/princess.material"
+        ]
+      }
+    }
+  },
+  {
+    "Xentity": {
+      "name": "princess_idle",
+      "transform": {
+        "pos": "-2.59957 -0.00999957 10.0264",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_princess_idle.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/princess.material"
+        ]
+      }
+    }
+  },
+  {
+    "Xentity": {
+      "name": "princess_jump",
+      "transform": {
+        "pos": "0.01 -0.00999957 9.92694",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "shapes": [
+          {
+          }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/level_princess_jump.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/princess.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Lampara003",
+      "transform": {
+        "pos": "110.499 15.1711 -35.5488",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "render": {
+        "mesh": "data/meshes/level_Lampara003.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "turret1",
+      "transform": {
+        "pos": "95 17 -81"
+      },
+      "collider": {
+        "shape": "capsule",
+        "controller": true,
+        "radius": 0.5,
+        "height": 1.5
+      },
+      "render": {
+        "mesh": "data/meshes/level_enemy_charge.mesh",
+        "material": "data/materials/turret.material",
+        "color": "1.0 1.0 1.0 1.0"
+      },
+      "vulnerability": {
+        "recover_rate": 1.0
+      },
+      "destructive_death": {},
+      "character_controller": {},
+      "shooter": {},
+      "ai_turret": {
+        "viewpoints": [
+          "90 17 -80",
+          "100 17 -80"
+        ]
+      },
+      "msg_logger": true,
+      "simple_animator": {
+        "animations": [
+          {
+            "key": "idle",
+            "mesh": "data/meshes/enemy_patrulla.mesh"
+          },
+          {
+            "key": "attack",
+            "mesh": "data/meshes/level_enemy_attack.mesh"
+          },
+          {
+            "key": "impact",
+            "mesh": "data/meshes/enemy_damaged.mesh"
+          },
+          {
+            "key": "guard",
+            "mesh": "data/meshes/enemy_charge.mesh"
+          },
+          {
+            "key": "stun",
+            "mesh": "data/meshes/enemy_damaged.mesh"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "turret2",
+      "transform": {
+        "pos": "105 17 -81"
+      },
+      "collider": {
+        "shape": "capsule",
+        "controller": true,
+        "radius": 0.5,
+        "height": 1.5
+      },
+      "render": {
+        "mesh": "data/meshes/level_enemy_charge.mesh",
+        "material": "data/materials/turret.material",
+        "color": "1.0 1.0 1.0 1.0"
+      },
+      "vulnerability": {
+        "recover_rate": 1.0
+      },
+      "destructive_death": {},
+      "character_controller": {},
+      "shooter": {},
+      "ai_turret": {
+        "viewpoints": [
+          "110 17 -80",
+          "100 17 -80"
+        ]
+      },
+      "msg_logger": true,
+      "simple_animator": {
+        "animations": [
+          {
+            "key": "idle",
+            "mesh": "data/meshes/enemy_patrulla.mesh"
+          },
+          {
+            "key": "attack",
+            "mesh": "data/meshes/level_enemy_attack.mesh"
+          },
+          {
+            "key": "impact",
+            "mesh": "data/meshes/enemy_damaged.mesh"
+          },
+          {
+            "key": "guard",
+            "mesh": "data/meshes/enemy_charge.mesh"
+          },
+          {
+            "key": "stun",
+            "mesh": "data/meshes/enemy_damaged.mesh"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "tank",
+      "transform": {
+        "pos": "100 5 -35",
+        "rotation": "0 1 0 0"
+      },
+      "collider": {
+        "shape": "capsule",
+        "controller": true,
+        "radius": 0.5,
+        "height": 1.5
+      },
+      "render": {
+        "mesh": "data/meshes/level_enemy_charge.mesh",
+        "material": "data/materials/tank.material",
+        "color": "1.0 1.0 1.0 1.0"
+      },
+      "vulnerability": {
+        "recover_rate": 1.0
+      },
+      "destructive_death": {},
+      "character_controller": {},
+      "shooter": {},
+      "ai_tank": {
+        "waypoints": [
+          "90 3.2 -45",
+          "110 3.2 -35",
+          "90 3.2 -30",
+          "110 3.2 -30",
+          "90 3.2 -35",
+          "110 3.2 -45"
+        ]
+      },
+      "msg_logger": true,
+      "simple_animator": {
+        "animations": [
+          {
+            "key": "idle",
+            "mesh": "data/meshes/enemy_patrulla.mesh"
+          },
+          {
+            "key": "attack",
+            "mesh": "data/meshes/level_enemy_attack.mesh"
+          },
+          {
+            "key": "impact",
+            "mesh": "data/meshes/enemy_damaged.mesh"
+          },
+          {
+            "key": "guard",
+            "mesh": "data/meshes/enemy_charge.mesh"
+          },
+          {
+            "key": "stun",
+            "mesh": "data/meshes/enemy_damaged.mesh"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Enemy2",
+      "prefab": "data/prefabs/enemy.json",
+      "transform": {
+        "pos": "109.411 13.35 -70.448"
+      },
+      "bt_basic_melee": {
+        "waypoints": [
+          "109.411 13.4 -70.448",
+          "91.359 13.4 -69.205",
+          "89.977 13.4 -78.195",
+          "112.030 13.4 -77.898"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Enemy3",
+      "prefab": "data/prefabs/enemy.json",
+      "transform": {
+        "pos": "51.318 3.2 -57.082"
+      },
+      "bt_basic_melee": {
+        "waypoints": [
+          "51.318 3.2 -57.082",
+          "53.276 3.2 -81.013"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Enemy4",
+      "prefab": "data/prefabs/enemy.json",
+      "transform": {
+        "pos": "40.675 3.2 -57.082"
+      },
+      "bt_basic_melee": {
+        "waypoints": [
+          "40.675 3.2 -57.082",
+          "40.675 3.2 -81.013"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Enemy5",
+      "prefab": "data/prefabs/enemy.json",
+      "transform": {
+        "pos": "29.066 3.2 -57.082"
+      },
+      "bt_basic_melee": {
+        "waypoints": [
+          "29.066 3.2 -57.082",
+          "29.066 3.2 -81.013"
+        ]
+      }
+    }
+  },
+  {
+    "xentity": {
+      "name": "sphere_1",
+      "transform": {
+        "pos": "-5.0 0.5 -5.0",
+        "scale": "1.0 1.0 1.0"
+      },
+      "render": {
+        "mesh": "data/meshes/enemy_GeoSphere001.mesh",
+        "color": "1.0 1.0 1.0 1.0"
+      }
+  }
+}
+  ,
+  {
+    "entity": {
+      "transform":{
+        "pos":"5.0 0.0 0.0"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  },
+
+  {
+    "entity": {
+      "transform":{
+        "pos":"5.0 0.0 5.0"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  },
+
+  {
+    "entity": {
+      "transform":{
+        "pos":"0.0 0.0 5.0"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  },
+
+  {
+    "entity": {
+      "transform":{
+        "pos":"-5.0 0.0 5.0"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  },
+
+  {
+    "entity": {
+      "transform":{
+        "pos":"-5.0 0.0 0.0"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  },
+
+  {
+    "entity": {
+      "transform":{
+        "pos":"-5.0 0.0 -5.0"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  },
+
+  {
+    "entity": {
+      "transform":{
+        "pos":"0.0 0.0 -5.0"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  },
+
+  {
+    "entity": {
+      "transform":{
+        "pos":"5.0 0.0 -5.0"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  }
+
+]

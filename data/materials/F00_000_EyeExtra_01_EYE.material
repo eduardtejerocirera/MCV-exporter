@@ -1,0 +1,10 @@
+{
+  "technique": "objs_skin.tech",
+  "shadows": true,
+  "textures":
+  {
+    "albedo": "data/textures/F00_000_EyeExtra_01.dds"
+    ,
+    "normal": "data/textures/defaults/null_normal.dds"
+  }
+}

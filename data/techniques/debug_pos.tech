@@ -1,0 +1,8 @@
+{
+  "vs_fx": "data/shaders/basics.fx",
+  "vs": "VS_Pos",
+  "vdecl": "Pos",
+  "ps": "PS",
+  "rs" : "wireframe"
+}
+

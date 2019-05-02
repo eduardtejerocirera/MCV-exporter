@@ -1,0 +1,19 @@
+[
+	{
+		"entity": {
+			"transform": {
+				"pos": "0 0 0",
+				"scale": "1 1 1"
+			},
+			"name": "dummy_minion",
+			"ttl":{
+				"ttl" : 0.5
+			},
+			"render": {
+				"mesh": "data/meshes/level_minion.mesh",
+                "color":"1.0 1.0 1.0 1.0",
+				"material": "data/materials/minion.material"
+			}
+		}
+	}
+]

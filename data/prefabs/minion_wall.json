@@ -1,0 +1,33 @@
+[
+	{
+		"entity": {
+			"name": "wall",
+			"transform": {
+				"pos": "0.0 0.0 2.0",
+				"rotation": "0.0 0.0 0.0 -1.0",
+				"scale": "1.5 2.0 1.0"
+			},
+			"wall": {
+
+			},
+			"collider": {
+				"shape": "box",
+				"half_size": "0.75 1.0 0.5",
+				"kinematic": true,
+				"dynamic": true
+			},
+			"render": {
+				"mesh": "data/meshes/Box001.mesh",
+                "color":"1.0 1.0 1.0 1.0",				
+				"materials":[
+					"data/materials/minion.material",
+					"data/materials/minion.material",
+					"data/materials/minion.material",
+					"data/materials/minion.material",
+					"data/materials/minion.material",
+					"data/materials/minion.material"
+				]
+			}
+		}
+	}
+]

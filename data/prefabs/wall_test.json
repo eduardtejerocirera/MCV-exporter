@@ -1,0 +1,20 @@
+[
+	{
+		"entity": {
+			"name": "wall_task_test",
+			"transform": {},
+			"wall_task": {
+				"brick_dimensions" : "0.5 0.5 0.5",
+				"wall_dimensions" : "5 5 2"
+			},
+			"collider": {
+				"shape": "box",
+				"half_size": "0.01 0.01 0.01",
+				"kinematic": true,
+				"dynamic": true
+			},
+			"targetable":{}
+
+		}
+	}
+]

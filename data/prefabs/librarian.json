@@ -1,0 +1,44 @@
+[
+ {
+    "entity":
+    {
+      "name": "bibliotecario01"
+      ,
+      "transform":
+      {
+        "pos": "0.0 11.5321 -71.5812"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "4.5 0.25 4.5"
+            ,
+            "offset":
+            {
+              "pos": "0.0 0.25 0.0"
+            }
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190404_Biblioteca04_checkPoints03_bibliotecario01.mesh"
+        ,
+        "color": "0.529412 0.0235294 0.0235294 1.0"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "entity": {
+      "transform": {},
+      "name": "boid",
+      "render":
+      {
+        "mesh": "data/meshes/minion.mesh"
+        ,
+        "material": "data/materials/minion2.material"
+      },
+      "comp_boid": {
+        "speed": "0 0 0",
+        "target": "Player",
+        "max_speed": 3.0,
+        "radius": 0.25
+      }
+    }
+  }
+]

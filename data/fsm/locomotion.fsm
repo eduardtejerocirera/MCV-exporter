@@ -1,0 +1,176 @@
+{
+    "states": [
+        {
+            "id": "n0",
+            "name": "jump",
+            "pos": [
+                908.14794921875,
+                -83.19999694824219
+            ],
+            "shape": "diamond",
+            "type": "jumpAction"
+        },
+        {
+            "default": true,
+            "id": "n2",
+            "name": "locomotion",
+            "parameter": "speed",
+            "pos": [
+                382.1619567871094,
+                186.72499084472656
+            ],
+            "shape": "hexagon",
+            "type": "locomotionTree"
+        },
+        {
+            "id": "n3",
+            "name": "run",
+            "pos": [
+                503.2384948730469,
+                -40.550880432128906
+            ],
+            "shape": "ellipse",
+            "type": "runCycle"
+        },
+        {
+            "id": "n4",
+            "name": "walk",
+            "pos": [
+                415.5002136230469,
+                -40.550880432128906
+            ],
+            "shape": "ellipse",
+            "type": "walkCycle"
+        },
+        {
+            "id": "n5",
+            "name": "idle",
+            "pos": [
+                327.761962890625,
+                -40.550880432128906
+            ],
+            "shape": "ellipse",
+            "type": "idleCycle"
+        },
+        {
+            "id": "n6",
+            "name": "backwards",
+            "pos": [
+                415.5002136230469,
+                301.3741149902344
+            ],
+            "shape": "ellipse",
+            "type": "backwardCycle"
+        },
+        {
+            "id": "n7",
+            "name": "strafe left",
+            "pos": [
+                240.03067016601563,
+                178.39999389648438
+            ],
+            "shape": "ellipse",
+            "type": "strafeleftCycle"
+        },
+        {
+            "id": "n8",
+            "name": "strafe right",
+            "pos": [
+                615.8009033203125,
+                178.39999389648438
+            ],
+            "shape": "ellipse",
+            "type": "straferightCycle"
+        }
+    ],
+    "transitions": [
+        {
+            "source": "locomotion",
+            "target": "walk",
+            "type": "weight",
+            "variable": {
+                "name": "speed",
+                "type": "float2",
+                "value": "0 1.5"
+            }
+        },
+        {
+            "source": "locomotion",
+            "target": "idle",
+            "type": "weight",
+            "variable": {
+                "name": "speed",
+                "type": "float2",
+                "value": "0 0"
+            }
+        },
+        {
+            "operator": "equal",
+            "source": "locomotion",
+            "target": "jump",
+            "type": "checkVariable",
+            "variable": {
+                "name": "jump",
+                "type": "boolean",
+                "value": true
+            }
+        },
+        {
+            "source": "jump",
+            "target": "locomotion",
+            "type": "animationEnds"
+        },
+        {
+            "source": "locomotion",
+            "target": "run",
+            "type": "weight",
+            "variable": {
+                "name": "speed",
+                "type": "float2",
+                "value": "0 3"
+            }
+        },
+        {
+            "source": "locomotion",
+            "target": "backwards",
+            "type": "weight",
+            "variable": {
+                "name": "speed",
+                "type": "float2",
+                "value": "0 -1"
+            }
+        },
+        {
+            "source": "locomotion",
+            "target": "strafe left",
+            "type": "weight",
+            "variable": {
+                "name": "speed",
+                "type": "float2",
+                "value": "-1.5 0"
+            }
+        },
+        {
+            "source": "locomotion",
+            "target": "strafe right",
+            "type": "weight",
+            "variable": {
+                "name": "speed",
+                "type": "float2",
+                "value": "1.5 0"
+            }
+        }
+    ],
+    "variables": [
+        {
+            "name": "speed",
+            "type": "float",
+            "value": 0.0
+        },
+        {
+            "name": "jump",
+            "type": "boolean",
+            "value": false
+        }
+    ]
+}

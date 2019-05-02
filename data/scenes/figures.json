@@ -1,0 +1,264 @@
+[
+  {
+    "entity":
+    {
+      "name": "Plane001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_Plane001.mesh"
+        ,
+        "color": "0.690196 0.101961 0.101961 1.0"
+        ,
+        "materials":
+        [
+          "data/textures/sculptedfloorboards4/sculptedfloorboards4.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Box001"
+      ,
+      "transform":
+      {
+        "pos": "-15.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_Box001.mesh"
+        ,
+        "color": "0.776471 0.882353 0.341176 1.0"
+        ,
+        "materials":
+        [
+          "data/textures/rustediron2/rustediron2.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "GeoSphere001"
+      ,
+      "transform":
+      {
+        "pos": "10.0 3.0 -1.69993e-07"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_GeoSphere001.mesh"
+        ,
+        "color": "0.345098 0.345098 0.882353 1.0"
+        ,
+        "materials":
+        [
+          "data/textures/sculptedfloorboards4/sculptedfloorboards4.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "GeoSphere002"
+      ,
+      "transform":
+      {
+        "pos": "10.0 3.0 -10.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_GeoSphere002.mesh"
+        ,
+        "color": "0.345098 0.345098 0.882353 1.0"
+        ,
+        "materials":
+        [
+          "data/textures/rustediron2/rustediron2.material",
+          "data/textures/sculptedfloorboards4/sculptedfloorboards4.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "GeoSphere002b"
+      ,
+      "transform":
+      {
+        "pos": "4.0 3.0 -10.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_GeoSphere002.mesh"
+        ,
+        "color": "0.345098 0.345098 0.882353 1.0"
+        ,
+        "materials":
+        [
+          "data/textures/rustediron2/rustediron2.material",
+          "data/textures/sculptedfloorboards4/sculptedfloorboards4.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "GeoSphere002c"
+      ,
+      "transform":
+      {
+        "pos": "-2.0 3.0 -10.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_GeoSphere002.mesh"
+        ,
+        "color": "0.345098 0.345098 0.882353 1.0"
+        ,
+        "materials":
+        [
+          "data/textures/rustediron2/rustediron2.material",
+          "data/textures/sculptedfloorboards4/sculptedfloorboards4.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Teapot001"
+      ,
+      "transform":
+      {
+        "pos": "10.0 8.74228e-07 20.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_Teapot001.mesh"
+        ,
+        "color": "0.337255 0.337255 0.337255 1.0"
+        ,
+        "materials":
+        [
+          "data/textures/sculptedfloorboards4/sculptedfloorboards4.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Torus001"
+      ,
+      "transform":
+      {
+        "pos": "26.8183 9.18256 -20.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_Torus001.mesh"
+        ,
+        "color": "0.223529 0.0313726 0.533333 1.0"
+        ,
+        "materials":
+        [
+          "data/textures/rustediron2/rustediron2.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Box002"
+      ,
+      "transform":
+      {
+        "pos": "15.0 -1.5299e-06 -35.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_Box002.mesh"
+        ,
+        "color": "0.109804 0.109804 0.694118 1.0"
+        ,
+        "materials":
+        [
+          "data/textures/rustediron2/rustediron2.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Box003"
+      ,
+      "transform":
+      {
+        "pos": "30.0 0.0 10.0"
+        ,
+        "rotation": "0.0 -0.322862 0.0 -0.946446"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_Box003.mesh"
+        ,
+        "color": "0.341176 0.882353 0.341176 1.0"
+        ,
+        "materials":
+        [
+          "data/textures/sculptedfloorboards4/sculptedfloorboards4.material"
+        ]
+      }
+    }
+  }
+]

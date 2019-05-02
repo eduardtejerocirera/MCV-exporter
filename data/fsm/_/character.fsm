@@ -1,0 +1,68 @@
+{
+    "states": [
+        {
+            "name": "idle",
+            "type": "idleAction"
+        },
+        {
+            "name": "walk",
+            "type": "walkAction"
+        },
+        {
+            "name": "jump",
+            "type": "jumpAction"
+        }
+    ],
+    "transitions": [
+        {
+            "operator": "greater",
+            "source": "idle",
+            "target": "walk",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "operator": "equals",
+            "source": "walk",
+            "target": "idle",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "operator": "equal",
+            "source": "idle",
+            "target": "jump",
+            "type": "checkVariable",
+            "variable": {
+                "name": "jump",
+                "type": "boolean",
+                "value": true
+            }
+        },
+        {
+            "source": "jump",
+            "target": "idle",
+            "type": "checkAnimationEnds"
+        }
+    ],
+    "variables": [
+        {
+            "name": "speed",
+            "type": "float",
+            "value": 0.0
+        },
+        {
+            "name": "jump",
+            "type": "boolean",
+            "value": false
+        }
+    ]
+}

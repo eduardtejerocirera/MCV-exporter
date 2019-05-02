@@ -1,0 +1,86 @@
+{
+    "states": [
+        {
+            "id": "n0",
+            "name": "idle",
+            "pos": [
+                216.22195434570313,
+                209.53147888183594
+            ],
+            "shape": "ellipse",
+            "type": "idleAction"
+        },
+        {
+            "id": "n1",
+            "name": "walk",
+            "pos": [
+                315.3338317871094,
+                209.53147888183594
+            ],
+            "shape": "ellipse",
+            "type": "walkAction"
+        },
+        {
+            "id": "n2",
+            "name": "jump",
+            "pos": [
+                117.11006164550781,
+                209.53147888183594
+            ],
+            "shape": "ellipse",
+            "type": "jumpAction"
+        }
+    ],
+    "transitions": [
+        {
+            "operator": "greater",
+            "source": "idle",
+            "target": "walk",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "operator": "equals",
+            "source": "walk",
+            "target": "idle",
+            "type": "checkVariable",
+            "variable": {
+                "name": "speed",
+                "type": "float",
+                "value": 0.0
+            }
+        },
+        {
+            "operator": "equal",
+            "source": "idle",
+            "target": "jump",
+            "type": "checkVariable",
+            "variable": {
+                "name": "jump",
+                "type": "boolean",
+                "value": true
+            }
+        },
+        {
+            "source": "jump",
+            "target": "idle",
+            "type": "checkAnimationEnds"
+        }
+    ],
+    "variables": [
+        {
+            "name": "speed",
+            "type": "float",
+            "value": 0.0
+        },
+        {
+            "name": "jump",
+            "type": "boolean",
+            "value": false
+        }
+    ]
+}

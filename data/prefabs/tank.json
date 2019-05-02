@@ -1,0 +1,15 @@
+{
+    "entity": {
+        "name": "enemy",
+        "transform": {
+            "pos": "0.0 4.36986e-07 9.99707",
+            "rotation": "-0.707107 0.0 0.0 -0.707107"
+        },
+        "collider": {},
+        "render": {
+            "mesh": "data/meshes/level_enemy_charge.mesh",
+            "material": "data/materials/enemy.material",
+            "color":"1.0 1.0 1.0 1.0"
+        }
+    }
+}

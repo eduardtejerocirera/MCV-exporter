@@ -1,0 +1,83 @@
+[
+	{
+		"entity": {
+			"name": "CameraOutput",
+			"transform": {
+				"pos": "35 35 -20",
+				"lookat": "0 0 0"
+			},
+			"camera": {
+				"fov": 60,
+				"near": 0.1,
+				"far": 100,
+				"offset eye": "0 0 0"
+			}
+		}
+	},
+	{
+		"entity": {
+			"name": "CameraDebug",
+			"transform": {
+				"pos": "35 35 -20",
+				"lookat": "0 0 0"
+			},
+			"camera": {
+				"fov": 60,
+				"near": 0.1,
+				"far": 100,
+				"offset eye": "0 0 0",
+				"sensor": {},
+				"culling": {}
+			},
+			"camera_flyover": {}
+		}
+	},
+	{
+		"entity": {
+			"name": "CameraPlayer",
+			"transform": {
+				"pos": "5 5 5"
+			},
+			"camera": {
+				"near": 1,
+				"far": 100,
+				"fov": 60,
+				"default": true
+			},
+			"camera_3rd_person": {
+				"target": "Player",
+				"curve": "data/curves/camera_curve_3rd.curve",
+				"ratio": 0.75,
+				"offset": "0 1.65 0",
+				"pitchSensitivity": 5,
+				"yawSensitivity": 5
+			},
+			"culling": {}
+		}
+	},
+	{
+		"entity": {
+			"name": "CameraAim",
+			"sensor": {
+				"group": "enemy",
+				"mask" : "player"
+			},
+			"transform": {},
+			"camera": {
+				"fov": 60,
+				"near": 0.1,
+				"far": 100,
+				"offset eye": "-0.5 0 0",
+				"offset center": "-0.5 0 0"
+			},
+			"camera_orbit": {
+				"target": "Player",
+				"offset": 1.65,
+				"radius":2,
+				"pitchSensitivity": 1,
+				"yawSensitivity": 1
+			},
+			"culling": {}
+		}
+	}
+]

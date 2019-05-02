@@ -1,0 +1,2 @@
+echo UPDATING EXPORTER
+git pull

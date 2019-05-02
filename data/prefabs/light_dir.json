@@ -1,0 +1,31 @@
+[
+	{
+    "entity": {
+      "transform": {
+        "pos": "-0.5 13 -32",
+        "yaw" : 23,
+        "pitch" : 24
+      },
+      "camera_flyover": {
+        "key": "1",
+        "enabled": false
+      },
+      "name": "light_dir",
+      "light_dir": {
+        "near": 5,
+        "far": 80,
+        "fov": 45,
+        "color": "1 1 1 1",
+        "intensity": 5.0,
+        "projector": "data/textures/batman.dds",
+        "casts_shadows": true,
+        "shadows_resolution": 1024,
+        "shadows_fmt": "R32_TYPELESS",
+        "ortho" : false,
+        "ortho_width" : 64,
+        "ortho_height" : 64,
+        "ortho_centered" : true
+      }
+    }
+	}
+]

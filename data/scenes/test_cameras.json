@@ -1,0 +1,160 @@
+[
+  {
+    "entity":
+    {
+      "name": "Camera_A"
+      ,
+      "transform":
+      {
+        "pos": "5.0 3.0 -25.0",
+        "lookat" : "0 0 0"
+      },
+      "camera" : {
+        "far" : 100
+      },
+      "camera_lookat" :
+      {
+      	"target" : "moving_camera_target"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Camera_B"
+      ,
+      "transform":
+      {
+        "pos": "-5.0 3.0 -25.0",
+        "lookat" : "0 0 0"
+      },
+      "camera" : {
+<<<<<<< HEAD
+        "far" : 100
+=======
+        "far" : 5.0
+>>>>>>> master
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Camera_C"
+      ,
+      "transform":
+      {
+        "pos": "0.0 3.0 25.0",
+        "lookat" : "0 0 0"
+      },
+      "camera" : {
+<<<<<<< HEAD
+        "far" : 100
+=======
+        "far" : 5.0
+>>>>>>> master
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Camera_Default"
+      ,
+      "transform":
+      {
+        "pos": "20.0 3.0 50.0",
+        "lookat" : "0 0 0"
+      },
+      "camera" : {
+        "far" : 15.0
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Camera_Output"
+      ,
+      "transform":
+      {
+        "pos": "20.0 3.0 50.0",
+        "lookat" : "0 0 0"
+      },
+      "camera" : {
+        "far" : 5.0
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "curve_test"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 10.0"
+      },
+      "curve_controller":
+      {
+      	"curve" : "data/curves/camera_path.curve",
+      	"enabled" : false,
+      	"speed" : 1.0,
+      	"ratio" : 0.0,
+      	"target" : "Camera_A"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "moving_camera_target",
+      "transform":
+      {
+        "pos": "-10.0 0.0 0.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "3rd_person_camera",
+      "transform":
+      {
+        "pos": "0.0 0.0 5.0",
+<<<<<<< HEAD
+        "scale" : "1 1 1"
+      },
+      "camera_3rd_person" : 
+      {
+      	"target" : "Player",
+=======
+        "scale" : 1.0
+      },
+      "camera_3rd_person" : 
+      {
+      	"target" : "player",
+>>>>>>> master
+      	"curve" : "data/curves/camera_3rd_person.curve",
+      	"ratio" : 0.0,
+      	"offset" : "0 1.5 0",
+      	"pitchSensitivity" : 2,
+      	"yawSensitivity" : 5
+      },
+      "camera" : {
+<<<<<<< HEAD
+        "far" : 100
+=======
+        "far" : 2.0
+>>>>>>> master
+      }
+    }
+  }
+]

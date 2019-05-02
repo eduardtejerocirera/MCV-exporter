@@ -1,0 +1,17 @@
+[
+	{
+		"entity": {
+            "name": "box",
+            "transform":
+            {
+              "pos": "0.0 0.0 0.0"
+            },
+            "render": {
+                "mesh": "data/meshes/Box001.mesh",
+                "color": "1.0 1.0 1.0 1.0",
+                "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
+            },
+            "targetable":{}
+        }
+	}
+]

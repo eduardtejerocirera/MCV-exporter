@@ -1,0 +1,11 @@
+{
+  "technique": "objs_skin.tech",
+  "shadows": true,
+  "textures":
+  {
+    "albedo":   "data/textures/fd/fdbody_albedo.dds",
+    "normal":   "data/textures/fd/fdbody_normal.dds",
+    "roughness":"data/textures/fd/fdbody_roughness.dds",
+    "ao":       "data/textures/fd/fdbody_ao.dds"
+  }
+}

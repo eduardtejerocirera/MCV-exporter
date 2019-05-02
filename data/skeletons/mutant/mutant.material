@@ -1,0 +1,10 @@
+{
+  "technique": "objs_skin.tech"
+  ,
+  "shadows": true
+  ,
+  "textures":
+  {
+    "albedo": "data/skeletons/mutant/Mutant_diffuse.dds"
+  }
+}

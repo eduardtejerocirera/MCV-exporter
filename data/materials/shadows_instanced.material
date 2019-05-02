@@ -1,0 +1,6 @@
+{
+  "technique": "shadows_instanced.tech",
+  "textures": {},
+  "category" : "shadows",
+  "casts_shadows" : false
+}

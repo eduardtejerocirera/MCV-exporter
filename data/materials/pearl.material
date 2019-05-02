@@ -1,0 +1,8 @@
+{
+	"technique" : "data/techniques/matcap.tech",
+	"shadows": false,
+	"textures":
+	{
+		"albedo" : "data/textures/matcap_061.dds"
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "technique":"objs.tech",
+  "shadows":true,
+  "textures":
+  {
+    "albedo": "data/textures/minion/minion_Base_Color.dds",
+    "normal": "data/textures/minion/minion_Normal.dds",
+    "roughness": "data/textures/minion/minion_Roughness.dds",
+    "emissive": "data/textures/minion/minion_Emissive.dds",
+    "ao": "data/textures/minion/minion_AO.dds"
+  }
+}

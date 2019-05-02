@@ -1,0 +1,27 @@
+[
+	{
+		"entity": {
+            "name": "controllable_book",
+            "transform":
+            {
+              "pos": "0.0 0.0 0.0"
+              ,
+              "scale" : "1 1 1"
+            },
+            "render": {
+                "mesh": "data/meshes/Box001.mesh",
+                "color": "1.0 1.0 1.0 1.0",
+                "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
+            },
+            "collider": {
+              "shape": "capsule",
+              "controller": true,
+              "radius": 0.5,
+              "height": 0.5
+            },
+            "targetable":{},
+            "grabbable":{},
+            "character_controller":{}
+        }
+	}
+]

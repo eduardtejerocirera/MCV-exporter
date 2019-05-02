@@ -1,0 +1,25 @@
+[
+  {
+    "entity":
+    {
+      "name": "test_trans_curve"
+      ,
+      "transform":
+      {
+        "pos": "0 0 -10"
+      },
+      "trans_curve_controller" : {
+        "curve" : "data/curves/orbit_circle.trans_curve",
+        "speed" : 0.1
+      },
+      "render" : {
+        "meshes": [
+          {
+            "mesh": "axis.mesh",
+            "material": "data/materials/debug_color.material"
+          }
+        ]
+      }
+    }
+  }
+]

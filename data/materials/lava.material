@@ -1,0 +1,12 @@
+{
+  "technique": "data/techniques/objs.tech"
+  ,
+  "shadows": true
+  ,
+  "textures":
+  {
+    "albedo": "data/textures/Lava_002_COLOR.dds"
+    ,
+    "normal": "data/textures/Lava_002_NRM.dds"
+  }
+}

@@ -1,0 +1,25 @@
+[
+	{
+		"entity" : {
+			"transform" : {
+				"pos" : "0 0 0"
+			},		
+			"name" : "Axis And Grid",
+			"render" : {
+				"meshes": [
+					{
+						"mesh" : "grid.mesh",
+						"material" : "data/materials/debug_color.material",
+						"state" : 0
+					}
+					,
+          {
+            "mesh": "axis.mesh",
+            "material": "data/materials/debug_color.material",
+            "state": 1
+          }
+				]
+			}
+		}
+	}
+]

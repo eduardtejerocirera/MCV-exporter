@@ -1,0 +1,125 @@
+{
+	"name":"mutant",
+	"anims" : [
+		{ "name" : "idle"},
+		{ "name" : "walk"},
+		{ "name" : "run"}
+	],
+  	"bone_ids_to_debug" : [
+    3
+  ]
+	,
+	"ragdoll":[
+		{	
+			"bone":"Mutant",
+		  "height": 0.01,
+  		"radius": 0.01,
+  		"parent_bone":""
+		}
+		,
+		{	
+			"bone":"Mutant:Spine",
+		  "height": 0.01,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant"
+		}
+		,
+		{	
+			"bone":"Mutant:Spine1",
+		  "height": 0.01,
+  		"radius": 0.07,
+  		"parent_bone":"Mutant:Spine"
+		}
+		,
+		{	
+			"bone":"Mutant:Spine2",
+		  "height": 0.01,
+  		"radius": 0.1,
+  		"parent_bone":"Mutant:Spine1"
+		}
+		,
+		{	
+			"bone":"Mutant:LeftUpLeg",
+		  "height": 0.1,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant"
+		}
+		,
+		{	
+			"bone":"Mutant:LeftLeg",
+		  "height": 0.1,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant:LeftUpLeg"
+		}
+		,
+		{	
+			"bone":"Mutant:RightUpLeg",
+		   "height": 0.1,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant"
+		}
+		,
+		{	
+			"bone":"Mutant:RightLeg",
+		  "height": 0.1,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant:RightUpLeg"
+		}
+		,
+		{	
+			"bone":"Mutant:Neck",
+		  "height": 0.01,
+  		"radius": 0.01,
+  		"parent_bone":"Mutant:Spine2"
+		}
+		,
+		{	
+			"bone":"Mutant:Head",
+		   "height": 0.02,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant:Neck"
+		}
+		,
+		{	
+			"bone":"Mutant:LeftArm",
+		  "height": 0.05,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant:Spine2"
+		}
+		,
+		{	
+			"bone":"Mutant:LeftForeArm",
+		  "height": 0.04,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant:LeftArm"
+		}
+		,
+		{	
+			"bone":"Mutant:LeftHand",
+			  "height": 0.01,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant:LeftForeArm"
+		}
+		,
+		{	
+			"bone":"Mutant:RightArm",
+			  "height": 0.1,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant:Spine2"
+		}
+		,
+		{	
+			"bone":"Mutant:RightForeArm",
+	  "height": 0.1,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant:RightArm"
+		}
+		,
+		{	
+			"bone":"Mutant:RightHand",
+		 	  "height": 0.05,
+  		"radius": 0.04,
+  		"parent_bone":"Mutant:RightForeArm"
+		}
+	]
+}

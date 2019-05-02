@@ -1,0 +1,8 @@
+{
+	"technique" : "data/techniques/texnouv.tech",
+	"shadows": false,
+	"textures":
+	{
+		"albedo" : "data/textures/UV_Grid_Lrg.dds"
+	}
+}

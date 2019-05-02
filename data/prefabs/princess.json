@@ -1,0 +1,22 @@
+[{
+  "entity":{
+    "name": "player",
+    "transform":{
+      "pos": "0.0 0.223192 0.0",
+      "rotation": "0.0 0.0 0.0 -1.0"
+    },
+    "collider" : {
+      "shape" : "capsule",
+      "controller" : true,
+      "radius" : 0.5,
+      "height" : 1.7
+    },
+    "render":{
+      "mesh": "data/meshes/level_princess_attack.mesh",
+      "color": "0.690196 0.101961 0.101961 1.0",
+      "material":"data/materials/princess.material"
+    },
+    "character_controller" : {},
+    "msg_logger" : true
+  }
+}]

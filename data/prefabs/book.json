@@ -1,0 +1,32 @@
+[
+	{
+		"entity": {
+            "name": "book",
+            "transform":
+            {
+              "pos": "0.0 0.0 0.0"
+              ,
+              "scale" : "1 1 1"
+            },
+            "render": {
+                "mesh": "data/meshes/Box001.mesh",
+                "color": "1.0 1.0 1.0 1.0",
+                "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
+            },
+            "collider":
+            {
+              "shapes":
+              [
+                {
+                  "shape": "box",
+                  "half_size": "0.5 0.5 0.5"
+                }
+              ],
+              "dynamic": true,
+              "kinematic": false,
+              "notify_sleep": true
+            },
+            "book":{}
+        }
+	}
+]

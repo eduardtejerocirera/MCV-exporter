@@ -1,0 +1,6 @@
+{
+	"vs_fx" : "data/shaders/matcap.fx",
+	"vdecl" : "PosNUv",
+	"vs" : "VS",
+	"ps" : "PS"
+}

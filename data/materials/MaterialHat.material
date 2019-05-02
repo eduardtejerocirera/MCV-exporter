@@ -1,0 +1,10 @@
+{
+    "technique": "objs_skin.tech",
+  "shadows": true,
+  "textures":
+  {
+    "albedo": "data/textures/hat_diffuse.dds"
+    ,
+    "normal": "data/textures/defaults/null_normal.dds"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "textures":
+  {
+    "albedo": "data/textures/wood_d.dds"
+    ,
+    "normal": "data/textures/defaults/null_normal.dds"
+  }
+}

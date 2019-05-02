@@ -1,0 +1,40 @@
+[
+  {
+    "entity": {
+      "name": "Teapot001",
+      "transform": {
+        "pos": "0.0 0.0 0.0",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "render": {
+        "mesh": "data/meshes/enemy_Teapot001.mesh",
+        "color": "0.882353 0.776471 0.341176 1.0"
+      }
+      ,
+      "local_aabb" : { "half_size" : "1 1 1" }
+      ,
+      "abs_aabb" : {}
+    }
+  },
+  {
+    "entity": {
+      "name": "GeoSphere001",
+      "transform": {
+        "pos": "0.00519161 0.386363 1.38254",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "render": {
+        "mesh": "data/meshes/enemy_GeoSphere001.mesh",
+        "color": "0.239216 0.529412 0.0235294 1.0"
+      }
+      ,
+      "tags" : ["explodes"]
+      ,
+      "hierarchy" : {
+        "pos": "0 0 2",
+        "rotation": "0.0 0.0 0.0 1.0",
+        "parent" : "Teapot001"
+      }
+    }
+  }
+]

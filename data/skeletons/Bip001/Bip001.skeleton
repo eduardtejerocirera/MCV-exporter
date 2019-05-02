@@ -1,0 +1,15 @@
+{
+    "name":"Bip001",
+    "meshes":["fdbody_low"],
+    "anims":[
+        {"name":"fd_idle"},
+        {"name":"fd_walk_f"},
+        {"name":"fd_walk_b"},
+        {"name":"fd_run_f"},
+        {"name":"fd_run_b"},
+        {"name":"fd_attack_1"},
+        {"name":"fd_attack_2"},
+        {"name":"fd_attack_dive"},
+        {"name":"fd_meditate"}
+    ]
+}

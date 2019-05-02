@@ -1,0 +1,26 @@
+[
+
+  {
+    "entity":
+    {
+      "name": "water_plane"
+      ,
+      "transform":
+      {
+        "pos": "0 5 0",
+        "scale" : 1.0
+      }
+      ,
+      "render":
+      {
+        "color" : "0.392 0.847 1 1",
+        "mesh": "data/meshes/figures_Plane001.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/water.material"
+        ]
+      }
+    }
+  }
+]

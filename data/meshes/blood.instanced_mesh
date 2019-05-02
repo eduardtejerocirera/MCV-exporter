@@ -1,0 +1,5 @@
+{
+  "instanced_mesh" : "data/meshes/UnitSolidCube.mesh",
+  "instances_type" : "InstanceColor",
+  "num_instances_reserved" : 8
+}

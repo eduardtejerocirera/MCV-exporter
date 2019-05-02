@@ -1,0 +1,74 @@
+[
+  {
+    "entity": {
+      "name": "Player",
+      "transform": {
+        "pos": "0 15 0"
+      },
+      "render": {
+        "mesh": "data/skeletons/root/root.mesh",
+        "material": "data/materials/princess.material",
+        "color": "1.0 1.0 1.0 1.0"
+      },
+      "collider": {
+        "shape": "capsule",
+        "controller": true,
+        "radius": 0.5,
+        "height": 1,
+        "group": "player"
+      },
+      "input_handler": {},
+      "character_controller": {},
+      "shooter": {},
+      "eject_manager": {},
+      "wall_manager": {},
+      "shoot_manager": {},
+      "health_manager": {},
+      "msg_logger": true,
+      "player_death": {},
+      "minion_manager": {
+        "total_minions": 150,
+        "initial_minions": 150,
+        "recover_rate": 1
+      },
+      "minion_bar": {},
+      "health_manager":{},
+      "send_minions":{},
+      "msg_logger": true,
+      "player_death": {},
+      "melee_task":{},
+      "simple_animator": {
+        "animations": [
+          {
+            "key": "idle",
+            "mesh": "data/meshes/level_princess_idle.mesh"
+          },
+          {
+            "key": "walk",
+            "mesh": "data/meshes/level_princess_attack.mesh"
+          },
+          {
+            "key": "attack",
+            "mesh": "data/meshes/level_princess_attack.mesh"
+          },
+          {
+            "key": "jump",
+            "mesh": "data/meshes/level_princess_jump.mesh"
+          },
+          {
+            "key": "impact",
+            "mesh": "data/meshes/level_princess_attack.mesh"
+          },
+          {
+            "key": "aim",
+            "mesh": "data/meshes/level_princess_attack.mesh"
+          }
+        ]
+      },
+      "armature": {
+        "src": "data/skeletons/root/root.skeleton"
+      },
+      "xragdoll": {}
+    }
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "entity": {
+      "name": "GeoSphere001",
+      "transform": {
+        "pos": "0.0 20.0 -8.74228e-07",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "local_aabb" : { "half_size" : "3 3 3" },
+      "abs_aabb" : {},
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "sphere"
+            ,
+            "radius": 3.0
+          }
+        ]
+        ,
+        "dynamic": true
+      },
+      "render": {
+        "mesh": "data/meshes/simpleSphere_GeoSphere001.mesh",
+        "color": "0.341176 0.882353 0.341176 1.0"
+        ,
+        "materials":
+        [
+          "data/materials/stones.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "Box001",
+      "transform": {
+        "pos": "-5.0 25.726 -1.12452e-06",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.5 0.5 1.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 0.5 0.0"
+            }
+          }
+        ]
+        ,
+        "dynamic": true
+        , 
+        "offset" : {
+          "pos" : "0 0.5 0"
+        }
+      },
+      "render": {
+        "mesh": "data/meshes/simpleSphere_Box001.mesh",
+        "color": "0.529412 0.431373 0.0313726 1.0"
+        ,
+        "materials":
+        [
+          "data/materials/stones.material"
+        ]
+      }
+    }
+  },
+  {
+    "xentity": {
+      "name": "Plane001",
+      "transform": {
+        "pos": "-4.96796 -1.42396e-07 -3.25765",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/simpleSphere_Plane001.col_mesh"
+          }
+        ]
+      }
+      ,
+      "abs_aabb" : {}
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/simpleSphere_Plane001.mesh"
+        ,
+        "color": "0.603922 0.843137 0.898039 1.0"
+        ,
+        "materials":
+        [
+          "data/materials/wood.material"
+          ,
+          "data/materials/stones.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "TriggerBomb",
+      "transform": {
+        "pos": "-13.9735 7.17075e-07 16.4048",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "7.32964 9.85992 10.0635"
+            ,
+            "offset":
+            {
+              "pos": "0.0 9.85992 0.0"
+            }
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "xentity":
+    {
+      "name": "MyCapsule"
+      ,
+      "transform":
+      {
+        "pos": "0.0 10.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shape": "capsule"
+        ,
+        "height": 1.0
+        ,
+        "radius": 0.5
+        ,
+        "density": 1.1
+        ,
+        "dynamic": true
+      }
+    }
+  },
+  {
+    "entity":
+    {
+      "name": "Box002"
+      ,
+      "transform":
+      {
+        "pos": "-32.5677 -2.94379e-06 -67.346"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/simpleSphere_Box002.mesh"
+        ,
+        "color": "0.341176 0.882353 0.341176 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Dummy001"
+      ,
+      "transform":
+      {
+        "pos": "18.662 1.40745e-06 32.1988"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "prefab": "data/scenes/enemy.json"
+    }
+  },
+  {
+    "entity": {
+      "name": "Dummy002",
+      "transform": {
+        "pos": "24.7017 4.18843e-07 9.58202",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "prefab": "data/scenes/enemy.json"
+    }
+  }
+]

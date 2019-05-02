@@ -1,0 +1,7 @@
+{
+	"resourcesPath" : "../../bin/",
+	"importPath" : "data/fsm/sources/",
+	"exportPath" : "data/fsm/",
+	"importExtension" : ".graphml",
+	"exportExtension" : ".fsm"
+}
