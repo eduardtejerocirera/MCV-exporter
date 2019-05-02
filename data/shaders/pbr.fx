@@ -22,6 +22,7 @@ struct VS_OUTPUT
   float2 Uv       : TEXCOORD0;
   float3 WorldPos : TEXCOORD1;
   float4 T        : NORMAL1;
+  float4 Color    : COLOR0;
 };
 
 //--------------------------------------------------------------------------------------
@@ -34,6 +35,7 @@ VS_OUTPUT runObjVS(VS_INPUT input, float4x4 world ) {
   output.N = mul(input.N, (float3x3)world);
   output.T = float4( mul(input.T.xyz, (float3x3)world), input.T.w);
   output.Uv = input.Uv;
+  output.Color = ObjColor; //Tint Color from constants.h
   return output;
 }
 
@@ -85,7 +87,7 @@ void PS(
 {
 
   float4 albedo_color = txAlbedo.Sample(samLinear, input.Uv);
-  o_albedo.xyz = albedo_color.xyz;
+  o_albedo.xyz = albedo_color.xyz * input.Color;
   o_albedo.a = txMetallic.Sample(samLinear, input.Uv).r;
 
   // Normal mapping

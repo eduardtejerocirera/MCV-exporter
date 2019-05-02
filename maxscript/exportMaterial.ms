@@ -104,13 +104,13 @@ struct TMaterialExporter (
 
 		fs.begin (matsPath + "minion.material" )
 		fs.beginObj()
-			fs.writeKeyValue "technique" "data/techniques/matcap.tech" 
+			fs.writeKeyValue "technique" "objs.tech" 
 			fs.writeComma()
-			fs.writeKeyValue "shadows" false 
+			fs.writeKeyValue "shadows" true 
 			fs.writeComma()
 			fs.writeKey "textures" 
 			fs.beginObj()
-				fs.writeKeyValue "albedo" "data/textures/matcap_014.dds" 
+				fs.writeKeyValue "albedo" "data/textures/white.dds"
 			fs.endObj()
 		fs.endObj()
 		fs.end()

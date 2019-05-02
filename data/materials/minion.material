@@ -1,8 +1,8 @@
 {
-	"technique" : "data/techniques/matcap.tech",
-	"shadows": false,
+	"technique" : "objs.tech",
+	"shadows": true,
 	"textures":
 	{
-		"albedo" : "data/textures/matcap_014.dds"
+		"albedo" : "data/textures/white.dds"
 	}
 }
