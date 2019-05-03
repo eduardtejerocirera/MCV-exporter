@@ -92,7 +92,6 @@ struct TSceneExporter (
 		--local texture_name = mats_path + obj.name
 		fs.writeKeyValue "mesh" mesh_name
 		fs.writeComma()
-		fs.writeKeyValue "color" obj.wireColor
 		
 		-- Export the real mesh
 		local full_mesh_filename = export_path + mesh_name
@@ -107,9 +106,16 @@ struct TSceneExporter (
 		local me = TMaterialExporter export_path: export_path base_path:base_path
 		local exported_materials = me.exportMaterial mat mats_path obj
 		
-		fs.writeComma()
 		fs.writeKey "materials"
 		fs.arrayOfStrings exported_materials
+		
+		--only add wirecolor if object does not have a texture
+		if mat.diffusemap == undefined then (
+			fs.writeComma()
+			fs.writeKeyValue "color" obj.wireColor
+		)
+
+
 			
 		fs.endObj()
 	),
