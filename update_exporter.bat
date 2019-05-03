@@ -1,2 +1,6 @@
 echo UPDATING EXPORTER
+
 git pull
+
+
+PAUSE
