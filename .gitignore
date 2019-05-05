@@ -1,4 +1,2 @@
-engine.exe
-imgui.ini
-Cal3D.lib
+data/boot.json
 *.cpuprofile
