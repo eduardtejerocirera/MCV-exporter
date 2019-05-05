@@ -1,0 +1,22 @@
+[
+	{
+		"entity" : {
+			"transform" : {
+				"pos" : "35 35 -20",
+        "lookat" : "0 0 0"
+			},
+      "name": "Camera",
+      "culling": {},
+			"camera" : {
+			},
+      "render_ao": {
+        "enabled": true
+      },
+      "camera_flyover": {
+        "key": "1"
+      }, 
+			"sensor" : {
+			}
+		}
+	}
+]

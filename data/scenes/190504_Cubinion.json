@@ -1,0 +1,25 @@
+[
+  {
+    "entity":
+    {
+      "name": "cubinion_low"
+      ,
+      "transform":
+      {
+        "pos": "-0.00249007 0.0 2.41399e-06"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190504_Cubinion_cubinion_low.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/cuminion.material"
+        ]
+      }
+    }
+  }
+]

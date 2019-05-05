@@ -1,0 +1,2337 @@
+[
+  {
+    "entity":
+    {
+      "name": "bibliotecario_plataforma"
+      ,
+      "transform":
+      {
+        "pos": "-20.7197 73.6656 18.9381"
+        ,
+        "rotation": "0.0 0.420633 0.0 -0.907231"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_bibliotecario_plataforma.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_bibliotecario_plataforma.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.839216 0.898039 0.65098 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "bilbiotecarios12"
+      ,
+      "transform":
+      {
+        "pos": "26.1955 49.5 5.78907"
+        ,
+        "rotation": "0.0 -0.642788 0.0 -0.766044"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_bilbiotecarios12.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_bilbiotecarios12.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.839216 0.898039 0.65098 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "bilbiotecarios8"
+      ,
+      "transform":
+      {
+        "pos": "-15.0947 33.4312 -23.1268"
+        ,
+        "rotation": "0.0 -0.953717 0.0 0.300706"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_bilbiotecarios8.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_bilbiotecarios8.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.839216 0.898039 0.65098 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "bilbiotecarios"
+      ,
+      "transform":
+      {
+        "pos": "0.0 7.83325 65.6536"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_bilbiotecarios.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_bilbiotecarios.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.839216 0.898039 0.65098 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava_modular"
+      ,
+      "transform":
+      {
+        "pos": "-0.0271239 -7.27395 82.5238"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "10.5 4.0 12.416"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "group": "floor"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava_central"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "35.0 4.75 35.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.75 0.0"
+            }
+            ,
+            "group": "floor"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava_rio"
+      ,
+      "transform":
+      {
+        "pos": "-22.4854 68.6273 13.8506"
+        ,
+        "rotation": "0.0 -0.284598 0.0 -0.958647"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "8.0 4.0 16.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava_cascada"
+      ,
+      "transform":
+      {
+        "pos": "-16.4545 7.96183 9.775"
+        ,
+        "rotation": "0.0 -0.309075 0.0 -0.951038"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.0 33.0 10.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 33.0 0.0"
+            }
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Esqueleto_placeholder"
+      ,
+      "transform":
+      {
+        "pos": "-11.0068 34.0 -27.862"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_Esqueleto_placeholder.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.894118 0.721569 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava_modular_01"
+      ,
+      "transform":
+      {
+        "pos": "-0.0271239 -7.39647 60.9038"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "10.5 9.0 10.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 9.0 0.0"
+            }
+            ,
+            "group": "floor"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_bilbioteca_cercana"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_bilbioteca_cercana.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_bilbioteca_cercana.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.6 0.894118 0.721569 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_barandilla"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_barandilla.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_barandilla.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.878431 0.337255 0.337255 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_biblioteca_sobresaliente"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_biblioteca_sobresaliente.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_biblioteca_sobresaliente.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.603922 0.603922 0.898039 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_bilbioteca_plano_esquina"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_bilbioteca_plano_esquina.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_bilbioteca_plano_esquina.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.882353 0.776471 0.341176 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_borde_lava"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_borde_lava.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_borde_lava.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.0235294 0.529412 0.227451 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_borde_piso"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_borde_piso.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_borde_piso.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.694118 0.580392 0.105882 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_borde_plataformas"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_borde_plataformas.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_borde_plataformas.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.603922 0.843137 0.898039 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_boton_piso"
+      ,
+      "transform":
+      {
+        "pos": "10.7568 50.2672 29.5614"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_boton_piso.col_mesh"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_boton_piso.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.341176 0.882353 0.341176 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_botones_switch"
+      ,
+      "transform":
+      {
+        "pos": "-4.89202 12.6828 47.4371"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_botones_switch.col_mesh"
+            ,
+            "kinematic": true
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_botones_switch.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.603922 0.843137 0.898039 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_boveda"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_boveda.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_boveda.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.694118 0.345098 0.105882 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_boveda_bordes"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_boveda_bordes.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_boveda_bordes.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.6 0.894118 0.721569 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_cascada_lava"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_cascada_lava.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.337255 0.337255 0.337255 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_esquina_borde"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_esquina_borde.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_esquina_borde.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.0313726 0.0313726 0.533333 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_estanteria"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_estanteria.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_estanteria.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.894118 0.721569 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_fondo_safezone"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_fondo_safezone.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_fondo_safezone.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.529412 0.231373 0.0313726 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_larga"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_larga.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_larga.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.603922 0.72549 0.898039 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_lava"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_lava.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.0235294 0.529412 0.443137 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_lava_cascada"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_lava_cascada.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_lava_cascada.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.6 0.894118 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_lava_cascada_borde"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_lava_cascada_borde.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_lava_cascada_borde.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.721569 0.894118 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_lava_central"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_lava_central.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.690196 0.101961 0.101961 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_pared_adelante"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_pared_adelante.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_pared_adelante.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.105882 0.694118 0.105882 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_pared_safezone"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_pared_safezone.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_pared_safezone.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.882353 0.776471 0.341176 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_pasillo_techo"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_pasillo_techo.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_pasillo_techo.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.345098 0.780392 0.882353 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_piso_portcullis"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_piso_portcullis.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_piso_portcullis.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.694118 0.109804 0.584314 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_piso_safezone"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_piso_safezone.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_piso_safezone.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.0235294 0.529412 0.227451 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_plano pared"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_plano pared.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_plano pared.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.0235294 0.529412 0.443137 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_plano_cascada"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_plano_cascada.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.878431 0.337255 0.337255 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_plataforma_boss"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_plataforma_boss.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_plataforma_boss.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.337255 0.337255 0.337255 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_portcullis"
+      ,
+      "transform":
+      {
+        "pos": "-0.0271938 21.4589 44.5321"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_portcullis.col_mesh"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_portcullis.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.6 0.894118 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_portcullis_piso"
+      ,
+      "transform":
+      {
+        "pos": "-27.3517 83.0146 1.28271"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_portcullis_piso.col_mesh"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_portcullis_piso.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.529412 0.431373 0.0313726 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_suela_corta"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_suela_corta.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_suela_corta.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.345098 0.780392 0.882353 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_switch_pared"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_switch_pared.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_switch_pared.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.603922 0.603922 0.898039 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_switch_piso"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_switch_piso.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_switch_piso.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.333333 0.109804 0.694118 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_techo_central"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_techo_central.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_techo_central.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.54902 0.345098 0.882353 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_techo_circular"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_techo_circular.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_techo_circular.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.882353 0.560784 0.341176 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_techo_safezone"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_techo_safezone.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_techo_safezone.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.6 0.894118 0.721569 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_union_pared_curva"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_union_pared_curva.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_union_pared_curva.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.337255 0.337255 0.337255 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_union_piso"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_union_piso.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_union_piso.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.345098 0.345098 0.882353 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_ventana"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_ventana.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_ventana.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.894118 0.839216 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "plano_piso"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_plano_piso.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_plano_piso.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.109804 0.34902 0.694118 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "techo_portcullis"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_techo_portcullis.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_techo_portcullis.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.839216 0.894118 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_botones_switch_2"
+      ,
+      "transform":
+      {
+        "pos": "-34.4885 80.6828 4.5645"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_botones_switch_2.col_mesh"
+            ,
+            "kinematic": true
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_botones_switch_2.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.603922 0.843137 0.898039 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_biblioteca_sobresaliente_movil"
+      ,
+      "transform":
+      {
+        "pos": "30.8077 52.0 -14.5513"
+        ,
+        "rotation": "0.0 0.5373 0.0 -0.843391"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_biblioteca_sobresaliente_movil.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_biblioteca_sobresaliente_movil.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.603922 0.603922 0.898039 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_estanteria_movil"
+      ,
+      "transform":
+      {
+        "pos": "24.0262 54.0 -2.20545"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_estanteria_movil.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07_pieza_estanteria_movil.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.894118 0.721569 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_0"
+      ,
+      "transform":
+      {
+        "pos": "-0.0271316 4.54871e-06 104.062"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 0
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "4.0 4.0 1.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_1"
+      ,
+      "transform":
+      {
+        "pos": "-0.0271502 9.99997 47.0622"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 1
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "4.0 4.0 1.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "trigger": true
+
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_2"
+      ,
+      "transform":
+      {
+        "pos": "16.4012 33.5 -21.919"
+        ,
+        "rotation": "0.0 0.34433 0.0 -0.938849"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 2
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.0 4.0 4.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "trigger": true
+
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_3"
+      ,
+      "transform":
+      {
+        "pos": "-23.8038 50.0 -13.7034"
+        ,
+        "rotation": "0.0 0.280689 0.0 -0.959799"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 3
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "4.0 4.0 1.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "trigger": true
+
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_4"
+      ,
+      "transform":
+      {
+        "pos": "7.82815 50.1 26.1645"
+        ,
+        "rotation": "0.0 -0.148618 0.0 -0.988895"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 4
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.0 4.0 4.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "trigger": true
+
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_5"
+      ,
+      "transform":
+      {
+        "pos": "-10.0642 78.0 26.4419"
+        ,
+        "rotation": "0.0 0.165894 0.0 -0.986144"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 5
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.0 4.0 4.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "trigger": true
+
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_6"
+      ,
+      "transform":
+      {
+        "pos": "-11.961 94.0 -23.9565"
+        ,
+        "rotation": "0.0 0.5 0.0 -0.866025"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 6
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "4.0 4.0 1.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "trigger": true
+            
+          }
+        ]
+      }
+    }
+  }
+]
