@@ -220,6 +220,8 @@ function findIndexOrRegister ht vtxs new_vtx = (
 
 function resetModel obj = (
 
+	format "hello\n"
+
 	--thehold controls redo/undo in 3dsMax
 	if not thehold.holding() do thehold.Begin()
 
@@ -236,16 +238,20 @@ function resetModel obj = (
 
 	-- create sphere in 0,0,0
 	local sph = Sphere radius:1.0 pos:[0,0,0] isSelected:on
-	convertToMesh sph
+	convertToPoly sph
 	local numFacesSphere_before = getNumFaces sph
 
+	format "1\n"
 	-- attach object to sphere to reset it
-	meshop.attach sph obj
+	polyop.attach sph obj
+
+	format "2\n"
 
 	for i in numFacesSphere_before to 1 by -1 do (
-		deleteFace sph i
+		polyop.deleteFaces sph i
 	)
 
+	format "3\n"
 	-- restore name and children
 	sph.name = objName
 

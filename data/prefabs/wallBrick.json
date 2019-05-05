@@ -7,9 +7,11 @@
               "pos": "0.0 0.0 0.0"
             },
             "render": {
-                "mesh": "data/meshes/Box001.mesh",
+                "mesh": "data/meshes/190504_Cubinion_cubinion_low.mesh",
                 "color": "1.0 1.0 1.0 1.0",
-                "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
+                "materials": [
+                    "data/materials/cuminion.material"
+                ]
             },
             "targetable":{}
         }

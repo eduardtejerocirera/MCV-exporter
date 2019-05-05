@@ -9,7 +9,8 @@
 				"shape" : "plane",
 				"normal" : "0 1 0",
 				"distance" : 0,
-        "group" : "floor"
+		"group" : "floor",
+		"mask": "all"
 			}
 		}
 	}

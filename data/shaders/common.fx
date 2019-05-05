@@ -22,6 +22,7 @@ Texture2D    txGAlbedo        TEXTURE_SLOT(TS_DEFERRED_ALBEDOS);
 Texture2D    txGNormal        TEXTURE_SLOT(TS_DEFERRED_NORMALS);
 Texture2D    txGLinearDepth   TEXTURE_SLOT(TS_DEFERRED_LINEAR_DEPTH);
 Texture2D    txAccLights      TEXTURE_SLOT(TS_DEFERRED_ACC_LIGHTS);
+Texture2D    txAO             TEXTURE_SLOT(TS_DEFERRED_AO);
 
 SamplerState samLinear        : register(s0);
 SamplerState samBorderColor   : register(s1);

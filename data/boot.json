@@ -1,27 +1,26 @@
 {
   "scenes_to_load": [
     "data/scenes/dp.json",
-
     "data/scenes/cameras.json",
+    "data/scenes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles07.json",
     "data/prefabs/helpers.json",
     "data/prefabs/light_dir.json",
     "data/prefabs/infinite_plane.json",
-
     "data/scenes/ui.json",
+    "data/scenes/figures.json",
     "data/scenes/lights.json"
-],
-"scenes_not_to_load": [
+  ],
+  "scenes_not_to_load": [
+    "data/scenes/test_instances.json",
+    "data/scenes/lights.json",
+    "data/scenes/simpleSphere.json",
+    "data/scenes/190404_Biblioteca04_checkPoints03.json",
   "data/scenes/level.json",
     "data/scenes/test_blood.json",
-    "data/scenes/190404_Biblioteca04_checkPoints03.json",
-    "data/scenes/test_instances.json",
-    "data/scenes/figures.json",
     "data/scenes/test_cameras.json",
 	  "data/prefabs/enemy.json",
     "data/scenes/simple_joint.json",
     "data/scenes/water_plane.json",
-    "data/scenes/lights.json",
-    "data/scenes/simpleSphere.json",
     "data/prefabs/librarian_test.json",
     "data/scenes/level.json"
 

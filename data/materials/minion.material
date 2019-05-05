@@ -1,8 +1,10 @@
 {
-	"technique" : "objs.tech",
-	"shadows": true,
-	"textures":
-	{
-		"albedo" : "data/textures/white.dds"
-	}
+  "technique": "objs.tech"
+  ,
+  "shadows": true
+  ,
+  "textures":
+  {
+    "albedo": "data/textures/white.dds"
+  }
 }

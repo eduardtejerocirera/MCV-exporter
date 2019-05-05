@@ -186,6 +186,11 @@
     "check":"all",
     "buttons":["control","o"]
   },
+  {
+    "name":"dbg_bomb_task",
+    "check":"any",
+    "buttons":["b","gamepad_x"]
+  },
   ["--------------------------------------------- DEBUG SKILLS ---------------------------------------"],
   {
     "name":"dbg_spawn",

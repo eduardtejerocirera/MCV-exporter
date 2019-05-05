@@ -2,9 +2,7 @@
     {
         "entity": {
             "name": "Player",
-            "transform": {
-                "pos": "0 15 0"
-            },
+
             "collider": {
                 "shape": "capsule",
                 "controller": true,

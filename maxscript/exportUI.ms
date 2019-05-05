@@ -1,6 +1,165 @@
+
+callbacks.removeScripts #selectionSetChanged id:#myCallbackID
+
 utility MyMCVExporter "MCV Exporter"
 (
 	
+	rollout currSelection "Current Selection"(
+
+		label selectedTitle "current Object:"
+		label selected ""
+
+		checkbox collider_check "collider" checked:false enabled:false
+		checkbox trigger_check "trigger" checked:false enabled:true
+
+		dropdownlist filterGroup "Filter Group:" items:#("floor", "wall", "none")
+		checkbox kinematic_check "kinematic" checked:false enabled:true
+
+
+
+
+
+		fn GetSelectedObject = (
+			if selection.count == 0 then (
+				selected.text = "No objects selected"
+				return undefined
+			)
+			else if selection.count > 1 then (
+				selected.text =  "Too many objects selected"
+				return undefined
+			)
+			else(
+				selected.text = selection[1].name
+				return selection[1]
+			)
+		)
+
+		--filter group ------------------------------------------------
+		
+		fn disaplayFilterGroup obj = (
+			if obj == undefined then (
+				filterGroup.visible = false
+			)else(
+				filterGroup.visible = true
+				local fgroup = getUserProp obj "group"
+				if fgroup == "floor" then(
+					filterGroup.selection = 1
+				) else if fgroup == "wall" then (
+					filterGroup.selection = 2
+				) else (
+					filterGroup.selection = 3
+				)
+
+			)
+		)
+
+		on filterGroup selected i do (
+
+			local obj = selection[1]
+			if obj != undefined then (
+				setUserProp obj "group" filterGroup.items[i]
+			)
+
+		)
+		--end filtergroup -------------------------------------------------
+
+		--kinematic check ----------------------------------------------------
+		fn displayKinematicCheck obj = (
+			kinematic_check.visible = true
+			local kinematic = getUserProp obj "kinematic"
+			if kinematic != undefined and kinematic == true then(
+				kinematic_check.checked = true
+			)else(
+				kinematic_check.checked = false
+			)
+
+
+		)
+
+		on kinematic_check changed state do (
+
+			local obj = selection[1]
+			--if it's a collider with parent, get parent
+			if obj.parent != undefined then obj = obj.parent
+			
+			setUserProp obj "dynamic" state
+			setUserProp obj "kinematic" state
+		)
+
+		--end kinematic check -----------------------------------------------
+
+		--trigger check ----------------------------------------------------
+		fn displayTriggerCheck obj = (
+			if obj == undefined then (
+				trigger_check.visible = false
+			)else(
+				trigger_check.visible = true
+				if isTrigger(obj) then (
+					trigger_check.checked = true
+				)else(
+					trigger_check.checked = false
+				)
+			)
+		)
+
+		
+		on trigger_check changed state do (
+			local obj = selection[1]
+			if classof obj == Sphere or classof obj == GeoSphere or classof obj == Box then (
+				setUserProp obj "trigger" state
+			)else(
+				MessageBox ("Object needs to be box or sphere to be collider!\n")
+				trigger_check.checked = false
+			)
+
+			
+		)
+		--end trigger check
+
+		--collider check----------------------------------------------------
+
+		fn displayColliderCheck obj = (
+			if obj == undefined then (
+				collider_check.visible = false
+			)else(
+				collider_check.visible = true	
+			)
+
+			--display/hide collider-related stuff
+			if isCollider(obj) then (
+				collider_check.checked = true
+				local parent = obj.parent
+				disaplayFilterGroup(obj)
+				displayKinematicCheck(parent)
+			)
+			else(
+				collider_check.checked = false
+				filterGroup.visible = false
+				kinematic_check.visible = false
+			)
+
+		)
+
+		--end collider_check ------------------------------------------------- 
+
+		fn disaplayValues obj = (
+			displayColliderCheck(obj)
+
+			-- object can be trigger without being collider
+			displayTriggerCheck(obj)
+
+		)
+
+		fn printSelName = (
+			local obj = GetSelectedObject()
+			disaplayValues(obj)
+		)
+
+
+    		
+
+	) --end rollout currSelection
+
 	rollout exporter "The Exporter"
 	(
 		
@@ -97,10 +256,14 @@ utility MyMCVExporter "MCV Exporter"
 	-- ...
 	on MyMCVExporter open do
 	(
+		addRollout currSelection
 		addRollout exporter
 	) 
 	on MyMCVExporter close do
 	(
+		removeRollout currSelection
 		removeRollout exporter
 	) 
 ) -- end utility MyUtil 
+
+callbacks.addScript #selectionSetChanged "MyMCVExporter.currSelection.printSelName()" id:#myCallbackID

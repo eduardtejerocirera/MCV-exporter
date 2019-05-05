@@ -8,6 +8,58 @@ struct TMaterialExporter (
 	export_path,                 -- Asigned in the ctor 
 	base_path,                 -- Asigned in the ctor 	
 	
+	fn isValidPath aname = (
+		-- Add no �, accents, etc.
+		local ok = true
+		ok = ok and findString aname " " == undefined
+
+		if not ok then (
+			throw ("Developers say: Name has a space. Please remove spaces from name:\n" + aname)
+		)
+
+		ok = ok and findString aname "á" == undefined
+		ok = ok and findString aname "é" == undefined
+		ok = ok and findString aname "í" == undefined
+		ok = ok and findString aname "ó" == undefined
+		ok = ok and findString aname "ú" == undefined
+		ok = ok and findString aname "Á" == undefined
+		ok = ok and findString aname "É" == undefined
+		ok = ok and findString aname "Í" == undefined
+		ok = ok and findString aname "Ó" == undefined
+		ok = ok and findString aname "Ú" == undefined
+		
+		ok = ok and findString aname "ñ" == undefined
+		ok = ok and findString aname "Ñ" == undefined
+
+		if not ok then (
+			throw ("Developers say: Name has an accent. Please remove accents from name:\n" + aname)
+		)
+
+		ok = ok and findString aname "%" == undefined
+		ok = ok and findString aname "$" == undefined
+		ok = ok and findString aname "\"" == undefined
+		ok = ok and findString aname "!" == undefined
+		ok = ok and findString aname "\'" == undefined
+
+		if not ok then (
+			format "NOT OK: %\n" aname
+			throw ("Developers say: Name has a symbol. Please remove symbols from name:\n" + aname )
+		)
+
+		return ok
+	),
+
+	fn isValidName aname = (
+		local ok = true;
+		ok = isValidPath(aname)
+		ok = ok and findString aname ":" == undefined
+		if not ok then (
+			format "NOT OK: %\n" aname
+			throw ("Developers say: Name has a ':'. Please remove ':' from name:\n" + aname )
+		)
+	),
+
+
 	fn exportMap map alias default_value = (
 		
 		if map == undefined then (
@@ -43,8 +95,16 @@ struct TMaterialExporter (
 			extraParams = "-f R8G8B8A8_UNORM"
 		)
 
+		-- check all paths are free from spaces and other symbols!
+		isValidPath(texconv_path)
+		isValidPath(outputDir)
+		isValidPath(map_filename)
+
+
 		local texconv_command = texconv_path + "texconv -o " + outputDir + " " + extraParams + " " + map_filename
 		format "running command:\n %\n" texconv_command
+		
+
 
 		DOSCommand(texconv_command)
 		
@@ -57,47 +117,6 @@ struct TMaterialExporter (
 		fs.writeKeyValue alias json_filename
 	),
 	
-	fn isValidName aname = (
-		-- Add no �, accents, etc.
-		local ok = true
-		ok = ok and findString aname " " == undefined
-
-		if not ok then (
-			throw ("Developers say: Name has a space. Please remove spaces from name.")
-		)
-
-		ok = ok and findString aname "á" == undefined
-		ok = ok and findString aname "é" == undefined
-		ok = ok and findString aname "í" == undefined
-		ok = ok and findString aname "ó" == undefined
-		ok = ok and findString aname "ú" == undefined
-		ok = ok and findString aname "Á" == undefined
-		ok = ok and findString aname "É" == undefined
-		ok = ok and findString aname "Í" == undefined
-		ok = ok and findString aname "Ó" == undefined
-		ok = ok and findString aname "Ú" == undefined
-		
-		ok = ok and findString aname "ñ" == undefined
-		ok = ok and findString aname "Ñ" == undefined
-
-		if not ok then (
-			throw ("Developers say: Name has an accent. Please remove accents from name.")
-		)
-
-		ok = ok and findString aname ":" == undefined
-		ok = ok and findString aname "%" == undefined
-		ok = ok and findString aname "$" == undefined
-		ok = ok and findString aname "\"" == undefined
-		ok = ok and findString aname "!" == undefined
-		ok = ok and findString aname "\'" == undefined
-
-		if not ok then (
-			throw ("Developers say: Name has a symbol. Please remove symbols from name.")
-		)
-
-		return ok
-	),
-
 	-- exports minion.material, to be used as a default mat with no textures
 	fn exportDefaultMaterial matsPath = (
 

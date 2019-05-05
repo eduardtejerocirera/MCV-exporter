@@ -35,7 +35,8 @@
         "shapes": [
           {
             "shape": "trimesh",
-            "collision_mesh": "data/meshes/level_Paredes.col_mesh"
+            "collision_mesh": "data/meshes/level_Paredes.col_mesh",
+            "group": "wall"
           }
         ]
       },

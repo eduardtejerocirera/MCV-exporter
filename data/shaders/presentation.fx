@@ -61,12 +61,24 @@ float4 PS(
     return txGAlbedo.Load(ss_load_coords);
 
   if( GlobalRenderOutput == RO_NORMAL ) {
-    float3 N = txGNormal.Load(ss_load_coords);
-    return float4( decodeNormal(N), 1);
+    float3 N = txGNormal.Load(ss_load_coords).xyz;
+    float3 q = float4( decodeNormal(N), 1);
+    return float4( q, 1);
+  }
+
+  if( GlobalRenderOutput == RO_NORMAL_VIEW_SPACE ) {
+    float3 N = txGNormal.Load(ss_load_coords).xyz;
+    float3 q = float4( decodeNormal(N), 1);
+    return float4( mul( q, (float3x3)View).xyz, 1);
   }
   
   if( GlobalRenderOutput == RO_ROUGHNESS ) {
     return g.roughness;
+  }
+  
+  if( GlobalRenderOutput == RO_AO ) {
+    float  ao = txAO.Load(ss_load_coords).x;
+    return ao;
   }
 
   if( GlobalRenderOutput == RO_METALLIC ) {

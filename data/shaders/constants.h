@@ -19,24 +19,26 @@
 #define TS_LIGHT_SHADOW_MAP  7
 #define TS_ENVIRONMENT_MAP   8
 #define TS_IRRADIANCE_MAP    9
-#define TS_NOISE_MAP         10
 
-#define TS_DEFERRED_ALBEDOS  11
-#define TS_DEFERRED_NORMALS  12
-#define TS_DEFERRED_LINEAR_DEPTH 13
-#define TS_DEFERRED_ACC_LIGHTS   14
+#define TS_DEFERRED_ALBEDOS  10
+#define TS_DEFERRED_NORMALS  11
+#define TS_DEFERRED_LINEAR_DEPTH 12
+#define TS_DEFERRED_ACC_LIGHTS   13
+#define TS_DEFERRED_AO           14
 
+#define TS_NOISE_MAP         15
 
 // -------------------------------------------------
 // Render Outputs. Must be in sync with module_render.cpp
-#define RO_COMPLETE     0
-#define RO_ALBEDO       1
-#define RO_NORMAL       2
-#define RO_ROUGHNESS    3
-#define RO_METALLIC     4
-#define RO_WORLD_POS    5
-#define RO_LINEAR_DEPTH 6
-#define RO_AO           7
+#define RO_COMPLETE           0
+#define RO_ALBEDO             1
+#define RO_NORMAL             2
+#define RO_NORMAL_VIEW_SPACE  3
+#define RO_ROUGHNESS          4
+#define RO_METALLIC           5
+#define RO_WORLD_POS          6
+#define RO_LINEAR_DEPTH       7
+#define RO_AO                 8
 
 // -------------------------------------------------
 #define MAX_SUPPORTED_BONES        256
@@ -51,6 +53,7 @@ SHADER_CTE_BUFFER(TCtesCamera, CTE_BUFFER_SLOT_CAMERAS)
   float4 Eye;
   matrix InverseViewProjection;
   matrix CameraScreenToWorld;
+  matrix CameraProjWithOffset;
   float3 CameraFront;
   float  CameraZFar;
   float3 CameraPosition;
@@ -72,6 +75,11 @@ SHADER_CTE_BUFFER(TCtesShared, CTE_BUFFER_SLOT_SHARED)
   int    GlobalRenderOutput;
   float  GlobalAmbientBoost;
   float  GlobalExposureAdjustment;
+
+  float GlobalFXAmount;
+  float GlobalFXVal1;
+  float GlobalFXVal2;
+  float GlobalFXVal3;
 };
 
 SHADER_CTE_BUFFER(TCtesDebugLine, CTE_BUFFER_SLOT_DEBUG_LINE)

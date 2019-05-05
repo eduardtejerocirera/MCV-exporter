@@ -3,7 +3,9 @@
   {
     "entity": {
       "name": "Player",
-      "transform": {},
+      "transform": {
+        "pos": "0.6 0 110.9"
+      },
       "input_handler": {},
       "character_controller": {},
       "shooter": {},

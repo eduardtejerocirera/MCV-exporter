@@ -214,6 +214,8 @@ float4 PS_Ambient(
   float3 env_fresnel = Specular_F_Roughness(g.specular_color, 1. - g.roughness * g.roughness, g.N, g.view_dir);
   //return float4(env_fresnel, 1 );
 
+  float ao = txAO.Sample( samLinear, iUV).x;
+
   float g_ReflectionIntensity = 1.0;
   float g_AmbientLightIntensity = 1.0;
 
@@ -223,7 +225,7 @@ float4 PS_Ambient(
                               g.albedo.xyz * irradiance * g_AmbientLightIntensity
                               , 1.0f) + self_illum;
 
-  return final_color * GlobalAmbientBoost;
+  return final_color * GlobalAmbientBoost * ao;
 }
 
 // ----------------------------------------

@@ -22,6 +22,8 @@
 				"shape" : "sphere",
 				"dynamic" : true,
 				"radius" : 0.01,
+				"group": "all",
+				"mask":"all",
 				"offset": {
 					"pos": "0 0.1 0"
 				}

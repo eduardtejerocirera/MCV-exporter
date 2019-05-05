@@ -53,7 +53,8 @@
     "book_spawner",
     "bt_librarian",
     "kinematic_controller",
-    "bt_basic_melee"
+    "bt_basic_melee",
+    "bomb_task"
   ],
   "render_debug": [
     "fsm",

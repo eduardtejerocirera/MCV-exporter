@@ -124,6 +124,11 @@
     "vs_fx": "data/shaders/water.fx",
     "vdecl": "PosNUvT",
     "noise" : "data/textures/noise_cloud2.dds"
+  },
+  "ao": {
+    "vs_fx": "data/shaders/ao.fx",
+    "vdecl": "PosColor",
+    "z": "disable_all"
   }
 }
 

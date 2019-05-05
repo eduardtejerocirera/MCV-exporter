@@ -2,11 +2,16 @@ clearListener()
 gc()
 
 fn isCollider obj = (
-	return obj != undefined and (findString obj.name "collider" != undefined ) and obj.parent != null
+	return obj != undefined and (findString obj.name "collider" != undefined ) and obj.parent != undefined
 )
 
 fn isTrigger obj = (
-	return obj != undefined and obj.layer.name == "triggers"
+	if obj != undefined then (
+		local is_trigger = getUserProp obj "trigger"
+		if is_trigger == undefined then return false
+		return is_trigger
+	)
+	return false
 )
 
 fn isCheckPoint obj = (
@@ -15,6 +20,10 @@ fn isCheckPoint obj = (
 
 fn isTriggerLava obj = (
 	return obj != undefined and (findString obj.name "trigger_lava" != undefined)
+)
+
+fn isFloor obj = (
+	return obj != undefined and obj.layer.name == "floor"
 )
 
 ----------------------------------------------------------
@@ -144,7 +153,7 @@ struct TSceneExporter (
 		
 			convexmes
 			
-		) else if classof obj == Editable_Mesh then (
+		) else if classof obj == Editable_Mesh or classof obj == PolyMeshObject then (
 			fs.writeKeyValue "shape" "trimesh"
 			fs.writeComma()
 			-- Warning, order might be incorrect!!!
@@ -154,6 +163,12 @@ struct TSceneExporter (
 			
 			fs.writeKeyValue "collision_mesh" mesh_name
 		)
+		else (
+			throw ("collider with name: " + obj.name + " and parent named: " + obj.parent.name + " is not sphere, box or trimesh!")
+		)
+
+
+
 		local px_group = getUserProp obj "group"
 		if px_group != undefined then (
 			fs.writeComma()
@@ -169,7 +184,7 @@ struct TSceneExporter (
 		local is_kinematic = getUserProp obj "kinematic"
 		if is_kinematic != undefined then (
 			fs.writeComma()
-			fs.writeKeyValue "kinematic" true
+			fs.writeKeyValue "kinematic" is_kinematic
 		)
 		
 		if obj.layer.name == "triggers" then (
@@ -205,16 +220,22 @@ struct TSceneExporter (
 			fs.writeKeyValue "density" density
 		)
 		
-		local is_dynamic = getUserProp obj "dynamic"
-		if is_dynamic != undefined then (
-			fs.writeComma()
-			fs.writeKeyValue "dynamic" is_dynamic
-		)
+		
 		
 		local is_kinematic = getUserProp obj "kinematic"
 		if is_kinematic != undefined then (
+			-- an object CANNOT be kinematic without being dynamic, so set it to dynamic anyways
 			fs.writeComma()
-			fs.writeKeyValue "kinematic" true
+			fs.writeKeyValue "dynamic" is_kinematic
+			fs.writeComma()
+			fs.writeKeyValue "kinematic" is_kinematic
+		)else (
+			-- check only if dynamic
+			local is_dynamic = getUserProp obj "dynamic"
+			if is_dynamic != undefined then (
+				fs.writeComma()
+				fs.writeKeyValue "dynamic" is_dynamic
+			)
 		)
 		
 		fs.endObj()
@@ -252,10 +273,12 @@ struct TSceneExporter (
 				ca_data.exportAsComponent fs
 			)
 
+			--adds checkpoint component
 			if isCheckPoint obj then (
 				exportCheckPoint obj
 			)
 
+			--adds damage_on_contact component
 			if isTriggerLava obj then (
 				exportTriggerLava obj
 			)

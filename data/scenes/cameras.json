@@ -3,14 +3,19 @@
 		"entity": {
 			"name": "CameraOutput",
 			"transform": {
-				"pos": "35 35 -20",
+				"pos": "0 0 0",
 				"lookat": "0 0 0"
 			},
 			"camera": {
 				"fov": 60,
 				"near": 0.1,
 				"far": 100,
-				"offset eye": "0 0 0"
+				"offset eye": "0 0 0",
+				"culling": {}
+			},
+			"culling": {},
+			"render_ao": {
+				"enabled": true
 			}
 		}
 	},
@@ -42,15 +47,16 @@
 				"near": 1,
 				"far": 100,
 				"fov": 60,
-				"default": true
+				"default": true,
+				"culling": {}
 			},
 			"camera_3rd_person": {
 				"target": "Player",
 				"curve": "data/curves/camera_curve_3rd.curve",
-				"ratio": 0.75,
+				"ratio": 0.5,
 				"offset": "0 1.65 0",
-				"pitchSensitivity": 5,
-				"yawSensitivity": 5
+				"pitchSensitivity": 1,
+				"yawSensitivity": 1
 			},
 			"culling": {}
 		}
