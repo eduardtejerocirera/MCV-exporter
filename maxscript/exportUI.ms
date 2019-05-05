@@ -12,12 +12,12 @@ utility MyMCVExporter "MCV Exporter"
 		checkbox collider_check "collider" checked:false enabled:false
 		checkbox trigger_check "trigger" checked:false enabled:true
 
-		dropdownlist filterGroup "Filter Group:" items:#("floor", "wall", "none")
+		dropdownlist filterGroup "Filter Group:" items:#("floor", "wall", "triggers", "none")
 		checkbox kinematic_check "kinematic" checked:false enabled:true
 
 
 
-
+		local printSelName
 
 		fn GetSelectedObject = (
 			if selection.count == 0 then (
@@ -37,7 +37,7 @@ utility MyMCVExporter "MCV Exporter"
 		--filter group ------------------------------------------------
 		
 		fn disaplayFilterGroup obj = (
-			if obj == undefined then (
+			if obj == undefined and not isCollider(obj) and not isTrigger(obj) then (
 				filterGroup.visible = false
 			)else(
 				filterGroup.visible = true
@@ -46,8 +46,10 @@ utility MyMCVExporter "MCV Exporter"
 					filterGroup.selection = 1
 				) else if fgroup == "wall" then (
 					filterGroup.selection = 2
-				) else (
+				) else if fgroup == "triggers" then (
 					filterGroup.selection = 3
+				)else(
+					filterGroup.selection = 4
 				)
 
 			)
@@ -107,6 +109,13 @@ utility MyMCVExporter "MCV Exporter"
 			local obj = selection[1]
 			if classof obj == Sphere or classof obj == GeoSphere or classof obj == Box then (
 				setUserProp obj "trigger" state
+
+				if state == true then(
+					setUserProp obj "group" "triggers"
+				)else(
+					setUserProp obj "group" "none"
+				)
+				printSelName()
 			)else(
 				MessageBox ("Object needs to be box or sphere to be collider!\n")
 				trigger_check.checked = false
@@ -129,12 +138,10 @@ utility MyMCVExporter "MCV Exporter"
 			if isCollider(obj) then (
 				collider_check.checked = true
 				local parent = obj.parent
-				disaplayFilterGroup(obj)
 				displayKinematicCheck(parent)
 			)
 			else(
 				collider_check.checked = false
-				filterGroup.visible = false
 				kinematic_check.visible = false
 			)
 
@@ -147,6 +154,8 @@ utility MyMCVExporter "MCV Exporter"
 
 			-- object can be trigger without being collider
 			displayTriggerCheck(obj)
+
+			disaplayFilterGroup(obj)
 
 		)
 
