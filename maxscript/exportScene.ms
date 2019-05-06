@@ -295,7 +295,7 @@ struct TSceneExporter (
 		fs.endObj()
 	),
 	
-	fn exportAll = (
+	fn exportObjects objs = (
 		print ("CHECKING " + export_path + scenes_path)
 		print ("CHECKING " + export_path + mesh_path)
 		print ("CHECKING " + export_path + mats_path)
@@ -312,7 +312,7 @@ struct TSceneExporter (
 		fs.beginArray()
 		
 		local nitems = 0
-		for obj in $* do (
+		for obj in objs do (
 			if isCollider obj then continue
 			if nitems > 0 then  fs.writeComma()
 			format "Exporting entity: % \n" obj.name

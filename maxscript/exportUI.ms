@@ -172,15 +172,16 @@ utility MyMCVExporter "MCV Exporter"
 	rollout exporter "The Exporter"
 	(
 		
-		button btn_scene "Export Scene"
+		button btn_scene "Export All as Scene"
+		button btn_selection_scene "Export Selection as Scene"
 		button btn_mesh "Export Mesh"
 		button btn_prefab_atts "Add Prefab Attributes"
 		button btn_skeleton "Export Skeleton & Meshes"
 		button btn_skel_anims "Export Animation" tooltip:"Uses max animation range and frame rate to specify the range to export"
 		button btn_reset "Reset Model" tooltip:"Attaches model to sphere to reset it and then deletes sphere"
 		
-		on btn_scene pressed do
-		(
+		
+		fn exportSceneObjs objs  = (
 			try (
 				gc()
 				local p = getDir #export + "\\"
@@ -195,11 +196,21 @@ utility MyMCVExporter "MCV Exporter"
 				)
 
 				local exporter = TSceneExporter export_path: export_path
-				exporter.exportAll()
+				exporter.exportObjects(objs)
 				MessageBox "All exported OK"
 			) catch (
 				MessageBox ("Error Exporting:\n" + getCurrentException() + "\n --- Stuff for devs:\n " + getCurrentExceptionStackTrace())
 			)
+		)
+		
+		
+		on btn_scene pressed do
+		(
+			exportSceneObjs $*
+		)
+		
+		on btn_selection_scene pressed do(
+			exportSceneObjs selection
 		)
 		
 		-- Exports the current selection mesh to file
