@@ -301,7 +301,6 @@ function exportMesh the_obj out_filename vtx_fmt = (
 	local idxs = #()
 	local subgroups = #()
 	
-	
 	-- An array of arrays, each containing the list of faces using the material nth
 	local faces_by_material_used = getMaterialsUsedByMesh obj
 	

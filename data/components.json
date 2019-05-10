@@ -1,7 +1,7 @@
 {
   "sizes" : {
-    "default"      : 1024,
-    "transform"    : 1024,
+    "default"      : 2500,
+    "transform"    : 2500,
     "player_death" : 2,
     "minion_manager": 2,
     "eject_manager": 2,
@@ -80,7 +80,8 @@
     "moving_platform",
     "bt_librarian",
     "bt_basic_melee",
-    "melee_task"
+    "melee_task",
+    "shoot_task"
   ],
 
   "test_to_copy":{"update":[], "render_debug":[]},

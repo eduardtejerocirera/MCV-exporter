@@ -2,27 +2,27 @@
 	{
 		"entity": {
 			"transform": {
-				"pos": "0 1.5 1.5",
 				"scale": "1 1 1"
 			},
 			"name": "bullet",
 			"bullet_controller": {
 				"bullet_force": 10.0,
 				"shakeness": 0.1,
-				"ttl":10
+				"ttl":10,
+				"damage":20
 			},
 			"ttl":{
 				"ttl" : 5.0
 			},
 			"render": {
-				"mesh": "data/meshes/level_minion.mesh",
-				"material": "data/materials/minion.material"
+				"mesh": "data/meshes/minion.mesh",
+				"material": "data/materials/minion2.material"
 			},
 			"collider" : {
 				"shape" : "sphere",
 				"dynamic" : true,
-				"radius" : 0.01,
-				"group": "all",
+				"radius" : 0.5,
+				"group": "default",
 				"mask":"all",
 				"offset": {
 					"pos": "0 0.1 0"

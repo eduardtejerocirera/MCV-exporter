@@ -1,6 +1,6 @@
 {
   "scenes_to_load": [
-    "data/scenes/dp.json",
+    "data/prefabs/dp/dp.json",
     "data/scenes/cameras.json",
     "data/prefabs/helpers.json",
     "data/prefabs/light_dir.json",

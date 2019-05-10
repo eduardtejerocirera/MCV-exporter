@@ -182,9 +182,14 @@
     "buttons":["f5"]
   },
   {
-    "name":"dbg_open_file",
+    "name":"dbg_open_scene",
     "check":"all",
     "buttons":["control","o"]
+  },
+  {
+    "name":"dbg_profile",
+    "check":"all",
+    "buttons":["control","p"]
   },
   {
     "name":"dbg_bomb_task",

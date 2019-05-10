@@ -1,34 +1,20 @@
 [
-    {
-        "entity":
-        {
-          "name": "minion"
-          ,
-          "transform":
-          {
-            "pos": "0.0 0.25 -2.12699"
-            ,
-            "rotation": "0.0 0.0 0.0 1.0"
-          }
-          ,
-          "collider":
-          {
-            "shapes":
-            [
-              {
-                "shape": "sphere"
-                ,
-                "radius": 0.2
-              }
-            ]
-          }
-          ,
-          "render":
-          {
-            "mesh": "data/meshes/minion.mesh"
-            ,
-            "material": "data/materials/minion2.material"
-          }
-        }
+  {
+    "entity": {
+      "transform": {},
+      "name": "minion",
+      "render":
+      {
+        "mesh": "data/meshes/minion.mesh"
+        ,
+        "material": "data/materials/minion2.material"
+      },
+      "comp_boid": {
+        "speed": "0 0 0",
+        "target": "Player",
+        "max_speed": 3.0,
+        "radius": 0.25
       }
+    }
+  }
 ]

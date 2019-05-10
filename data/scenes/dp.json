@@ -4,7 +4,7 @@
     "entity": {
       "name": "Player",
       "transform": {
-        "pos": "0 0 0"
+        "pos": "0.6 0 110.9"
       },
       "input_handler": {},
       "character_controller": {},
@@ -94,7 +94,9 @@
         "height": 1,
         "group": "player"
       },
-      "melee_task":{}
+      "melee_task":{},
+      "shoot_task":{},
+      "bomb_task":{}
     }
   }
 ]

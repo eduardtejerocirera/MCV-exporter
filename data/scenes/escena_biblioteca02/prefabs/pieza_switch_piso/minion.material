@@ -1,0 +1,16 @@
+{
+  "textures":
+  {
+    "albedo": "data/textures/defaults/null_albedo.dds"
+    ,
+    "roughness": "data/textures/defaults/white.dds"
+    ,
+    "metallic": "data/textures/defaults/metal004.dds"
+    ,
+    "normal": "data/textures/defaults/null_normal.dds"
+    ,
+    "emissive": "data/textures/defaults/black.dds"
+    ,
+    "ao": "data/textures/defaults/white.dds"
+  }
+}

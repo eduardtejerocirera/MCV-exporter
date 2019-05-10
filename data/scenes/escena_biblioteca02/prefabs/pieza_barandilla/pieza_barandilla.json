@@ -1,0 +1,44 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_barandilla106"
+      ,
+      "transform":
+      {
+        "pos": "-0.871557 8.6821e-07 19.8623"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "0.9 0.5 0.125"
+            ,
+            "offset":
+            {
+              "pos": "0.0 0.5 0.0"
+            }
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_barandilla_pieza_barandilla106.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.627451 0.627451 0.627451 1.0"
+      }
+    }
+  }
+]

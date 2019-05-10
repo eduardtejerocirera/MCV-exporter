@@ -1,0 +1,39 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_pared_safezone037"
+      ,
+      "transform":
+      {
+        "pos": "-0.125 1.7266e-06 39.5"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_pared_safezone_pieza_pared_safezone037.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_pared_safezone_pieza_pared_safezone037.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.627451 0.627451 0.627451 1.0"
+      }
+    }
+  }
+]

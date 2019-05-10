@@ -1,0 +1,55 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_lava_cascada_borde002"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_piso_lava_piso3_borde_pieza_lava_cascada_borde002.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.627451 0.627451 0.627451 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lateral_lava"
+      ,
+      "transform":
+      {
+        "pos": "0.0212371 -0.937133 27.2543"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_piso_lava_piso3_borde_trigger_lateral_lava.col_mesh"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+]

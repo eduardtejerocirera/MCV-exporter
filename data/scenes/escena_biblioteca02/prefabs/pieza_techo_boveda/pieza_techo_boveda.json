@@ -1,0 +1,39 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_boveda"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_techo_boveda_pieza_boveda.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_techo_boveda_pieza_boveda.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.0235294 0.529412 0.443137 1.0"
+      }
+    }
+  }
+]

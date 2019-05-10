@@ -1,0 +1,55 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_plano_cascada001"
+      ,
+      "transform":
+      {
+        "pos": "-24.2721 6.62269e-07 15.1509"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_plano_cascada_pieza_plano_cascada001.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.627451 0.627451 0.627451 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_plano_lava_cascada"
+      ,
+      "transform":
+      {
+        "pos": "-25.555 -1.31879 12.4706"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_plano_cascada_trigger_plano_lava_cascada.col_mesh"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+]

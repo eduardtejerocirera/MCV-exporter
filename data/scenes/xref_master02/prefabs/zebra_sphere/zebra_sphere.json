@@ -1,0 +1,37 @@
+[
+  {
+    "entity":
+    {
+      "name": "Sphere003"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "sphere"
+            ,
+            "radius": 1.0
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "zebra_sphere_Sphere003.mesh"
+        ,
+        "materials":
+        [
+          "zebra.material"
+        ]
+      }
+    }
+  }
+]

@@ -17,7 +17,7 @@ utility MyMCVExporter "MCV Exporter"
 
 
 
-		local printSelName
+		local printSelName --forward declaration
 
 		fn GetSelectedObject = (
 			if selection.count == 0 then (
@@ -171,35 +171,54 @@ utility MyMCVExporter "MCV Exporter"
 
 	rollout exporter "The Exporter"
 	(
-		
-		button btn_scene "Export Scene"
+		button btn_scene "Export All as Scene"
+		button btn_selection_scene "Export Selection as Scene"
+		button btn_export_prefab "Export as Prefab"
 		button btn_mesh "Export Mesh"
 		button btn_prefab_atts "Add Prefab Attributes"
 		button btn_skeleton "Export Skeleton & Meshes"
 		button btn_skel_anims "Export Animation" tooltip:"Uses max animation range and frame rate to specify the range to export"
 		button btn_reset "Reset Model" tooltip:"Attaches model to sphere to reset it and then deletes sphere"
 		
-		on btn_scene pressed do
-		(
+		
+		fn exportObjectsWithMessageBoxes objs is_prefab:false = (
 			try (
 				gc()
-				local p = getDir #export + "\\"
+				
+				--thehold controls redo/undo in 3dsMax
+				if not thehold.holding() do thehold.Begin()
+				
 				local export_path = getSavePath caption:"Export Scene to path:"\
 					historyCategory: "ExportScene"
 				
-				-- Check again if inserted savepath is valid
-				if export_path == undefined then (
-					export_path = p
-				) else (
-						export_path = export_path + "\\"
-				)
+				-- if not entered path, cancel export
+				if export_path == undefined then return false
+				
+				export_path = export_path + "\\"
+				local baseName = getFilenameFile(maxfilename)
+				local basePath = baseName + "/"
 
-				local exporter = TSceneExporter export_path: export_path
-				exporter.exportAll()
+				exportSceneObjs objs baseName export_path basePath is_prefab:is_prefab
 				MessageBox "All exported OK"
 			) catch (
 				MessageBox ("Error Exporting:\n" + getCurrentException() + "\n --- Stuff for devs:\n " + getCurrentExceptionStackTrace())
 			)
+
+			--adding an entry to undo stack
+			theHold.Accept "ResetModel"
+		)
+
+		on btn_scene pressed do
+		(
+			exportObjectsWithMessageBoxes $*
+		)
+		
+		on btn_selection_scene pressed do(
+			exportObjectsWithMessageBoxes selection
+		)
+
+		on btn_export_prefab pressed do(
+			exportObjectsWithMessageBoxes $* is_prefab:true 
 		)
 		
 		-- Exports the current selection mesh to file

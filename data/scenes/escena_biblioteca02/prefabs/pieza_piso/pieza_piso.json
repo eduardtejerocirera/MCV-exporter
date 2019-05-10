@@ -1,0 +1,39 @@
+[
+  {
+    "entity":
+    {
+      "name": "plano_piso"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_piso_plano_piso.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_piso_plano_piso.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.345098 0.564706 0.882353 1.0"
+      }
+    }
+  }
+]

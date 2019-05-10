@@ -1,0 +1,39 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_plano pared142"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_pared_pieza_plano pared142.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_pared_pieza_plano pared142.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.6 0.894118 0.6 1.0"
+      }
+    }
+  }
+]

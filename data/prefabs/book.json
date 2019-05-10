@@ -9,7 +9,7 @@
               "scale" : "1 1 1"
             },
             "render": {
-                "mesh": "data/meshes/Box001.mesh",
+                "mesh": "data/meshes/Box001_PosNUvT.mesh",
                 "color": "1.0 1.0 1.0 1.0",
                 "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
             },

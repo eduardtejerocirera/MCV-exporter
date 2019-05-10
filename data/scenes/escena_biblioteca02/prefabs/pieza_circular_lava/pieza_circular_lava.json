@@ -1,0 +1,65 @@
+[
+  {
+    "entity":
+    {
+      "name": "lava_central"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_circular_lava_lava_central.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.529412 0.231373 0.0313726 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava_central"
+      ,
+      "transform":
+      {
+        "pos": "0.0 -2.04456 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "35.0 1.0 35.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 1.0 0.0"
+            }
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+]

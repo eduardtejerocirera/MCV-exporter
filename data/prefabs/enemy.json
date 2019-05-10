@@ -12,7 +12,7 @@
           "group":"enemy"
         },
         "render": {
-          "mesh": "data/skeletons/Bip001/fdbody_low.mesh",
+          "mesh": "data/skeletons/firedemon/fdbody_low.mesh",
           "materials": [
             "data/materials/fd/fdbody.material",
             "data/materials/fd/fdchains.material"            
@@ -20,7 +20,7 @@
           "color": "1.0 1.0 1.0 1.0"
         },
         "armature": {
-          "src": "data/skeletons/Bip001/Bip001.skeleton"
+          "src": "data/skeletons/firedemon/firedemon.skeleton"
         },
         "vulnerability": {
           "recover_rate": 1.0

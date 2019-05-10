@@ -1,14 +1,6 @@
 
--- ----------------------------------------------------------
--- ----------------------------------------------------------
--- ----------------------------------------------------------
-struct TMaterialExporter (
-	
-	fs = TJsonFormatter(), 
-	export_path,                 -- Asigned in the ctor 
-	base_path,                 -- Asigned in the ctor 	
-	
-	fn isValidPath aname = (
+
+fn isValidPath aname = (
 		-- Add no �, accents, etc.
 		local ok = true
 		ok = ok and findString aname " " == undefined
@@ -47,7 +39,7 @@ struct TMaterialExporter (
 		)
 
 		return ok
-	),
+	)
 
 	fn isValidName aname = (
 		local ok = true;
@@ -57,13 +49,32 @@ struct TMaterialExporter (
 			format "NOT OK: %\n" aname
 			throw ("Developers say: Name has a ':'. Please remove ':' from name:\n" + aname )
 		)
-	),
+	)
+
+
+-- ----------------------------------------------------------
+-- ----------------------------------------------------------
+-- ----------------------------------------------------------
+struct TMaterialExporter (
+	
+	fs = TJsonFormatter(), 
+	export_path,                 -- Asigned in the ctor 
+	base_path,                 -- Asigned in the ctor
+	mats_dir,
+	mats_export_path,
+	textures_dir,
+	textures_export_path,
+
+	
+	
+
+
 
 
 	fn exportMap map alias default_value = (
 		
 		if map == undefined then (
-			local json_filename = base_path + "textures/" + default_value + ".dds"
+			local json_filename = "data/textures/" + default_value + ".dds" --default textures inside data/textures/...
 			fs.writeKeyValue alias json_filename
 			return false
 		)
@@ -74,14 +85,8 @@ struct TMaterialExporter (
 		-- bricks
 		local base_name = getFilenameFile map_filename
 		
-		-- data\textures\bricks.dds"
-		local json_filename = base_path + "textures/" + base_name + ".dds"
-		
-		-- "C:\exportPath\data\textures\"
-		local outputDir = export_path + base_path + "textures"
-		
-		-- "C:\exportPath\data\textures\bricks.dds"
-		local ofull_path = export_path + json_filename
+		-- "C:\usrs\...\MyScene\textures\"
+		local outputDir = export_path + textures_export_path
 
 		local texconv_path = getDir #userStartupScripts
 		texconv_path += "/../../tools/"
@@ -102,26 +107,20 @@ struct TMaterialExporter (
 
 
 		local texconv_command = texconv_path + "texconv -o " + outputDir + " " + extraParams + " " + map_filename
-		format "running command:\n %\n" texconv_command
-		
-
+		format "running command:\n %\n" texconv_command		
 
 		DOSCommand(texconv_command)
 		
-		-- Check if ofull_path exists
-		--if not doesFileExist ofull_path then (
-		--	format "We should copy from % to %\n" map_filename ofull_path
-		--	copyFile map_filename ofull_path
-		--)
-		
+		-- textures\bricks.dds"
+		local json_filename = textures_dir + base_name + ".dds"
 		fs.writeKeyValue alias json_filename
 	),
 	
 	-- exports minion.material, to be used as a default mat with no textures
-	fn exportDefaultMaterial matsPath = (
+	fn exportDefaultMaterial = (
+		local fullExportPath = export_path + mats_export_path
 
-
-		fs.begin (matsPath + "minion.material" )
+		fs.begin (fullExportPath + "minion.material" )
 		fs.beginObj()
 			fs.writeKeyValue "technique" "objs.tech" 
 			fs.writeComma()
@@ -142,7 +141,9 @@ struct TMaterialExporter (
 		--print( "CHECKING IF NAME " + mat_name + " IS VALID" )
 		isValidName( mat_name )
 		
-		fs.begin (export_path + mat_name )
+		local fullMatExportPath = export_path + mats_export_path + mat_name + ".material"
+
+		fs.begin (fullMatExportPath )
 		fs.beginObj()
 		  --Will use the defaults set in the parser. Needs to be a full data/techniques/textured.tech"
 			--fs.writeKeyValue "technique" "textured.tech"
@@ -175,14 +176,17 @@ struct TMaterialExporter (
 	),
 	
 	-- Will return an array of all the materials names used by obj and exported by us
-	fn exportMaterial mat base_name obj = (
+	fn exportMaterial mat obj = (
 		
 		local exported_materials = #()
-		
+		local mats_JSON_path = mats_dir 
+
 		if classof mat == StandardMaterial then (
-			local mat_name = base_name + mat.name + ".material"
-			append exported_materials mat_name
-			exportStdMaterial mat mat_name
+			local mat_JSON_name = mats_JSON_path + mat.name + ".material"
+			if mat.name == "minion" then mat_JSON_name = "data/materials/minion.material" --change to engine path if using minion material
+			append exported_materials mat_JSON_name
+			
+			exportStdMaterial mat mat.name
 			
 		) else if classof mat == MultiMaterial then (
 			local multi_mat = mat
@@ -195,13 +199,15 @@ struct TMaterialExporter (
 				if mat_of_mesh == undefined then throw ("Mesh " + obj.name + " is using a multimaterial in slot " + (mat_idx as string)+ " but the multimat does not have this submat")
 				if classof mat_of_mesh != StandardMaterial then throw ("Mesh " + obj.name + " is using a multimaterial in slot " + (mat_idx as string) + " but the multimat in this slot is not a stdMaterial")
 				
-				local mat_name = base_name + mat_of_mesh.name + ".material"
-				append exported_materials mat_name
-				exportStdMaterial mat_of_mesh mat_name
+				local mat_JSON_name = mats_JSON_path + mat_of_mesh.name + ".material"
+				if mat_of_mesh.name == "minion" then mat_JSON_name = "data/materials/minion.material" --change to engine path if using minion material
+				append exported_materials mat_JSON_name
+
+				exportStdMaterial mat_of_mesh mat_of_mesh.name
 			)
 		)
 		
-		return exported_materials
+		return exported_materials -- to be written into JSON
 	)
 
 	

@@ -1,0 +1,90 @@
+[
+  {
+    "entity":
+    {
+      "prefab": "prefabs/zebra_sphere/zebra_sphere.json"
+      ,
+      "name": "Sphere001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 4.50203 -6.02302"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  }
+  ,
+
+    {
+    "xentity":
+    {
+      "prefab": "data/prefabs/firedemon.json"
+      ,
+      "name": "box"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/zebra_sphere/zebra_sphere.json"
+      ,
+      "name": "Sphere002"
+      ,
+      "transform":
+      {
+        "pos": "0.0 4.50203 6.6623"
+        ,
+        "rotation": "0.536206 -0.840717 0.0405199 -0.0635311"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/wood_cube/wood_cube.json"
+      ,
+      "name": "Box001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.634164 0.0 0.0 -0.773199"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Cylinder001"
+      ,
+      "transform":
+      {
+        "pos": "-0.381811 2.75225e-07 6.29642"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/xref_master02_Cylinder001.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/minion.material"
+        ]
+        ,
+        "color": "0.894118 0.721569 0.6 1.0"
+      }
+    }
+  }
+]
