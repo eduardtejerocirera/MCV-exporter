@@ -1,7 +1,7 @@
 {
   "sizes" : {
-    "default"      : 2500,
-    "transform"    : 2500,
+    "default"      : 1024,
+    "transform"    : 1024,
     "player_death" : 2,
     "minion_manager": 2,
     "eject_manager": 2,
