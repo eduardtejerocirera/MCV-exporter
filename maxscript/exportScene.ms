@@ -39,6 +39,15 @@ fn isNameWeird aname = (
 )
 
 
+
+fn isSpecialPrefab obj = (
+	if obj != undefined then (
+		local sPrefab = getUserProp obj "special_prefab"
+		return sPrefab != undefined 
+	)
+	return false
+)
+
 ----------------------------------------------------------
 struct TSceneExporter (
 
@@ -99,7 +108,7 @@ struct TSceneExporter (
 		fs.writeComma()
 		fs.writeKey "checkpoint"
 
-		local index = ((substring obj.name 20 1) as Integer)
+		local index = ((substring obj.name 20 1) as Integer) -- get checkpoint index from name
 		fs.beginObj()
 			fs.writeKeyValue "index" index
 		fs.endObj()
@@ -234,7 +243,7 @@ struct TSceneExporter (
 			fs.writeKeyValue "kinematic" is_kinematic
 		)
 		
-		if obj.layer.name == "triggers" then (
+		if isTrigger obj then (
 			fs.writeComma()
 			fs.writeKeyValue "trigger" true
 		)
@@ -367,7 +376,6 @@ struct TSceneExporter (
 		for xrName in xrefNames do(
 			local objects = #()
 
-			local prefab_file_path = 
 			local fullxrName = xrefPaths.getFullFilePath xrName
 			format "fullxrName : %\n" fullxrName
 			mergeMaxFile fullxrName #noredraw #autoRenameDups #useMergedMtlDups mergedNodes:&objects
@@ -376,9 +384,32 @@ struct TSceneExporter (
 			local prefabBasePath = baseName + "/" -- myPrefab/
 			format "exporting prefab: %\n" prefabBasePath
 			format "objs: %\n" objects.count
-			exportSceneObjs objects baseName new_export_path prefabBasePath is_prefab:true 
-			delete objects
+			format "basname: %, new_export_path: %, prefabBasePath: %\n" baseName new_export_path prefabBasePath
+			local deleted = false
+			try(
+				exportSceneObjs objects baseName new_export_path prefabBasePath is_prefab:true 
+			)catch(
+				delete objects -- in case of error delete merged objects
+				deleted = true
+				throw()
+			)
+
+			if not deleted then delete objects
 		)
+	),
+
+	fn exportSpecialPrefab obj = (
+		fs.beginObj()
+		fs.writeKey "entity"
+			fs.beginObj()
+			local sPrefab = getUserProp obj "special_prefab"
+			local prefabPath = "data/prefabs/" + sPrefab + ".json"
+			fs.writeKeyValue "prefab" prefabPath
+			fs.writeComma()
+			exportCompName obj
+			exportTransform obj
+			fs.endObj()
+		fs.endObj()
 	),
 
 	fn exportObjects objs = (
@@ -416,10 +447,18 @@ struct TSceneExporter (
 			)
 
 			if isCollider obj then continue
+
 			if nitems > 0 then  fs.writeComma()
-			format "Exporting entity: % \n" obj.name
-			exportEntity obj
 			nitems = nitems + 1
+
+			if isSpecialPrefab obj then (
+				format "Exporting special prefab: % \n" obj.name
+				exportSpecialPrefab obj
+			) else (
+				format "Exporting entity: % \n" obj.name
+				exportEntity obj
+			)
+
 		)
 		
 		fs.endArray()

@@ -15,6 +15,8 @@ utility MyMCVExporter "MCV Exporter"
 		dropdownlist filterGroup "Filter Group:" items:#("floor", "wall", "triggers", "none")
 		checkbox kinematic_check "kinematic" checked:false enabled:true
 
+		dropdownlist specialPrefabs "Special Prefab" items:#("-","firedemon")
+
 
 
 		local printSelName --forward declaration
@@ -33,6 +35,35 @@ utility MyMCVExporter "MCV Exporter"
 				return selection[1]
 			)
 		)
+
+		-- special prefab --------------------------------------------------------
+		fn displaySpecialPrefabs obj = (
+			if obj == undefined then (
+				specialPrefabs.visible = false
+			)else(
+				specialPrefabs.visible = true
+				local sPrefab = getUserProp obj "special_prefab"
+				if sPrefab == "firedemon" then(
+					specialPrefabs.selection = 2
+				)else(
+					specialPrefabs.selection = 1
+				)
+
+			)
+		)
+
+		on specialPrefabs selected i do (
+			local obj = selection[1]
+			if obj != undefined then (
+				if i == 1 and getUserProp obj "special_prefab" != undefined then (
+					setUserProp obj "special_prefab" ""
+				)else(
+					setUserProp obj "special_prefab" specialPrefabs.items[i] 
+				)
+			)
+
+		)
+		-- end special prefab----------------------------------------------------
 
 		--filter group ------------------------------------------------
 		
@@ -152,11 +183,11 @@ utility MyMCVExporter "MCV Exporter"
 		fn disaplayValues obj = (
 			displayColliderCheck(obj)
 
-			-- object can be trigger without being collider
 			displayTriggerCheck(obj)
 
 			disaplayFilterGroup(obj)
 
+			displaySpecialPrefabs(obj)		
 		)
 
 		fn printSelName = (
