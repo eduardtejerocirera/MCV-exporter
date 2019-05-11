@@ -76,6 +76,22 @@ struct TJsonFormatter (
 			format "\"%\": %\n" key_str val to:fs
 		)
 	),
+
+	fn writeValue val = (
+		indent()
+		if classof val == string then (
+			format "\"%\"\n" val to:fs
+		) else if classof val == Point3 then (
+			format "\"% % %\"\n" val.x val.y val.z to:fs
+		) else if classof val == Color then (
+			format "\"% % % %\"\n" (val.red / 255.0) (val.green / 255.0) (val.blue / 255.0)  (val.alpha / 255.0)to:fs
+		) else if classof val == quat then (
+			-- Quats rotate in the opposite direction
+			format "\"% % % %\"\n" val.x val.y val.z -val.w to:fs
+		) else (
+			format "%\n" val to:fs
+		)
+	),
 	
 	-- --------------------
 	fn writeName name = (

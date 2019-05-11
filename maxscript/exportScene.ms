@@ -18,6 +18,24 @@ fn isCheckPoint obj = (
 	return obj != undefined and (findString obj.name "trigger_checkpoint_" != undefined)
 )
 
+fn isWayPoint obj = (
+	if obj != undefined then(
+		local wp = getUserProp obj "waypoint"
+		if wp == undefined then return false
+		return wp
+	)
+	return false
+)
+
+fn objHasChildWaypoint obj = (
+	if obj != undefined and obj.children != undefined and obj.children.count != 0 then(
+		for child in obj.children do (
+			if isWayPoint child then return true 
+		)
+	)
+	return false
+)
+
 fn isTriggerLava obj = (
 	return obj != undefined and (findString obj.name "trigger_lava" != undefined)
 )
@@ -314,6 +332,33 @@ struct TSceneExporter (
 		
 		exportCompCollider obj candidates
 	),
+
+	fn exportChildrenWaypoints obj = (
+		fs.writeComma()
+		fs.writeKey "waypoints" 
+
+
+		local waypoints = #()
+
+		local n = 0
+		for child in obj.children do (
+			if isWayPoint child then(
+				local max2mcv = rotateXMatrix -90
+				local pos = child.transform.translation * max2mcv
+				append waypoints pos
+			)
+		)
+
+		fs.beginArray()
+		local n = 0
+		for p in waypoints do (
+			if n > 0 then fs.writeComma()
+			fs.writeValue p
+			n = n + 1
+		)
+		fs.endArray()
+
+	),
 	
 	----------------------------------------------------------
 	fn exportEntity obj = (
@@ -326,6 +371,9 @@ struct TSceneExporter (
 				fs.writeComma()
 				exportCompName obj
 				exportTransform obj
+				if objHasChildWaypoint obj then (
+					exportChildrenWaypoints obj
+				)
 				fs.endObj()
 				fs.endObj()
 				return true
@@ -348,6 +396,10 @@ struct TSceneExporter (
 			--adds damage_on_contact component
 			if isTriggerLava obj then (
 				exportTriggerLava obj
+			)
+
+			if objHasChildWaypoint obj then (
+				exportChildrenWaypoints obj
 			)
 			
 			exportChildrenColliders obj
@@ -408,6 +460,11 @@ struct TSceneExporter (
 			fs.writeComma()
 			exportCompName obj
 			exportTransform obj
+
+			if objHasChildWaypoint obj then (
+				exportChildrenWaypoints obj
+			) 
+
 			fs.endObj()
 		fs.endObj()
 	),
@@ -446,7 +503,7 @@ struct TSceneExporter (
 				if not existsFilenameInSet xrefNames obj.filename then append xrefNames obj.filename
 			)
 
-			if isCollider obj then continue
+			if isCollider obj or isWayPoint obj then continue
 
 			if nitems > 0 then  fs.writeComma()
 			nitems = nitems + 1
