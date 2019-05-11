@@ -1,6 +1,8 @@
 clearListener()
 gc()
 
+fn exportSceneObjs objs baseName export_path base_path is_prefab:false   = () -- forward declaration
+
 fn isCollider obj = (
 	return obj != undefined and (findString obj.name "collider" != undefined ) and obj.parent != undefined
 )
