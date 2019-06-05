@@ -8,7 +8,7 @@ struct  TSkeletonsExporter (
 	
 	fn isBone obj = ( 
 		-- Discard black bones
-		return (classof obj == Biped_Object or classof obj == Dummy) and obj.wireColor != Black
+		return (classof obj == Biped_Object or classof obj == Dummy or classof obj == Point) and obj.wireColor != Black and obj.ishidden == false 
 	),
 	
 	-- Search the root bones in the scene to define the .csf
@@ -40,10 +40,13 @@ struct  TSkeletonsExporter (
 	fn findMeshCandidates = (
 		local objs = #()
 		for obj in $* do (
-			if (classof obj == PolyMeshObject) or (classof obj == Editable_Mesh) then (
-				if obj.modifiers[#Skin] != undefined then (
-					format "% is a skinned mesh \n" obj.name
-					append objs obj
+			
+			if (classof obj == PolyMeshObject) or (classof obj == Editable_Mesh)  then (
+				if obj.ishidden == false then (
+					if obj.modifiers[#Skin] != undefined then (
+						format "% is a skinned mesh \n" obj.name
+						append objs obj
+					)
 				)
 			)
 		)
@@ -61,6 +64,8 @@ struct  TSkeletonsExporter (
 	-- Find a bone candidate to be the root, and choose his name as name of the output file
 	fn findRootBone = (
 		local root_bones = findSkelCandidates()
+		if root_bones.count > 1 then throw "Detected more than 1 root skeleton bones. Hide all except the one to export."
+		if root_bones.count == 0 then throw "No skeleton candidates found in the scene"
 		local root = root_bones[1]
 		setSkelName root.name
 		return root_bones
