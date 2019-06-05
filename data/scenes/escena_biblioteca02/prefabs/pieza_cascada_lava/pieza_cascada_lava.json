@@ -1,0 +1,55 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_cascada_lava002"
+      ,
+      "transform":
+      {
+        "pos": "-15.521 3.54482e-07 8.1096"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_cascada_lava_pieza_cascada_lava002.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.627451 0.627451 0.627451 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_cascada_de_lava"
+      ,
+      "transform":
+      {
+        "pos": "-19.2734 2.25745e-07 5.16443"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_cascada_lava_trigger_cascada_de_lava.col_mesh"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+]

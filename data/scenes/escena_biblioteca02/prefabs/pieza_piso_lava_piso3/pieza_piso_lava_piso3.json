@@ -1,0 +1,39 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_lava_cascada021"
+      ,
+      "transform":
+      {
+        "pos": "0.0 -0.50001 0.0"
+        ,
+        "rotation": "0.0 0.573576 0.0 -0.819152"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_piso_lava_piso3_pieza_lava_cascada021.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_piso_lava_piso3_pieza_lava_cascada021.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.627451 0.627451 0.627451 1.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_borde_lava021"
+      ,
+      "transform":
+      {
+        "pos": "14.8604 1.39155e-06 31.835"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_borde_lava_pieza_borde_lava021.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.627451 0.627451 0.627451 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "collider"
+      ,
+      "transform":
+      {
+        "pos": "14.8604 1.39155e-06 31.835"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_borde_lava_collider.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.627451 0.627451 0.627451 1.0"
+      }
+    }
+  }
+]

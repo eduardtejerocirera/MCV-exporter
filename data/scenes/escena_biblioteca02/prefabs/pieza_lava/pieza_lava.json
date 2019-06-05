@@ -1,0 +1,55 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_lava045"
+      ,
+      "transform":
+      {
+        "pos": "-2.5 0.0 -2.5"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_lava_pieza_lava045.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.105882 0.694118 0.580392 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_pieza_lava"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_lava_trigger_pieza_lava.col_mesh"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+]

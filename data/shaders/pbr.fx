@@ -309,4 +309,3 @@ float4 PS_dir_lights(
 }
 
 
-

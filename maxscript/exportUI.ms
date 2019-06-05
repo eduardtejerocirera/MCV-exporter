@@ -15,9 +15,11 @@ utility MyMCVExporter "MCV Exporter"
 		dropdownlist filterGroup "Filter Group:" items:#("floor", "wall", "triggers", "none")
 		checkbox kinematic_check "kinematic" checked:false enabled:true
 
+		dropdownlist specialPrefabs "Special Prefab" items:#("-","firedemon")
 
 
-		local printSelName
+
+		local printSelName --forward declaration
 
 		fn GetSelectedObject = (
 			if selection.count == 0 then (
@@ -33,6 +35,35 @@ utility MyMCVExporter "MCV Exporter"
 				return selection[1]
 			)
 		)
+
+		-- special prefab --------------------------------------------------------
+		fn displaySpecialPrefabs obj = (
+			if obj == undefined then (
+				specialPrefabs.visible = false
+			)else(
+				specialPrefabs.visible = true
+				local sPrefab = getUserProp obj "special_prefab"
+				if sPrefab == "firedemon" then(
+					specialPrefabs.selection = 2
+				)else(
+					specialPrefabs.selection = 1
+				)
+
+			)
+		)
+
+		on specialPrefabs selected i do (
+			local obj = selection[1]
+			if obj != undefined then (
+				if i == 1 and getUserProp obj "special_prefab" != undefined then (
+					setUserProp obj "special_prefab" ""
+				)else(
+					setUserProp obj "special_prefab" specialPrefabs.items[i] 
+				)
+			)
+
+		)
+		-- end special prefab----------------------------------------------------
 
 		--filter group ------------------------------------------------
 		
@@ -152,11 +183,11 @@ utility MyMCVExporter "MCV Exporter"
 		fn disaplayValues obj = (
 			displayColliderCheck(obj)
 
-			-- object can be trigger without being collider
 			displayTriggerCheck(obj)
 
 			disaplayFilterGroup(obj)
 
+			displaySpecialPrefabs(obj)		
 		)
 
 		fn printSelName = (
@@ -171,9 +202,9 @@ utility MyMCVExporter "MCV Exporter"
 
 	rollout exporter "The Exporter"
 	(
-		
 		button btn_scene "Export All as Scene"
 		button btn_selection_scene "Export Selection as Scene"
+		button btn_export_prefab "Export as Prefab"
 		button btn_mesh "Export Mesh"
 		button btn_prefab_atts "Add Prefab Attributes"
 		button btn_skeleton "Export Skeleton & Meshes"
@@ -181,36 +212,44 @@ utility MyMCVExporter "MCV Exporter"
 		button btn_reset "Reset Model" tooltip:"Attaches model to sphere to reset it and then deletes sphere"
 		
 		
-		fn exportSceneObjs objs  = (
+		fn exportObjectsWithMessageBoxes objs is_prefab:false = (
 			try (
 				gc()
-				local p = getDir #export + "\\"
+				
+				--thehold controls redo/undo in 3dsMax
+				if not thehold.holding() do thehold.Begin()
+				
 				local export_path = getSavePath caption:"Export Scene to path:"\
 					historyCategory: "ExportScene"
 				
-				-- Check again if inserted savepath is valid
-				if export_path == undefined then (
-					export_path = p
-				) else (
-						export_path = export_path + "\\"
-				)
+				-- if not entered path, cancel export
+				if export_path == undefined then return false
+				
+				export_path = export_path + "\\"
+				local baseName = getFilenameFile(maxfilename)
+				local basePath = baseName + "/"
 
-				local exporter = TSceneExporter export_path: export_path
-				exporter.exportObjects(objs)
+				exportSceneObjs objs baseName export_path basePath is_prefab:is_prefab
 				MessageBox "All exported OK"
 			) catch (
 				MessageBox ("Error Exporting:\n" + getCurrentException() + "\n --- Stuff for devs:\n " + getCurrentExceptionStackTrace())
 			)
+
+			--adding an entry to undo stack
+			theHold.Accept "ResetModel"
 		)
-		
-		
+
 		on btn_scene pressed do
 		(
-			exportSceneObjs $*
+			exportObjectsWithMessageBoxes $*
 		)
 		
 		on btn_selection_scene pressed do(
-			exportSceneObjs selection
+			exportObjectsWithMessageBoxes selection
+		)
+
+		on btn_export_prefab pressed do(
+			exportObjectsWithMessageBoxes $* is_prefab:true 
 		)
 		
 		-- Exports the current selection mesh to file

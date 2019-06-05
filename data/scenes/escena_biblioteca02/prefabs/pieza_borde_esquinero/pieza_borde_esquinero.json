@@ -1,0 +1,39 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_esquina_borde004"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.025"
+        ,
+        "rotation": "0.0 -0.707107 0.0 -0.707107"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_borde_esquinero_pieza_esquina_borde004.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_borde_esquinero_pieza_esquina_borde004.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.0313726 0.0313726 0.533333 1.0"
+      }
+    }
+  }
+]

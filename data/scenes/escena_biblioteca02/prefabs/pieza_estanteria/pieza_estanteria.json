@@ -1,0 +1,44 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_estanteria"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.0 2.0 2.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 2.0 0.0"
+            }
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_estanteria_pieza_estanteria.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.890196 0.6 0.6 1.0"
+      }
+    }
+  }
+]

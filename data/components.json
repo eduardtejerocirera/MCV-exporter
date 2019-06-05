@@ -80,7 +80,8 @@
     "moving_platform",
     "bt_librarian",
     "bt_basic_melee",
-    "melee_task"
+    "melee_task",
+    "shoot_task"
   ],
 
   "test_to_copy":{"update":[], "render_debug":[]},

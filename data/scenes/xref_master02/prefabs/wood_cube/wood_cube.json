@@ -1,0 +1,42 @@
+[
+  {
+    "entity":
+    {
+      "name": "Box002"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.0 1.5 1.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 1.5 0.0"
+            }
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "wood_cube_Box002.mesh"
+        ,
+        "materials":
+        [
+          "wood.material"
+        ]
+      }
+    }
+  }
+]

@@ -1,6 +1,8 @@
 clearListener()
 gc()
 
+fn exportSceneObjs objs baseName export_path base_path is_prefab:false   = () -- forward declaration
+
 fn isCollider obj = (
 	return obj != undefined and (findString obj.name "collider" != undefined ) and obj.parent != undefined
 )
@@ -18,32 +20,83 @@ fn isCheckPoint obj = (
 	return obj != undefined and (findString obj.name "trigger_checkpoint_" != undefined)
 )
 
+fn isWayPoint obj = (
+	if obj != undefined then(
+		local wp = getUserProp obj "waypoint"
+		if wp == undefined then return false
+		return wp
+	)
+	return false
+)
+
+fn objHasChildWaypoint obj = (
+	if obj != undefined and obj.children != undefined and obj.children.count != 0 then(
+		for child in obj.children do (
+			if isWayPoint child then return true 
+		)
+	)
+	return false
+)
+
 fn isTriggerLava obj = (
 	return obj != undefined and (findString obj.name "trigger_lava" != undefined)
 )
 
-fn isFloor obj = (
-	return obj != undefined and obj.layer.name == "floor"
+fn isXRefObj obj = (
+	return classof obj == XRefObject and not obj.unresolved
+)
+
+fn isNameWeird aname = (
+	local ok = true
+	ok = ok and findString aname "×" == undefined
+	ok = ok and findString aname "þ" == undefined
+	ok = ok and findString aname "ü" == undefined
+	ok = ok and findString aname "¡" == undefined
+	ok = ok and findString aname "ý" == undefined
+	ok = ok and findString aname "û" == undefined
+
+	return ok
+)
+
+
+
+fn isSpecialPrefab obj = (
+	if obj != undefined then (
+		local sPrefab = getUserProp obj "special_prefab"
+		return sPrefab != undefined 
+	)
+	return false
 )
 
 ----------------------------------------------------------
 struct TSceneExporter (
 
 	fs = TJsonFormatter(), 
-	-- export_path = "c:/code/engine/bin/",
+	baseName = "",
 	export_path = getDir #export + "\\",
 	base_path = "data/",
-	current_scene_name,
-	scenes_path = base_path + "scenes/",
-	mesh_path = base_path + "meshes/",
-	mats_path = base_path + "materials/",
-	textures_path = base_path + "textures/",
+	
+	scenes_dir = "",
+	scenes_export_path = base_path  + scenes_dir,
+
+	
+	mesh_dir = "entities/meshes/",
+	mesh_export_path = base_path + mesh_dir,
+
+
+	mats_dir = "entities/materials/",
+	mats_export_path = base_path + mats_dir,
+
+
+	textures_dir = "entities/textures/",
+	textures_export_path = base_path + textures_dir,
+
 	
 	fn exportCompName obj = (
 		fs.writeKeyValue "name" obj.name
 	),
 	
-	fn isValidName aname = (
+	fn isNameWithoutSpaces aname = (
 		return findString aname " " == undefined 
 	),
 
@@ -54,7 +107,7 @@ struct TSceneExporter (
 		
 		local max2mcv = rotateXMatrix -90
 		local mcv2max = rotateXMatrix 90
-		local mcv_position = obj.position * max2mcv
+		local mcv_position = obj.transform.translation * max2mcv
 		
 		-- From mcv, we will go to max, apply the max transform and go back to mcv coord system
 		local mcv_transform = mcv2max * obj.transform * max2mcv
@@ -75,7 +128,7 @@ struct TSceneExporter (
 		fs.writeComma()
 		fs.writeKey "checkpoint"
 
-		local index = ((substring obj.name 20 1) as Integer)
+		local index = ((substring obj.name 20 1) as Integer) -- get checkpoint index from name
 		fs.beginObj()
 			fs.writeKeyValue "index" index
 		fs.endObj()
@@ -91,35 +144,57 @@ struct TSceneExporter (
 	),
 	
 	----------------------------------------------------------
+
+	fn exportPrefabEntry obj = (
+		local filename = getFilenameFile obj.filename
+		local prefabPath = "prefabs/" + filename + "/" + filename + ".json" -- prebabs/MyPrefab/MyPrefab.json
+		fs.writeKeyValue "prefab" prefabPath
+	),
+	---------------------------------------------------------
+
 	fn exportEditableMesh obj = (
 		
 		fs.writeComma()
 		fs.writeKey "render" 
 		fs.beginObj()
-		local mesh_name = mesh_path + current_scene_name + "_" + obj.name + ".mesh"
+		local mesh_name = baseName + "_" + obj.name + ".mesh" -- MyScene_mesh001.mesh || MyPrefab_mesh001.mesh
+		local mesh_JSON_path = mesh_dir + mesh_name -- entities/meshes/MyScene_mesh001.mesh || MyPrefab_mesh001.mesh
+		local full_mesh_path = export_path + mesh_export_path + mesh_name -- C:/Usrs/.../MyScene/entities/meshes/MyScene_mesh001.mesh 
+		format "full_mesh_filename is %\n" full_mesh_path
 
 		--local texture_name = mats_path + obj.name
-		fs.writeKeyValue "mesh" mesh_name
+		fs.writeKeyValue "mesh" mesh_JSON_path
 		fs.writeComma()
 		
-		-- Export the real mesh
-		local full_mesh_filename = export_path + mesh_name
-		format "full_mesh_filename is %\n" full_mesh_filename
-		exportMesh obj full_mesh_filename undefined
+		-- Export the real mesh: we convert it to editable_mesh if necessary in exportMesh
+		exportMesh obj full_mesh_path undefined
 		
 		-- Export material(s)
 		local mat = obj.material
 		if mat == undefined then (
 			throw ("Obj " + obj.name + " does NOT have a material")
 		)
-		local me = TMaterialExporter export_path: export_path base_path:base_path
-		local exported_materials = me.exportMaterial mat mats_path obj
+
+		local me = TMaterialExporter export_path:export_path base_path:base_path \
+		 mats_dir:mats_dir mats_export_path:mats_export_path \
+		 textures_dir:textures_dir textures_export_path:textures_export_path
+
+		-- for this to work obj needs to be editable mesh
+		local edMesh = obj
+		if classof obj != Editable_mesh then (
+			edMesh = copy obj
+			convertToMesh edMesh
+		)
+
+		local exported_materials = me.exportMaterial mat edMesh
+
+		if obj != edMesh then delete edMesh
 		
 		fs.writeKey "materials"
 		fs.arrayOfStrings exported_materials
 		
 		--only add wirecolor if object does not have a texture
-		if mat.diffusemap == undefined then (
+		if classof mat == StandardMaterial and mat.diffusemap == undefined then (
 			fs.writeComma()
 			fs.writeKeyValue "color" obj.wireColor
 		)
@@ -153,15 +228,16 @@ struct TSceneExporter (
 		
 			convexmes
 			
-		) else if classof obj == Editable_Mesh or classof obj == PolyMeshObject then (
+		) else if classof obj == Editable_Mesh or classof obj == Editable_Poly or classof obj == PolyMeshObject then (
 			fs.writeKeyValue "shape" "trimesh"
 			fs.writeComma()
 			-- Warning, order might be incorrect!!!
-			local mesh_name = mesh_path + current_scene_name + "_" + obj.parent.name + ".col_mesh"
-			local full_mesh_filename = export_path + mesh_name
+			local mesh_name = baseName + "_" + obj.parent.name + ".col_mesh"
+			local full_mesh_filename = export_path + mesh_export_path + mesh_name
 			exportMesh obj full_mesh_filename "Pos"
 			
-			fs.writeKeyValue "collision_mesh" mesh_name
+			local mesh_JSON_path = mesh_dir + mesh_name
+			fs.writeKeyValue "collision_mesh" mesh_JSON_path
 		)
 		else (
 			throw ("collider with name: " + obj.name + " and parent named: " + obj.parent.name + " is not sphere, box or trimesh!")
@@ -187,7 +263,7 @@ struct TSceneExporter (
 			fs.writeKeyValue "kinematic" is_kinematic
 		)
 		
-		if obj.layer.name == "triggers" then (
+		if isTrigger obj then (
 			fs.writeComma()
 			fs.writeKeyValue "trigger" true
 		)
@@ -258,12 +334,53 @@ struct TSceneExporter (
 		
 		exportCompCollider obj candidates
 	),
+
+	fn exportChildrenWaypoints obj = (
+		fs.writeComma()
+		fs.writeKey "waypoints" 
+
+
+		local waypoints = #()
+
+		local n = 0
+		for child in obj.children do (
+			if isWayPoint child then(
+				local max2mcv = rotateXMatrix -90
+				local pos = child.transform.translation * max2mcv
+				append waypoints pos
+			)
+		)
+
+		fs.beginArray()
+		local n = 0
+		for p in waypoints do (
+			if n > 0 then fs.writeComma()
+			fs.writeValue p
+			n = n + 1
+		)
+		fs.endArray()
+
+	),
 	
 	----------------------------------------------------------
 	fn exportEntity obj = (
 		fs.beginObj()
 		fs.writeKey "entity"
 			fs.beginObj()
+
+			if isXRefObj obj then (
+				exportPrefabEntry obj
+				fs.writeComma()
+				exportCompName obj
+				exportTransform obj
+				if objHasChildWaypoint obj then (
+					exportChildrenWaypoints obj
+				)
+				fs.endObj()
+				fs.endObj()
+				return true
+			)
+			
 			exportCompName obj
 			exportTransform obj
 		
@@ -282,6 +399,10 @@ struct TSceneExporter (
 			if isTriggerLava obj then (
 				exportTriggerLava obj
 			)
+
+			if objHasChildWaypoint obj then (
+				exportChildrenWaypoints obj
+			)
 			
 			exportChildrenColliders obj
 		
@@ -295,41 +416,143 @@ struct TSceneExporter (
 		fs.endObj()
 	),
 	
-	fn exportObjects objs = (
-		print ("CHECKING " + export_path + scenes_path)
-		print ("CHECKING " + export_path + mesh_path)
-		print ("CHECKING " + export_path + mats_path)
-		makeDir (export_path + scenes_path)
-		makeDir (export_path + mesh_path)
-		makeDir (export_path + mats_path)
-		makeDir (export_path + textures_path)
+	fn existsFilenameInSet setNames filename = (
+		local exists = false
+		for n in setNames do (
+			if filename == n then (
+				return true
+			)
+		)
+		return false
+	),
 
-		-- Decide output filename based on .max filename
-		current_scene_name = getFilenameFile maxFileName
-		local full_path = export_path + scenes_path + current_scene_name + ".json"
-		format "Exporting to % %\n" full_path  current_scene_name
-		fs.begin full_path
+	fn exportXrefObjects xrefNames = (
+		for xrName in xrefNames do(
+			local objects = #()
+
+			local fullxrName = xrefPaths.getFullFilePath xrName
+			format "fullxrName : %\n" fullxrName
+			mergeMaxFile fullxrName #noredraw #autoRenameDups #useMergedMtlDups mergedNodes:&objects
+			local new_export_path = export_path + base_path + "prefabs/" -- C:/usrs/.../MyScene/prefabs/
+			local baseName = getFileNameFile xrName
+			local prefabBasePath = baseName + "/" -- myPrefab/
+			format "exporting prefab: %\n" prefabBasePath
+			format "objs: %\n" objects.count
+			format "basname: %, new_export_path: %, prefabBasePath: %\n" baseName new_export_path prefabBasePath
+			local deleted = false
+			try(
+				exportSceneObjs objects baseName new_export_path prefabBasePath is_prefab:true 
+			)catch(
+				delete objects -- in case of error delete merged objects
+				deleted = true
+				throw()
+			)
+
+			if not deleted then delete objects
+		)
+	),
+
+	fn exportSpecialPrefab obj = (
+		fs.beginObj()
+		fs.writeKey "entity"
+			fs.beginObj()
+			local sPrefab = getUserProp obj "special_prefab"
+			local prefabPath = "data/prefabs/" + sPrefab + ".json"
+			fs.writeKeyValue "prefab" prefabPath
+			fs.writeComma()
+			exportCompName obj
+			exportTransform obj
+
+			if objHasChildWaypoint obj then (
+				exportChildrenWaypoints obj
+			) 
+
+			fs.endObj()
+		fs.endObj()
+	),
+
+	fn exportObjects objs = (
+
+		local full_scenes_path = export_path + base_path + scenes_dir
+		local full_mesh_path = export_path + base_path + mesh_dir
+		local full_mats_path = export_path + base_path + mats_dir
+		local full_textures_path = export_path + base_path + textures_dir
+
+		print ("CHECKING Scenes path: " + full_scenes_path)
+		print ("CHECKING mesh path: " + full_mesh_path)
+		print ("CHECKING mats path: " + full_mats_path)
+		print ("CHECKING textures path: " + full_textures_path)
+
+		if not doesDirectoryExist(full_scenes_path) then makeDir (full_scenes_path)
+		if not doesDirectoryExist(full_mesh_path) then makeDir (full_mesh_path)
+		if not doesDirectoryExist(full_mats_path) then makeDir (full_mats_path)
+		if not doesDirectoryExist(full_textures_path) then makeDir (full_textures_path)
+
+		local jsonPath = full_scenes_path + baseName + ".json"
+		format "Exporting to % --> %\n" jsonPath  baseName
+
+		fs.begin jsonPath
 		fs.beginArray()
 		
+		local xrefNames = #()
+
 		local nitems = 0
 		for obj in objs do (
-			if isCollider obj then continue
+			
+			if not isNameWeird(obj.name) do continue --quietly skip weird objects
+
+			if isXRefObj obj then (
+				if not existsFilenameInSet xrefNames obj.filename then append xrefNames obj.filename
+			)
+
+			if isCollider obj or isWayPoint obj then continue
+
 			if nitems > 0 then  fs.writeComma()
-			format "Exporting entity: % \n" obj.name
-			exportEntity obj
 			nitems = nitems + 1
+
+			if isSpecialPrefab obj then (
+				format "Exporting special prefab: % \n" obj.name
+				exportSpecialPrefab obj
+			) else (
+				format "Exporting entity: % \n" obj.name
+				exportEntity obj
+			)
+
 		)
 		
 		fs.endArray()
 		fs.end()
 
+
+		print xrefNames
+		exportXrefObjects xrefNames
+
+		--export minion.material
 		local me = TMaterialExporter export_path: export_path base_path:base_path
-		local matPath = export_path + mats_path
-		me.exportDefaultMaterial matPath
+		me.exportDefaultMaterial
 		
 	)
 	
 	
+)
+
+
+
+--------------------------------------------------------------------------------------
+
+fn exportSceneObjs objs baseName export_path base_path is_prefab:false   = (
+
+
+	local exporter
+	if is_prefab == true then(
+		-- all exported to same directory
+		exporter = TSceneExporter baseName:baseName export_path:export_path base_path:base_path scenes_dir:"" mesh_dir:"" mats_dir:"" textures_dir:"" 
+	)else(
+		exporter = TSceneExporter baseName:baseName export_path: export_path base_path:base_path
+	)
+
+	exporter.exportObjects(objs)
+
 )
 	
 --exporter = TSceneExporter()

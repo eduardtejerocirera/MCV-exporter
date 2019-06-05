@@ -1,0 +1,58 @@
+[
+  {
+    "entity":
+    {
+      "name": "Player"
+      ,
+      "transform": {
+        "pos": "0.6 0 0.9"
+      }
+      ,
+      "input_handler": {},
+      "character_controller": {},
+      "eject_manager": {},
+      "wall_manager": {},
+      "shoot_manager": {},
+      "health_manager": {},
+      "msg_logger": true,
+      "player_death": {},
+      "minion_manager": {
+        "total_minions": 150,
+        "initial_minions": 150,
+        "recover_rate": 1
+      },
+      "minion_bar": {},
+      "send_minions":{},
+      
+      "armature":{
+        "src": "data/skeletons/dp/dp.skeleton"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/skeletons/dp/dark_princess.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/dp/dp.material"
+        ]
+      },
+      "fsm" :
+      {
+        "file" : "data/fsm/character2.fsm",
+        "autoplay" : true
+      },
+      "fsm_player_input" : {},
+      "collider": {
+        "shape": "capsule",
+        "controller": true,
+        "radius": 0.5,
+        "height": 1,
+        "group": "player"
+      },
+      "melee_task":{},
+      "bomb_task":{},
+      "shoot_task": {}
+    }
+  }
+]

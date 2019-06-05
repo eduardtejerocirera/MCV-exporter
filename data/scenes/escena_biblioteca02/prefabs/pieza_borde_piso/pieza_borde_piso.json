@@ -1,0 +1,39 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_borde_piso_tipo_b"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.125"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_borde_piso_pieza_borde_piso_tipo_b.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_borde_piso_pieza_borde_piso_tipo_b.mesh"
+        ,
+        "materials":
+        [
+          "minion.material"
+        ]
+        ,
+        "color": "0.0313726 0.0313726 0.533333 1.0"
+      }
+    }
+  }
+]

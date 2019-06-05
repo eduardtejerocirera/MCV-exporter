@@ -1,12 +1,6 @@
 {
     "name":"dp",
-    "meshes":[ 
-        "Body",
-        "Face",
-        "Hair",
-        "Hat",
-        "Skirt"
-    ],
+    "meshes":["dark_princess"],
     "anims":[
         { "name": "idle" },
         { "name": "jump" },
@@ -27,6 +21,5 @@
         { "name": "skill_attack_1" },
         { "name": "skill_attack_2" },
         { "name": "skill_attack_3" }
-    ],
-    "extra":[ "Face"]
+    ]
 }
