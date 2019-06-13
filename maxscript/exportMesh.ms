@@ -442,4 +442,4 @@ function exportMesh the_obj out_filename vtx_fmt = (
 	
 )
 
-exportMesh $ "C:/Code/engine/bin/data/meshes/morph_plane.mesh" undefined
+--exportMesh $ "C:/Code/engine/bin/data/meshes/morph_plane.mesh" undefined
