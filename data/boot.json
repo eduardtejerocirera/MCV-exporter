@@ -8,6 +8,10 @@
 
   ],
   "scenes_not_to_load": [
+    
+    "data/scenes/test_animations.json",
+
+
     "data/scenes/test_instances.json",
     "data/scenes/lights.json",
     "data/scenes/simpleSphere.json",

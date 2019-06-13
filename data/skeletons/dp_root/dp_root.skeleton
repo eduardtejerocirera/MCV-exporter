@@ -1,0 +1,17 @@
+{
+    "name":"dp_root",
+    "meshes":["dark_princess"],
+    "folder": "dp_root",
+    "csf": "dp_root.csf",
+    "anims":[
+        {"name":"dark_princess_bomb"},
+        {"name":"dark_princess_eject"},
+		{ "name": "dark_princess_combatidle" },
+		{ "name": "dark_princess_idle1" },
+		{ "name": "dark_princess_idle2" },
+		{ "name": "dark_princess_jump" },
+		{ "name": "dark_princess_shoot" },
+		{ "name": "dark_princess_wall" }
+
+    ]
+}

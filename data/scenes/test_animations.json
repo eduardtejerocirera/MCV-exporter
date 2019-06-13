@@ -11,13 +11,13 @@
       
       "armature":{
         "help":["path hasta el archivo .skeleton correspondiente. En el mismo path tienen que estar los archivos .cmf, .csf y .caf"],
-        "src": "data/skeletons/test_animations/dark_princess.skeleton"
+        "src": "data/skeletons/dp_root/dp_root.skeleton"
       }
       ,
       "render":
       {
         "help": ["Este fichero .mesh debe tener el mismo nombre que el archivo .cmf en la carpeta de las animaciones."],
-        "mesh": "data/skeletons/test_animations/dark_princess.mesh"
+        "mesh": "data/skeletons/dp_root/dark_princess.mesh"
         ,
         "materials":
         [
