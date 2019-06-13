@@ -1,0 +1,6 @@
+{
+  "textures":
+  {
+    "albedo": "data/textures/defaults/white.dds"
+  }
+}

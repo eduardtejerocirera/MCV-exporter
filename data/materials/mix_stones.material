@@ -1,0 +1,9 @@
+{
+  "textures":
+  {
+    "albedo": "data/textures/mix/Moss_02_COLOR.dds",
+    "normal": "data/textures/mix/Moss_02_NRM.dds",
+    "metallic": "data/textures/black.dds",
+    "roughness": "data/textures/white.dds"
+  }
+}

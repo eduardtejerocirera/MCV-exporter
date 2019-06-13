@@ -26,6 +26,7 @@
     "trans_curve_controller",
     "character_controller",
     "armature",
+    "skel_lookat",
     "bone_tracker",
     "ragdoll",
     "camera_flyover",
@@ -42,25 +43,33 @@
     "hierarchy",
     "local_aabb",
     "culling",
-    "fsm",
-    "fsm_player_input",
     "camera_lookat",
     "camera_3rd_person",
     "camera_orbit",
     "light_dir",
+    "fsm",
+    "fsm_player_input",
+    "camera",
+    "compute",
+    "light_point",
     "camera",
     "moving_platform",
     "book_spawner",
     "bt_librarian",
     "kinematic_controller",
     "bt_basic_melee",
-    "bomb_task"
+    "bomb_task",
+    "render_focus",
+    "eject_task",
+    
+    "owlbt_soldier"
   ],
   "render_debug": [
     "fsm",
     "transform",
     "camera_flyover",
     "light_dir",
+    "light_point",
     "sensor",
     "armature",
     "abs_aabb",
@@ -81,9 +90,6 @@
     "bt_librarian",
     "bt_basic_melee",
     "melee_task",
-    "shoot_task"
-  ],
-
-  "test_to_copy":{"update":[], "render_debug":[]},
-  "ai":{"update":["ai_patrol","ai_turret","ai_tank"], "render_debug":["ai_patrol","ai_turret","ai_tank"]}
+    "book_spawner"
+  ]
 }

@@ -1,6 +1,8 @@
 {
     "name":"firedemon",
     "meshes":["fdbody_low"],
+    "folder": "firedemon",
+    "csf": "firedemon.csf",
     "anims":[
         {"name":"fd_idle"},
         {"name":"fd_walk_f"},

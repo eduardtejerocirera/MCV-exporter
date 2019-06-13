@@ -1,0 +1,7 @@
+{
+  "technique" : "objs_morph.tech",
+  "textures": {
+    "albedo": "data/textures/fieldstone-c.dds",
+    "normal": "data/textures/fieldstone-n.dds"
+  }
+}

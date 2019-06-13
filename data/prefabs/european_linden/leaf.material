@@ -1,0 +1,8 @@
+{
+  "technique" : "objs_alpha_culled_by_gpu.tech",
+  "textures":
+  {
+    "albedo": "data/prefabs/european_linden/t_europeanlindenleaf_basecolor.dds",
+    "normal": "data/prefabs/european_linden/t_europeanlindenleaf_normal.dds"
+  }
+}

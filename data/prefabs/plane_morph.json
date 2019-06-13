@@ -1,0 +1,28 @@
+[
+	{
+		"entity" : {
+			"transform" : {
+				"pos" : "0 0 0"
+			},		
+			"name" : "Morph",
+			"render" : {
+				"meshes": [
+					{
+						"mesh" : "data/meshes/morph_plane.mesh",
+						"material" : "data/materials/morph_plane.material"
+					}
+				]
+			},
+			"buffers" : {
+				"TCtesMorph" : {
+					"total_bytes" : 16,
+					"slot" : 11
+				}
+			}
+			, 
+			"circular_controller" : {
+				"speed" : 0.0
+			}
+		}
+	}
+]

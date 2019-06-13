@@ -1,0 +1,45 @@
+[
+  {
+    "entity":
+    {
+      "name": "Trees"
+    }
+  },
+  {
+    "xentity":
+    {
+      "name": "Tree Low",
+      "prefab": "data/prefabs/european_linden/european_linden_low.json"
+    }
+  },
+  {
+    "xentity":
+    {
+      "name": "Tree Hi",
+      "transform" : {
+        "pos" : "5 0 0"
+      },
+      "prefab": "data/prefabs/european_linden/european_linden_hi.json"
+    }
+  },
+  {
+    "entity":
+    {
+      "name": "White Oak Hi",
+      "transform" : {
+        "pos" : "-10 0 0"
+      },
+      "prefab": "data/prefabs/white_oak/white_oak_hi.json"
+    }
+  },
+  {
+    "entity":
+    {
+      "name": "White Oak Low",
+      "transform" : {
+        "pos" : "-10 0 10"
+      },
+      "prefab": "data/prefabs/white_oak/white_oak_low.json"
+    }
+  }
+]

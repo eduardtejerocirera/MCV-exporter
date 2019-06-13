@@ -1,0 +1,8 @@
+{
+  "technique" : "objs_alpha_culled_by_gpu.tech",
+  "textures":
+  {
+    "albedo": "data/prefabs/white_oak/T_White_Oak_Leaves_Hero_1_BaseColor.dds",
+    "normal": "data/prefabs/white_oak/T_White_Oak_Leaves_Hero_1_Normal.dds"
+  }
+}

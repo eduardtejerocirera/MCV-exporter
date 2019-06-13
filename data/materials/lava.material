@@ -1,12 +1,11 @@
 {
-  "technique": "data/techniques/objs.tech"
+  "technique": "pbr_lava.tech"
   ,
   "shadows": true
   ,
   "textures":
   {
-    "albedo": "data/textures/Lava_002_COLOR.dds"
-    ,
-    "normal": "data/textures/Lava_002_NRM.dds"
+    "albedo": "data/textures/Lava_002_COLOR.dds",
+    "emissive": "data/textures/defaults/white.dds"
   }
 }

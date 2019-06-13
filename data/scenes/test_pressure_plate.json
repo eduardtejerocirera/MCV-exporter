@@ -1,0 +1,105 @@
+[
+    {
+    "entity": {
+      "name": "test_trigger",
+      "transform": {
+        "pos": "0 0 110"
+      },
+      "collider": {
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "1.35 0.3 1.35",
+
+            "trigger": true
+          }
+        ]
+      },
+      "pressure_plate": {
+        "targets": [
+          { "target": "test_triggered" }
+        ]
+      },
+      "render": {
+        "mesh": "data/meshes/190503_escena_biblioteca_para_exportar_pivotes centrados_piezas moviles08_pieza_switch_piso.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      }
+    }
+  },
+  {
+    "entity": {
+      "name": "test_triggered",
+      "transform": {
+        "pos": "0 0 115",
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "collider": {
+        "lock": "1 0 1 1 1 1",
+        "shapes": [
+          {
+            "shape": "box",
+            "half_size": "4.73174 8.23436 0.802611",
+            "offset": {
+              "pos": "0.0 0.0 0.0"
+            }
+          }
+        ],
+        "kinematic": true,
+        "dynamic": true
+      },
+      "render": {
+        "mesh": "data/meshes/Teapot001.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      },
+      "kinematic_controller":{},
+      "mover": { "move_vector": "0 1 0" }
+    }
+  },
+
+  {
+    "entity": {
+      "transform":{
+        "pos":"10.0 0.0 105.0",
+        "scale": "0.2 0.2 0.2"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  },
+  {
+    "entity": {
+      "transform":{
+        "pos":"14.0 0.0 105.0",
+        "scale": "0.2 0.2 0.2"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  },
+  {
+    "entity": {
+      "transform":{
+        "pos":"12.0 0.0 105.0",
+        "scale": "0.2 0.2 0.2"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  },
+  {
+    "entity": {
+      "transform":{
+        "pos":"16.0 0.0 105.0",
+        "scale": "0.2 0.2 0.2"
+      },
+      "prefab": "data/prefabs/test_grabbable.json"
+
+    }
+  }
+]

@@ -1,0 +1,1734 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_larga"
+      ,
+      "transform":
+      {
+        "pos": "0.0 24.5 -1.07093e-06"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_larga.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_larga.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_larga.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_suela_corta"
+      ,
+      "transform":
+      {
+        "pos": "0.0 24.5 -1.07093e-06"
+        ,
+        "rotation": "0.0 -0.939693 0.0 -0.34202"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_suela_corta.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_suela_corta.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_larga.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_lava"
+      ,
+      "transform":
+      {
+        "pos": "-10.0271 14.9 90.0623"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_lava.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/piso_lava.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/pieza_union_piso/pieza_union_piso.json"
+      ,
+      "name": "pieza_union_piso"
+      ,
+      "transform":
+      {
+        "pos": "0.0 24.875 -1.08732e-06"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "plano_piso"
+      ,
+      "transform":
+      {
+        "pos": "-4.52713 15.0 104.562"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_plano_piso.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_plano_piso.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/plano_piso.material"
+        ]
+        ,
+        "color": "0.345098 0.564706 0.882353 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/pieza_bilbioteca_plano_esquina/pieza_bilbioteca_plano_esquina.json"
+      ,
+      "name": "pieza_bilbioteca_plano_esquina"
+      ,
+      "transform":
+      {
+        "pos": "-1.90735e-06 0.0 -1.14441e-05"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/pieza_circular_lava/pieza_circular_lava.json"
+      ,
+      "name": "Cylinder001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 24.5 -1.07093e-06"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/pieza_techo_portcullis/pieza_techo_portcullis.json"
+      ,
+      "name": "techo_portcullis"
+      ,
+      "transform":
+      {
+        "pos": "-0.0271931 33.0003 43.062"
+        ,
+        "rotation": "0.0 0.707107 0.0 -0.707107"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_barandilla"
+      ,
+      "transform":
+      {
+        "pos": "-0.00913143 65.0 0.0404024"
+        ,
+        "rotation": "0.0 0.0436196 0.0 -0.999048"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_barandilla.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_barandilla.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_barandilla.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/pieza_piso_lava_piso3_borde/pieza_piso_lava_piso3_borde.json"
+      ,
+      "name": "pieza_lava_cascada_borde"
+      ,
+      "transform":
+      {
+        "pos": "0.0 92.5 -4.0433e-06"
+        ,
+        "rotation": "0.0 0.258819 0.0 -0.965926"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/pieza_piso_lava_piso3_borde/pieza_piso_lava_piso3_borde.json"
+      ,
+      "name": "pieza_lava_cascada_borde001"
+      ,
+      "transform":
+      {
+        "pos": "-54.5914 92.5 4.7762"
+        ,
+        "rotation": "0.0 -0.737277 0.0 -0.675591"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/pieza_piso_portcullis/pieza_piso_portcullis.json"
+      ,
+      "name": "pieza_piso_portcullis"
+      ,
+      "transform":
+      {
+        "pos": "0.0 92.5 -4.0433e-06"
+        ,
+        "rotation": "0.0 0.67559 0.0 -0.737277"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_techo_circular"
+      ,
+      "transform":
+      {
+        "pos": "0.0 125.0 -5.46392e-06"
+        ,
+        "rotation": "0.0 -0.0871558 0.0 -0.996195"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_techo_circular.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_techo_circular.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_techo_circular.material"
+        ]
+        ,
+        "color": "0.109804 0.34902 0.694118 1.0"
+      }
+    }
+  },
+  {
+    "entity":
+    {
+      "prefab": "prefabs/pieza_transicion/pieza_transicion.json"
+      ,
+      "name": "pieza_union_pared_curva"
+      ,
+      "transform":
+      {
+        "pos": "0.0 15.0 -6.55671e-07"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/pieza_techo_transicion/pieza_techo_transicion.json"
+      ,
+      "name": "pieza_techo_transicion"
+      ,
+      "transform":
+      {
+        "pos": "0.0 15.0 -6.55671e-07"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava04"
+      ,
+      "transform":
+      {
+        "pos": "-22.4854 82.6993 13.8506"
+        ,
+        "rotation": "0.0 -0.284598 0.0 -0.958647"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "8.0 4.0 16.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava01"
+      ,
+      "transform":
+      {
+        "pos": "0.0272584 6.02848 82.6327"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "10.5 4.0 12.416"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava02"
+      ,
+      "transform":
+      {
+        "pos": "1.90735e-06 13.9685 -1.56426e-06"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "35.0 4.75 35.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.75 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava"
+      ,
+      "transform":
+      {
+        "pos": "-0.0136299 5.71616 60.286"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "10.5 9.0 10.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 9.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_lava03"
+      ,
+      "transform":
+      {
+        "pos": "-16.4546 22.9618 9.775"
+        ,
+        "rotation": "0.0 -0.309075 0.0 -0.951038"
+      }
+      ,
+      "damage_on_contact":
+      {
+        "damage": 1000
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.0 33.0 10.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 33.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_5"
+      ,
+      "transform":
+      {
+        "pos": "-10.0642 93.0 26.4419"
+        ,
+        "rotation": "0.0 0.165894 0.0 -0.986144"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 5
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.0 4.0 4.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_4"
+      ,
+      "transform":
+      {
+        "pos": "7.82815 65.1 26.1645"
+        ,
+        "rotation": "0.0 -0.148618 0.0 -0.988895"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 4,
+        "toParse": "data/scenes/escena_biblioteca57/escena_biblioteca_firedemons_4.json"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.0 4.0 4.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_3"
+      ,
+      "transform":
+      {
+        "pos": "-23.8038 65.0 -13.7034"
+        ,
+        "rotation": "0.0 0.280689 0.0 -0.959799"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 3,
+        "toParse": "data/scenes/escena_biblioteca57/escena_biblioteca_firedemons_3.json"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "4.0 4.0 1.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_2"
+      ,
+      "transform":
+      {
+        "pos": "16.4012 48.5 -21.919"
+        ,
+        "rotation": "0.0 0.34433 0.0 -0.938849"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 2,
+        "toParse": "data/scenes/escena_biblioteca57/escena_biblioteca_firedemons_2.json"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "1.0 4.0 4.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_1"
+      ,
+      "transform":
+      {
+        "pos": "-0.0271502 25.0 47.0622"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 1
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "4.0 4.0 1.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_0"
+      ,
+      "transform":
+      {
+        "pos": "-0.0271316 15.0 101.895"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 0,
+        "toParse": "data/scenes/escena_biblioteca57/escena_biblioteca_firedemons_1.json"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "4.0 4.0 1.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "trigger_checkPoint_6"
+      ,
+      "transform":
+      {
+        "pos": "-10.5348 109.0 -24.6445"
+        ,
+        "rotation": "0.0 0.5373 0.0 -0.843391"
+      }
+      ,
+      "checkpoint":
+      {
+        "index": 6
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "7.44 4.0 1.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.0 0.0"
+            }
+            ,
+            "group": "triggers"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_estanteria"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_estanteria.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_estanteria.mesh"
+        ,
+        "color":"0.5 0.42 0.39 1"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_estanteria.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_biblioteca_sobresaliente"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_biblioteca_sobresaliente.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_biblioteca_sobresaliente.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_biblioteca_sobresaliente.material"
+        ]
+        ,
+        "color": "0.529412 0.231373 0.0313726 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_borde_plataformas"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_borde_plataformas.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_borde_plataformas.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/Pieza_Borde_Plataforma.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_techo_safezone"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_techo_safezone.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_techo_safezone.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_techo_safezone.material"
+        ]
+        ,
+        "color": "0.894118 0.721569 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_bilbioteca_cercana"
+      ,
+      "transform":
+      {
+        "pos": "0.0 25.0 -1.09278e-06"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_bilbioteca_cercana.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_bilbioteca_cercana.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_biblioteca_cercana.material"
+        ]
+        ,
+        "color": "0.529412 0.231373 0.0313726 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_fondo_safezone"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_fondo_safezone.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_fondo_safezone.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_pared_safezone.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_borde_piso"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_borde_piso.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_borde_piso.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_borde_piso.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_esquinero"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_esquinero.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_esquinero.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_esquineros.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_boveda"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_boveda.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_boveda.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_boveda.material"
+        ]
+        ,
+        "color": "0.603922 0.72549 0.898039 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_pasillo_techo"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_pasillo_techo.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_pasillo_techo.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_techo_pasillo.material"
+        ]
+        ,
+        "color": "0.894118 0.839216 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_lava_cascada"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_lava_cascada.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_lava.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_cascada_lava"
+      ,
+      "transform":
+      {
+        "pos": "0.3 0.0 0.3"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_cascada_lava.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/piso_lava.material"
+        ]
+        ,
+        "color": "0.603922 0.603922 0.898039 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_plano_cascada"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_plano_cascada.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/piso_lava.material"
+        ]
+        ,
+        "color": "0.6 0.894118 0.721569 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_techo_central"
+      ,
+      "transform":
+      {
+        "pos": "0.0 8.0 -3.49691e-07"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_techo_central.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_techo_central.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_techo_circular_vidrio.material"
+        ]
+        ,
+        "color": "0.694118 0.580392 0.105882 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_plano pared"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_plano pared.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_plano pared.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pared_entrada.material"
+        ]
+        ,
+        "color": "0.568627 0.109804 0.694118 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_plataforma_boss"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_plataforma_boss.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_plataforma_boss.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/plataforma_boss.material"
+        ]
+        ,
+        "color": "0.109804 0.584314 0.694118 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_switch_pared"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_switch_pared.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_switch_pared.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_botones.material"
+        ]
+        ,
+        "color": "0.882353 0.776471 0.341176 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_pared_adelante"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_pared_adelante.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_pared_adelante.mesh"
+        ,
+        "color":"0.5 0.42 0.39 1"
+        ,
+        "materials":
+        [
+          "entities/materials/cilindro_exterior.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_pared_safezone"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_pared_safezone.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_pared_safezone.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_pared_safezone.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_ventana"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_ventana.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_ventana.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/ventana_marco.material"
+          ,
+          "entities/materials/ventana_pilar.material"
+          ,
+          "entities/materials/ventana_marco.material"
+          ,
+          "entities/materials/ventana_ventana.material"
+          ,
+          "entities/materials/ventana_vidrios.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_piso_safezone"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_piso_safezone.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_piso_safezone.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_larga.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_ventana001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_ventana001.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/ventana_marco.material"
+          ,
+          "entities/materials/ventana_pilar.material"
+          ,
+          "entities/materials/ventana_marco.material"
+          ,
+          "entities/materials/ventana_ventana.material"
+          ,
+          "entities/materials/ventana_vidrios.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_ventana002"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_ventana002.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/ventana_marco.material"
+          ,
+          "entities/materials/ventana_pilar.material"
+          ,
+          "entities/materials/ventana_marco.material"
+          ,
+          "entities/materials/ventana_ventana.material"
+          ,
+          "entities/materials/ventana_vidrios.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_ventana003"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_ventana003.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/ventana_marco.material"
+          ,
+          "entities/materials/ventana_pilar.material"
+          ,
+          "entities/materials/ventana_marco.material"
+          ,
+          "entities/materials/ventana_ventana.material"
+          ,
+          "entities/materials/ventana_vidrios.material"
+        ]
+      }
+    }
+  }
+
+]

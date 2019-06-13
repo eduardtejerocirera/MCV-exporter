@@ -1,0 +1,50 @@
+[
+  {
+    "entity":
+    {
+      "name": "bibliotecario_plataforma"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "6.49161 2.30605 4.7549"
+            ,
+            "offset":
+            {
+              "pos": "0.0 2.30605 0.0"
+            }
+            ,
+            "kinematic": true
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "BibliotecarioSplataforma_bibliotecario_plataforma.mesh"
+        ,
+        "materials":
+        [
+          "bibliotecario.material"
+        ]
+        ,
+        "color": "0.65098 0.898039 0.898039 1.0"
+      }
+    }
+  }
+]

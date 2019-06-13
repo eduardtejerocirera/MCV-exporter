@@ -47,7 +47,7 @@ function writeMeshToFile outfilename verts idxs vtxType subgroups = (
 	-- 16 bits (2 bytes) allow 65536 indices
 	local bytes_per_index = 2
 	if verts.count > 65535 then bytes_per_index = 4
-	format "Saving % %\n" outfilename bytes_per_index
+	format "Saving % % with fmt %\n" outfilename bytes_per_index vtxType
 	
 	-- Write Header
 	local headerSize = 16 + 16 + 32
@@ -281,6 +281,13 @@ function exportMesh the_obj out_filename vtx_fmt = (
 	
 	if vtx_fmt == undefined then vtx_fmt = "PosNUv"
 		
+	local modmorph = the_obj.modifiers[#Morpher]
+	if modmorph != undefined then (
+		format "Detected morpher in obj %\n" the_obj.name
+		WM3_MC_SetValue modmorph 1 0.0
+		vtx_fmt = "PosNUvPosN"
+	)	
+
 	local order = #(1,3,2)
 	
 	
@@ -366,6 +373,24 @@ function exportMesh the_obj out_filename vtx_fmt = (
 				local new_vert;
 				if vtx_fmt == "PosNUv" then new_vert = #(posLocal.x, posLocal.y, posLocal.z, N.x, N.y, N.z, uvA.x, 1.0 - uvA.y )
 				else if vtx_fmt == "Pos" then new_vert = #(posLocal.x, posLocal.y, posLocal.z )
+				else if vtx_fmt == "PosNUvPosN" then (
+					-- Restore morph to default pose
+					WM3_MC_SetValue modmorph 1 100.0
+					
+					-- Geometric position2
+					local posAbs2 = getVert obj face[vtx_idx] 
+					local posLocal2 = posAbs2 * world2mcv 
+					
+					-- Normal2
+					local Nworld2 = face_normals[vtx_idx]
+					local N2 = Nworld2 * world2mcv.rotationpart
+					
+					new_vert = #(posLocal.x, posLocal.y, posLocal.z, N.x, N.y, N.z, uvA.x, 1.0 - uvA.y )
+					join new_vert #(posLocal2.x, posLocal2.y, posLocal2.z, N2.x, N2.y, N2.z )
+					
+					-- Restore morph to default pose
+					WM3_MC_SetValue modmorph 1 0.0
+				)
 				
 				-- Check if the vtx is unique
 				local new_idx = findIndexOrRegister ht verts new_vert
@@ -417,4 +442,4 @@ function exportMesh the_obj out_filename vtx_fmt = (
 	
 )
 
---exportMesh $ "C:/Code/engine/bin/data/meshes/UnitSolidCube.mesh" undefined
+exportMesh $ "C:/Code/engine/bin/data/meshes/morph_plane.mesh" undefined

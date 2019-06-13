@@ -1,0 +1,16 @@
+{
+  "textures":
+  {
+    "albedo": "entities/textures/pieza_ventana_ventana_tranparente_Roughness_inversed.dds"
+    ,
+    "roughness": "data/textures/defaults/white.dds"
+    ,
+    "metallic": "entities/textures/pieza_ventana_ventana_tranparente_Roughness.dds"
+    ,
+    "normal": "entities/textures/pieza_ventana_ventana_tranparente_Normal_DirectX.dds"
+    ,
+    "emissive": "entities/textures/pieza_ventana_ventana_tranparente_Roughness_inversed.dds"
+    ,
+    "ao": "entities/textures/pieza_ventana_ventana_tranparente_Mixed_AO.dds"
+  }
+}

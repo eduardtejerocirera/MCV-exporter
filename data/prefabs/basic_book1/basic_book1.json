@@ -1,0 +1,36 @@
+[
+  {
+    "entity":
+    {
+      "name": "basic_book1"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "render":
+      {
+        "mesh": "basic_book1_basic_book1.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.529412 0.0235294 0.0235294 1.0"
+      },
+       "collider": {
+          "shape": "capsule",
+          "controller": true,
+          "radius": 0.5,
+          "height": 0.5,
+          "group":"enemy"
+        },
+        "targetable":{},
+        "grabbable":{},
+        "character_controller":{}
+    }
+  }
+]

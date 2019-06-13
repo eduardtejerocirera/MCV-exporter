@@ -5,9 +5,9 @@
   {
     "albedo": "data/textures/dp/dark_princess_Base_Color_.dds"
     ,
-    "roughness": "data/textures/defaults/white.dds"
+    "metallic": "data/textures/defaults/metal004.dds"
     ,
-    "metallic": "data/textures/dp/dark_princess_Roughness.dds"
+    "roughness": "data/textures/dp/dark_princess_Roughness.dds"
     ,
     "normal": "data/textures/dp/dark_princes_Normal_DirectX_.dds"
     ,

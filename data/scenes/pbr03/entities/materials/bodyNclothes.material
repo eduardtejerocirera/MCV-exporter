@@ -1,0 +1,16 @@
+{
+  "textures":
+  {
+    "albedo": "data/scenes/pbr03/entities/textures/bodyNclothes_albedo.dds"
+    ,
+    "roughness":  "data/scenes/pbr03/entities/textures/bodyNclothes_rough.dds"
+    ,
+    "metallic":  "data/scenes/pbr03/entities/textures/bodyNclothes_metal.dds"
+    ,
+    "normal":  "data/scenes/pbr03/entities/textures/bodyNclothes_normal.dds"
+    ,
+    "emissive":  "data/scenes/pbr03/entities/textures/bodyNclothes_emisive.dds"
+    ,
+    "ao": "data/textures/defaults/white.dds"
+  }
+}

@@ -4,8 +4,8 @@
     "data/scenes/cameras.json",
     "data/prefabs/helpers.json",
     "data/prefabs/light_dir.json",
-    "data/prefabs/infinite_plane.json",
-    "data/scenes/ui.json"
+    "data/prefabs/infinite_plane.json"
+
   ],
   "scenes_not_to_load": [
     "data/scenes/test_instances.json",

@@ -1,0 +1,35 @@
+[
+    {
+      "entity": {
+        "name": "enemy",
+        "transform": {
+        },
+        "collider": {
+          "shape": "capsule",
+          "controller": true,
+          "radius": 0.5,
+          "height": 1.5,
+          "group":"enemy"
+        },
+        "render": {
+          "mesh": "data/skeletons/firedemon/fdbody_low.mesh",
+          "materials": [
+            "data/materials/fd/fdbody.material",
+            "data/materials/fd/fdchains.material"            
+          ],
+          "color": "1.0 1.0 1.0 1.0"
+        },
+        "armature": {
+          "src": "data/skeletons/firedemon/firedemon.skeleton"
+        },
+        "vulnerability": {
+          "recover_rate": 1.0
+        },
+        "destructive_death": {},
+        "character_controller": {},
+        "shooter": {},
+        "msg_logger": true,
+        "grabbable": {}
+      }
+    }
+]

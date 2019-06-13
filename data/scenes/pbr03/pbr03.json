@@ -1,0 +1,5841 @@
+[
+  {
+    "entity":
+    {
+      "name": "board.004"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_board.004.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Board.001.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.069"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.069.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.070"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.070.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.00784314 0.00784314 0.00784314 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.071"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.071.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0313726 0.0313726 0.0313726 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.072"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.072.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0745098 0.0745098 0.0745098 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.073"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.073.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.137255 0.137255 0.137255 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.074"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.074.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.243137 0.243137 0.243137 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.075"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.075.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.32549 0.32549 0.32549 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.076"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.076.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.458824 0.458824 0.458824 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.077"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.077.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.611765 0.611765 0.603922 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.078"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.078.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.803922 0.803922 0.796079 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.079"
+      ,
+      "transform":
+      {
+        "pos": "3.89757 0.0407353 4.450"
+        ,
+        "scale":"0.8 0.8 0.8"
+        ,
+        "rotation": "0.0 -1.0 1.25172e-07 -2.8213e-07"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.079.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Plane.001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_Plane.001.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Suelo.001.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Plane"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_Plane.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Suelo.001.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.189"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.189.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.615686 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.027"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.027.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0313726 0.0313726 0.0313726 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.026"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.026.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.00784314 0.00784314 0.00784314 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.025"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.025.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.080"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.080.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.081"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.081.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.00784314 0.00784314 0.00784314 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.082"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.082.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0313726 0.0313726 0.0313726 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.083"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.083.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0745098 0.0745098 0.0745098 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.084"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.084.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.137255 0.137255 0.137255 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.085"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.085.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.243137 0.243137 0.243137 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.086"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.086.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.32549 0.32549 0.32549 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.087"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.087.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.458824 0.458824 0.458824 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.088"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.088.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.611765 0.611765 0.603922 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.089"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.089.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.803922 0.803922 0.796079 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.090"
+      ,
+      "transform":
+      {
+        "pos": "0.00949144 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.090.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.137"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.137.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.126"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.126.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.115"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.115.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.104"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.104.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0745098 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.138"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.138.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.796079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.127"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.127.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.00784314 0.803922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.116"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.116.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.803922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.105"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.105.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0745098 0.803922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.147"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.147.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.611765 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.136"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.136.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.00784314 0.611765 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.125"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.125.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.603922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.114"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.114.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0745098 0.603922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.146"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.146.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.45098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.135"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.135.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.00784314 0.458824 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.124"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.124.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.458824 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.113"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.113.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0745098 0.45098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.145"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.145.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.329412 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.134"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.134.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.00784314 0.32549 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.123"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.123.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.32549 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.112"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.112.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0705882 0.32549 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.143"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.143.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.137255 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.132"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.132.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.00784314 0.133333 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.144"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.144.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.223529 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.133"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.133.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.00784314 0.223529 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.122"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.122.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.219608 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.111"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.111.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0705882 0.219608 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.101"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.101.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.133333 0.32549 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.121"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.121.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.137255 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.110"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.110.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0745098 0.137255 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.093"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.093.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.133333 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.094"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.094.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.137255 0.803922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.103"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.103.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.137255 0.603922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.102"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.102.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.137255 0.458824 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.100"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.100.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.137255 0.219608 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.099"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.099.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.137255 0.137255 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.082"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.082.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.219608 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.092"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.092.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.219608 0.803922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.091"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.091.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.223529 0.611765 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.090"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.090.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.223529 0.458824 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.089"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.089.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.219608 0.32549 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.088"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.088.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.219608 0.219608 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.087"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.087.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.219608 0.133333 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.071"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.071.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.329412 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.081"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.081.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.329412 0.803922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.079"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.079.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.32549 0.45098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.080"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.080.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.32549 0.603922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.077"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.077.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.329412 0.223529 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.078"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.078.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.329412 0.329412 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.076"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.076.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.32549 0.133333 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.070"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.070.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.462745 0.803922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.060"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.060.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.458824 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.069"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.069.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.462745 0.603922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.068"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.068.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.462745 0.45098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.067"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.067.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.458824 0.32549 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.066"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.066.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.458824 0.219608 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.065"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.065.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.458824 0.133333 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.049"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.049.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.615686 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.038"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.038.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.796079 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.027"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.027.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.037"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.037.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.803922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.048"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.048.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.796079 0.796079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.059"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.059.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.615686 0.803922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.058"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.058.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.611765 0.603922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.036"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.036.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.603922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.047"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.047.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.803922 0.603922 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.057"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.057.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.611765 0.45098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.046"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.046.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.796079 0.45098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.035"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.035.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.458824 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.056"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.056.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.611765 0.32549 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.045"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.045.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.803922 0.329412 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.034"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.034.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.32549 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.033"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.033.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.219608 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.044"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.044.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.796079 0.219608 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.055"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.055.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.615686 0.223529 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.054"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.054.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.615686 0.137255 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.043"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.043.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.803922 0.137255 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.032"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.032.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.137255 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.142"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.142.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0705882 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.131"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.131.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.00784314 0.0705882 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.120"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.120.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.0745098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.109"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.109.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0705882 0.0705882 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.098"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.098.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.137255 0.0745098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.086"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.086.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.219608 0.0705882 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.075"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.075.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.329412 0.0745098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.064"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.064.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.458824 0.0705882 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.053"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.053.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.615686 0.0745098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.042"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.042.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.803922 0.0745098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.031"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.031.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.0745098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.141"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.141.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.130"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.130.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.00784314 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.119"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.119.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.108"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.108.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0745098 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.097"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.097.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.137255 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.085"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.085.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.223529 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.074"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.074.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.32549 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.063"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.063.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.462745 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.052"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.052.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.611765 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.191"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.191.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.030"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.030.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.140"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.140.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.129"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.129.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.00784314 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.118"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.118.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.107"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.107.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0705882 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.096"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.096.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.133333 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.084"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.084.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.219608 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.073"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.073.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.32549 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.062"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.062.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.458824 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.051"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.051.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.615686 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.040"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.040.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.803922 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.029"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.029.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.139"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.139.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.128"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.128.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.00784314 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.106"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.106.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0745098 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.095"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.095.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.133333 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.083"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.083.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.223529 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.072"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.072.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.32549 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.061"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.061.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.458824 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.039"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.039.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.803922 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.028"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.028.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.996079 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.050"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.050.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.615686 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.068"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.068.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.067"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.067.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.803922 0.803922 0.796079 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.066"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.066.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.611765 0.611765 0.603922 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.065"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.065.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.458824 0.458824 0.458824 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.064"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.064.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.32549 0.32549 0.32549 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.063"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.063.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.243137 0.243137 0.243137 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.062"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.062.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.137255 0.137255 0.137255 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.061"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.061.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0745098 0.0745098 0.0745098 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.060"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.060.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0313726 0.0313726 0.0313726 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.059"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.059.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.00784314 0.00784314 0.00784314 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.058"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.058.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.057"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.057.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.056"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.056.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.803922 0.803922 0.796079 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.055"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.055.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.611765 0.611765 0.603922 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.054"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.054.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.458824 0.458824 0.458824 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.053"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.053.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.32549 0.32549 0.32549 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.052"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.052.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.243137 0.243137 0.243137 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.051"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.051.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.137255 0.137255 0.137255 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.050"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.050.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0745098 0.0745098 0.0745098 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.049"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.049.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0313726 0.0313726 0.0313726 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.048"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.048.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.00784314 0.00784314 0.00784314 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.047"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.047.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.188"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.188.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.458824 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.187"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.187.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.329412 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.186"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.186.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.219608 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.185"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.185.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.133333 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.184"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.184.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0745098 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.183"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.183.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.182"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.182.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.027451 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.181"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.181.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.180"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.180.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.178"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.178.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.611765 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.177"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.177.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.45098 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.176"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.176.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.223529 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.175"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.175.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.329412 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.174"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.174.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.137255 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.173"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.173.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0705882 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.172"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.172.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.171"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.171.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.00784314 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.170"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.170.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "gun2"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_gun2.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/lambert2SG.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "gun1"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_gun1.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/initialShadingGroup.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "shirt"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_shirt.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/fem23_backPoselambert3SG.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Untitled.003"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_Untitled.003.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/lambert2SG.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "Untitled.002"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_Untitled.002.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/initialShadingGroup.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "body"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_body.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/fem23_backPoselambert2SG.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tank"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tank.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material_2.material"
+        ]
+        ,
+        "color": "1 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.190"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.190.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.796079 0.996079 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.028"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.028.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.0745098 0.0745098 0.0745098 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.029"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.029.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.137255 0.137255 0.137255 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.030"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.030.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.243137 0.243137 0.243137 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.031"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.031.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.32549 0.32549 0.32549 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.032"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.032.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.458824 0.458824 0.458824 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.033"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.033.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.611765 0.611765 0.603922 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.034"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.034.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.803922 0.803922 0.796079 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "tiles.035"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tiles.035.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/vertexcolor.002.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "board.002"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_board.002.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Board.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "board.001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_board.001.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Board.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "board"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_board.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Board.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.041"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.041.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.803922 0.027451 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.192"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.192.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 1 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.193"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.193.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.9 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.194"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.194.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.195"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.195.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.7 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.196"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.196.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.197"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.197.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.5 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.198"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.198.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.4 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.199"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.199.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.3 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.200"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.200.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.2 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.201"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.201.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.1 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.202"
+      ,
+      "transform":
+      {
+        "pos": "0 0 -0.375"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.202.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.0 0.0 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "m0.179"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/pbr03_m0.179.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.material"
+        ]
+        ,
+        "color": "0.0 0.796079 0.0 1.0"
+      }
+    }
+  },
+  {
+    "entity":{
+        "name": "tracer",
+        
+        "transform":
+        {
+          "pos": "0.0 0.0 0.0"
+          ,
+          "rotation": "0.0 0.0 0.0 -1.0"
+        }
+        ,
+        "render":
+        {
+          "mesh": "data/scenes/pbr03/entities/meshes/pbr03_tracer.mesh"
+          ,
+          "materials":
+          [
+            "data/scenes/pbr03/entities/materials/bodyNclothes.material",
+            "data/scenes/pbr03/entities/materials/glasses.material",
+            "data/scenes/pbr03/entities/materials/eyes.material",
+            "data/scenes/pbr03/entities/materials/hair.material"
+          ]
+          ,
+          "color": "1 1 1 1.0"
+        }
+    }
+  },
+  {
+    "xentity":
+    {
+      "name": "reactor2"
+      ,
+      "transform":
+      {
+        "pos": "-0.000742185 1.2553 0.150336"
+        ,
+        "rotation": "-0.500658 -0.497824 -0.502175 -0.499333"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/tracer_reactor2.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.002.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "xentity":
+    {
+      "name": "reactor3"
+      ,
+      "transform":
+      {
+        "pos": "-0.000742185 1.2553 0.174455"
+        ,
+        "rotation": "-0.707102 -0.00249958 -0.00249958 -0.707102"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/scenes/pbr03/entities/meshes/tracer_reactor3.mesh"
+        ,
+        "materials":
+        [
+          "data/scenes/pbr03/entities/materials/Material.001.material"
+        ]
+        ,
+        "color": "0.8 0.8 0.8 1.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "technique" : "objs_culled_by_gpu.tech",
+  "textures":
+  {
+    "albedo": "data/prefabs/red_maple/T_Bark_basecolor.dds",
+    "normal": "data/prefabs/red_maple/T_Bark_normal.dds"
+  }
+}

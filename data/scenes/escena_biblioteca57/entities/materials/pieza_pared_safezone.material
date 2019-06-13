@@ -1,0 +1,16 @@
+{
+  "textures":
+  {
+    "albedo": "entities/textures/pieza_fondo_safezone_Base_Color.dds"
+    ,
+    "roughness": "data/textures/defaults/white.dds"
+    ,
+    "metallic": "entities/textures/pieza_fondo_safezone_Height.dds"
+    ,
+    "normal": "entities/textures/pieza_fondo_safezone_Normal_DirectX.dds"
+    ,
+    "emissive": "entities/textures/pieza_fondo_safezone_Emissive.dds"
+    ,
+    "ao": "data/textures/defaults/white.dds"
+  }
+}

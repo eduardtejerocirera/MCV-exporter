@@ -1,0 +1,656 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_boton_pared"
+      ,
+      "transform":
+      {
+        "pos": "-4.87705 27.1416 47.4371"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "switch": {
+        "targets": [
+          { "target": "pieza_portcullis" }
+        ]
+      },
+      "tint": { "tint": "0.0 1.0 0.0 1.0" },
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": ".470128 0.948885 0.72704"
+            ,
+            "offset":
+            {
+              "pos": "0.0 0.548885 0.0"
+            }
+            ,
+            "group": "triggers",
+            "trigger":true
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_boton_pared.mesh"
+        ,
+        "materials":[
+          "data/materials/switch.material"
+        ],
+        "xmaterials":
+        [
+          "entities/materials/pieza_botones.material"
+        ]
+        ,
+        "color": "0.0313726 0.431373 0.529412 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_portcullis"
+      ,
+      "transform":
+      {
+        "pos": "-0.0271935 25 44.5321"
+        ,
+        "rotation": "0.0 0.707107 0.0 -0.707107"
+      }
+      ,
+      "kinematic_controller":{},
+      "mover": { "move_vector": "0 7 0" },
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "0.34 4.76082 4.7435"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.76082 0.0"
+            }
+            ,
+            "group": "wall"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_portcullis.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/portcullis_techo.material"
+        ]
+      }
+    }
+  },
+
+  {
+    "entity":
+    {
+      "name": "pieza_boton_pared001"
+      ,
+      "transform":
+      {
+        "pos": "-34.522 95.6851 4.5453"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,"switch": {
+        "targets": [
+          { "target": "pieza_portcullis_piso" }
+        ]
+      },
+      "tint": { "tint": "0.0 1.0 0.0 1.0" },
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": ".470128 0.948885 0.72704"
+            ,
+            "offset":
+            {
+              "pos": "0.0 0.548885 0.0"
+            }
+            ,
+            "group": "triggers",
+            "trigger":true
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_boton_pared001.mesh"
+        ,
+        "xmaterials":
+        [
+          "entities/materials/pieza_botones.material"
+        ]
+        ,
+        "materials":[
+          "data/materials/switch.material"
+        ],
+        "color": "0.0313726 0.431373 0.529412 1.0"
+      }
+    }
+  },
+
+  {
+    "entity":
+    {
+      "name": "pieza_portcullis_piso"
+      ,
+      "kinematic_controller":{},
+      "mover": { "move_vector": "0 7 0" },
+      "transform":
+      {
+        "pos": "-27.3123 93.1517 1.19931"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "7.754 5.5 0.4"
+            ,
+            "offset":
+            {
+              "pos": "0.0 5.5 0.0"
+            }
+            ,
+            "group": "wall"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_portcullis_piso.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/portcullis.material"
+        ]
+      }
+    }
+  },
+
+  {
+    "entity":
+    {
+      "prefab": "prefabs/BibliotecarioS/BibliotecarioS.json"
+      ,
+      "name": "bilbiotecarios"
+      ,
+      "transform":
+      {
+        "pos": "7.05856 24.3032 65.7554"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "kinematic_controller":{},
+      "bt_librarian":{
+        "speed": 2,
+        "waypoints":
+        [
+          "7.05856 24.3032 65.7554"
+          ,
+          "7.05856 24.3032 54.41"
+          ,
+          "-6.31345 24.3032 54.41"
+          ,
+          "-6.31345 24.3032 66.5425"
+        ]
+      }
+    }
+  },
+
+  {
+    "entity":
+    {
+      "prefab": "prefabs/BibliotecarioS8/BibliotecarioS8.json"
+      ,
+      "name": "bilbiotecarios8"
+      ,
+      "transform":
+      {
+        "pos": "-17.7061 49.4666 -22.3731"
+        ,
+        "rotation": "0.0 -0.953717 0.0 0.300706"
+      }
+      ,
+      "kinematic_controller":{},
+      "bt_librarian":{
+        "speed":2,
+        "book_distance":7,
+        "waypoint_distance": 2,
+        "waypoints":
+        [
+          "-17.7061 49.4666 -22.3731"
+          ,
+          "-23.77 49.4666 -9.1203"
+        ]
+      }
+    }
+  }
+
+  ,
+  {
+    "entity":
+    {
+      "prefab": "prefabs/BibliotecarioS12/BibliotecarioS12.json"
+      ,
+      "name": "bilbiotecarios12"
+      ,
+      "transform":
+      {
+        "pos": "15.68 65.8992 -21.72"
+        ,
+        "rotation": "0.0 -0.642788 0.0 -0.766044"
+      }
+      ,
+      "kinematic_controller":{},
+      "bt_librarian":{
+        "speed":2,
+        "book_distance":7,
+        "move_book":true,
+        "speed_books":0.75,
+        "waypoint_distance": 2,
+        "waypoints":
+        [
+          "15.68 65.8992 -21.72"
+          ,
+          "21.10 65.8992 -10.71"
+        ]
+      }
+    }
+  }
+  ,
+
+  {
+    "entity":
+    {
+      "name": "bibliotecario_plataforma"
+      ,
+      "transform":
+      {
+        "pos": "-17.2199 91.8328 20.8679"
+        ,
+        "rotation": "0.0 -0.34202 0.0 -0.939693"
+      }
+      ,
+      "kinematic_controller":{},
+      "bt_librarian":{
+        "speed": 1.25,
+        "waypoint_distance": 2,
+        "waypoints":
+        [
+          "-26.3789 93.2941 6.26302"
+          ,
+          "-23.7504 93.2941 15.1552"
+          ,
+          "-18.64 93.2941 19.85"
+        ]
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "5.0 0.8 4.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 0.8 0.0"
+            }
+            ,
+            "group": "floor"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_bibliotecario_plataforma.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/bibliotecario.material"
+        ]
+        ,
+        "color": "0.890196 0.6 0.6 1.0"
+      }
+    }
+  }
+
+  ,
+  {
+    "entity":
+    {
+      "name": "spawner_libro001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_spawner_libro001.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_spawner_libro001.mesh"
+        ,
+        "xmaterials":
+        [
+          "entities/materials/pieza_estanteria.material"
+        ],
+        "materials":[
+          "data/materials/minion.material"
+        ]
+      },
+      "book_spawner":{
+        "librarian": "bilbiotecarios8",
+        "spawning_point": "8.81 52.1 -22.59"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "spawner_libro002"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_spawner_libro002.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_spawner_libro002.mesh"
+        ,
+        "xmaterials":
+        [
+          "entities/materials/pieza_estanteria.material"
+        ],
+        "materials":[
+          "data/materials/minion.material"
+        ],
+        "color": "1 1 1 1"
+      },
+      "book_spawner":{
+        "librarian": "bilbiotecarios12",
+        "offset": 2,
+        "height": 2,
+        "spawning_point": "13 70 22.95"
+      }
+    }
+  },
+
+  {
+    "entity":
+    {
+      "name": "pieza_plate"
+      ,
+      "transform":
+      {
+        "pos": "20.7 65.15 23.48"
+        ,
+        "rotation": "0.0 -0.173648 0.0 -0.984808"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_plate.col_mesh"
+            ,
+            "group": "floor"
+          },
+          {
+            "shape": "box",
+            "half_size": "1 1 1"
+            ,
+            "offset":
+            {
+              "pos": "0.0 1 0.0"
+            },
+            "group": "triggers",
+            "trigger": true
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_plate.mesh"
+        ,
+        "xmaterials":
+        [
+          "entities/materials/pieza_botones.material"
+        ],
+        "materials":[
+          "data/materials/switch.material"
+        ],
+        "color": "0.0313726 0.431373 0.529412 1.0"
+      },
+      "pressure_plate": {
+        "targets": [
+          
+          { "target": "pieza_biblioteca_sobresaliente_movil" },
+          { "target": "pieza_estanteria_movil" }
+        ]
+      },
+      "tint": { "tint": "0.0 1.0 0.0 1.0" }
+    }
+  },
+
+  {
+    "xentity":
+    {
+      "name": "pieza_switch_piso"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_switch_piso.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_switch_piso.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_botones.material"
+        ]
+        ,
+        "color": "0.6 0.894118 0.6 1.0"
+      }
+    }
+  },
+
+  {
+    "entity":
+    {
+      "name": "pieza_estanteria_movil"
+      ,
+      "transform":
+      {
+        "pos": "0.0 4.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_estanteria_movil.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_estanteria_movil.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/pieza_estanteria.material"
+        ]
+      },
+      "kinematic_controller":{},
+      "mover": { "move_vector": "0 -4 0" }
+    }
+  },
+
+  {
+    "entity":
+    {
+      "name": "pieza_biblioteca_sobresaliente_movil"
+      ,
+      "transform":
+      {
+        "pos": "3.612 0 -1.712"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/escena_biblioteca57_pieza_biblioteca_sobresaliente_movil.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/escena_biblioteca57_pieza_biblioteca_sobresaliente_movil.mesh"
+        ,
+        "xmaterials":
+        [
+          "entities/materials/pieza_biblioteca_sobresaliente.material"
+        ],
+        "materials":[
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "1.0 1.0 1.0 1.0"
+      },
+      "kinematic_controller":{},
+      "mover": { "move_vector": "-3.612 0 1.712" }
+    }
+
+  }
+]

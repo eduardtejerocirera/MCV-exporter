@@ -1,0 +1,41 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_union_piso001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 1.80799e-06 41.3619"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_union_piso_pieza_union_piso001.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_union_piso_pieza_union_piso001.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.627451 0.627451 0.627451 1.0"
+      }
+    }
+  }
+]

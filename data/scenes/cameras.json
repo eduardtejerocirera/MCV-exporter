@@ -9,13 +9,37 @@
 			"camera": {
 				"fov": 60,
 				"near": 0.1,
-				"far": 100,
+				"far": 200,
 				"offset eye": "0 0 0",
 				"culling": {}
 			},
 			"culling": {},
 			"render_ao": {
 				"enabled": true
+			},
+			"render_blur": {
+				"enabled": false
+			},
+			"render_focus": {
+				"enabled": false
+			},
+			"render_bloom": {
+				"max_steps" : 4,
+				"threshold_min":1,
+				"threshold_max":1.140,
+				"multiplier":3,
+
+				"global_distance":1.1,
+				"w0":70,
+				"w1":56,
+				"w2":8,
+				"weights":"0.15 0.06 0.6 0.02"
+			},
+			"color_grading": {
+				"lut" : "data/textures/lut/M31-REC709.dds"
+			},
+			"color_banding": {
+				"noise" : "data/textures/whitenoise.dds"
 			}
 		}
 	},
@@ -29,12 +53,18 @@
 			"camera": {
 				"fov": 60,
 				"near": 0.1,
-				"far": 100,
+				"far": 200,
 				"offset eye": "0 0 0",
 				"sensor": {},
 				"culling": {}
 			},
-			"camera_flyover": {}
+			"camera_flyover": {
+				"speed":10,
+				"sensitivity":0.01,
+				"speed_reduction_factor":30,
+				"enabled":true
+			}
+
 		}
 	},
 	{
@@ -45,7 +75,7 @@
 			},
 			"camera": {
 				"near": 1,
-				"far": 100,
+				"far": 200,
 				"fov": 60,
 				"default": true,
 				"culling": {}
@@ -55,8 +85,8 @@
 				"curve": "data/curves/camera_curve_3rd.curve",
 				"ratio": 0.5,
 				"offset": "0 1.65 0",
-				"pitchSensitivity": 1,
-				"yawSensitivity": 1
+				"pitchSensitivity": 0.8,
+				"yawSensitivity": 0.8
 			},
 			"culling": {}
 		}
@@ -72,16 +102,16 @@
 			"camera": {
 				"fov": 60,
 				"near": 0.1,
-				"far": 100,
-				"offset eye": "-0.5 0 0",
-				"offset center": "-0.5 0 0"
+				"far": 200,
+				"offset eye": "-1 0 0",
+				"offset center": "-1 0 0"
 			},
 			"camera_orbit": {
 				"target": "Player",
 				"offset": 1.65,
 				"radius":2,
-				"pitchSensitivity": 1,
-				"yawSensitivity": 1
+				"pitchSensitivity": 0.8,
+				"yawSensitivity": 0.8
 			},
 			"culling": {}
 		}

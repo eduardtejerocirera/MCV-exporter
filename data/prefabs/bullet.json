@@ -9,7 +9,7 @@
 				"bullet_force": 10.0,
 				"shakeness": 0.1,
 				"ttl":10,
-				"damage":20
+				"damage":10
 			},
 			"ttl":{
 				"ttl" : 5.0

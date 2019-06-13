@@ -1,0 +1,29 @@
+[ 
+  {
+    "entity":
+    {
+      "name": "Test Animations"
+      ,
+      "transform": {
+        "pos": "0 0 0",
+        "rotation": "0 1 0 0"
+      },
+      
+      "armature":{
+        "help":["path hasta el archivo .skeleton correspondiente. En el mismo path tienen que estar los archivos .cmf, .csf y .caf"],
+        "src": "data/skeletons/test_animations/dark_princess.skeleton"
+      }
+      ,
+      "render":
+      {
+        "help": ["Este fichero .mesh debe tener el mismo nombre que el archivo .cmf en la carpeta de las animaciones."],
+        "mesh": "data/skeletons/test_animations/dark_princess.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/dp/dp.material"
+        ]
+      }
+    }
+  }
+]

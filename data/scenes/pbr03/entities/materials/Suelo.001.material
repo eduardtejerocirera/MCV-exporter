@@ -1,0 +1,9 @@
+{
+  "textures":
+  {
+    "albedo": "data/scenes/pbr03/entities/textures/marble_pattern.dds",
+    "normal": "data/scenes/pbr03/entities/textures/NormalMap.dds",
+    "roughness": "data/scenes/pbr03/entities/textures/marble_pattern.dds"
+
+  }
+}

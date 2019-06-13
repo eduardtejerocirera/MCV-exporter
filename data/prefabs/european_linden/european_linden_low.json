@@ -1,0 +1,18 @@
+[
+  {
+    "entity": {
+      "name": "european_linden_low",
+      "render": {
+        "mesh": "data/prefabs/european_linden/trees_EuropeanLinden_low.mesh",
+        "materials": [
+          "data/prefabs/european_linden/cap_03.material",
+          "data/prefabs/european_linden/bark.material",
+          "data/prefabs/european_linden/leaf.material"
+        ]
+      },
+      "transform": {
+        "scale": 0.05
+      }
+    }
+  }
+]

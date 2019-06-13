@@ -2,21 +2,91 @@
   "ui": {
     "vs_fx": "data/shaders/ui.fx",
     "vdecl": "PosUvColor",
-    "blend": "combinative"
+    "blend": "combinative",
+    "z" : "disable_all"
+  },
+  "ui_additive": {
+    "vs_fx": "data/shaders/ui.fx",
+    "vdecl": "PosUvColor",
+    "blend": "additive",
+    "z" : "disable_all"
   },
   "objs": {
     "vs_fx": "data/shaders/pbr.fx",
     "vdecl": "PosNUvT"
   },
-  "objs_instanced": {
+  "objs_alpha": {
     "vs_fx": "data/shaders/pbr.fx",
-    "vs" : "VS_instanced",
+    "ps" : "PS_alpha",
+    "vdecl": "PosNUvT"
+  },
+  "pbr_lava": {
+    "vs_fx": "data/shaders/pbr.fx",
+    "ps": "PS_lava",
+    "vdecl": "PosNUvT"
+  },
+  "pbr_test": {
+    "vs_fx": "data/shaders/pbr.fx",
+    "ps": "PS_test",
+    "vdecl": "PosNUvT"
+  },
+  "switch": {
+    "vs_fx": "data/shaders/pbr.fx",
+    "ps": "PS_switch",
+    "vdecl": "PosNUvT"
+  },  
+  "objs_instanced": {
+    "desc" : "Instances controlled by another vertex buffer. decl is decl_mesh1_x_decl_mesh2",
+    "vs_fx": "data/shaders/pbr.fx",
+    "vs": "VS_instanced",
     "vdecl": "PosNUvT_x_Instance"
   },
   "objs_skin": {
     "vs_fx": "data/shaders/pbr.fx",
     "vs": "VS_skin",
     "vdecl": "PosNUvTanSkin"
+  },
+  "objs_mix": {
+    "vs_fx": "data/shaders/pbr.fx",
+    "vdecl": "PosNUvT",
+    "ps" : "PS_gbuffer_mix"
+  },
+  "objs_num_instances": {
+    "desc" : "Instances controlled by num_instances component. Normal obj decl. Ps is the default pbr in pbr.fx",
+    "vs_fx": "data/shaders/gpu_particles_orbit.fx",
+    "vdecl": "PosNUvT",
+    "ps_fx": "data/shaders/pbr.fx",
+    "gpu_buffers" : {
+      "instances" : 0
+    }
+  },
+  "objs_culled_by_gpu": {
+    "desc" : "Instances result of gpu_culling",
+    "vs_fx": "data/shaders/gpu_culling.fx",
+    "vdecl": "PosNUvT",
+    "ps_fx": "data/shaders/pbr.fx",
+    "gpu_buffers" : {
+      "culled_instances" : 0
+    }
+  },
+  "objs_alpha_culled_by_gpu": {
+    "desc" : "Instances result of gpu_culling",
+    "vs_fx": "data/shaders/gpu_culling.fx",
+    "vdecl": "PosNUvT",
+    "ps_fx": "data/shaders/pbr.fx",
+    "ps" : "PS_alpha",
+    "gpu_buffers" : {
+      "culled_instances" : 0
+    }
+  },
+  "objs_morph": {
+    "desc" : "Single meshes with morph information",
+    "vs_fx": "data/shaders/pbr.fx",
+    "vs": "VS_morph",
+    "vdecl": "PosNUvPosNT",
+    "ctes_buffers" : {
+      "TCtesMorph" : 11
+    }
   },
   "debug_color": {
     "vs_fx": "data/shaders/basics.fx",
@@ -47,7 +117,7 @@
   },
   "shadows_instanced": {
     "vs_fx": "data/shaders/shadows.fx",
-    "vs" : "VS_instanced",
+    "vs": "VS_instanced",
     "vdecl": "Pos_x_Instance",
     "ps": "",
     "rs": "shadows"
@@ -65,34 +135,34 @@
     "ps": "",
     "rs": "shadows"
   },
-  "gbuffer_resolve" : {
+  "gbuffer_resolve": {
     "vs_fx": "data/shaders/screen_quad.fx",
     "vdecl": "PosColor",
     "ps_fx": "data/shaders/pbr.fx",
-    "ps" : "PS_GBuffer_Resolve",
-    "z" : "disable_all"
+    "ps": "PS_GBuffer_Resolve",
+    "z": "disable_all"
   },
-  "presentation" : {
+  "presentation": {
     "vs_fx": "data/shaders/screen_quad.fx",
     "vdecl": "PosColor",
     "ps_fx": "data/shaders/presentation.fx",
-    "z" : "disable_all"
+    "z": "disable_all"
   },
-  "pbr_ambient" : {
+  "pbr_ambient": {
     "vs_fx": "data/shaders/screen_quad.fx",
     "vdecl": "PosColor",
     "ps_fx": "data/shaders/pbr.fx",
-    "ps" : "PS_Ambient",
+    "ps": "PS_Ambient",
     "z": "disable_all",
     "envmap": "data/textures/cubemaps/env.dds",
     "irradiance": "data/textures/cubemaps/irradiance.dds"
   },
-  "pbr_skybox" : {
+  "pbr_skybox": {
     "vs_fx": "data/shaders/pbr.fx",
-    "vs" : "VS_skybox",
+    "vs": "VS_skybox",
     "vdecl": "PosColor",
     "ps_fx": "data/shaders/pbr.fx",
-    "ps" : "PS_skybox",
+    "ps": "PS_skybox",
     "z": "test_equal"
   },
   "pbr_point_lights": {
@@ -113,22 +183,57 @@
     "rs": "reverse_culling",
     "blend": "additive"
   },
-  "pbr_decals" : {
+  "pbr_decals": {
     "vs_fx": "data/shaders/pbr_decals.fx",
     "vdecl": "PosNUvT_x_InstanceColor",
-    "blend" : "combinative_gbuffer",
+    "blend": "combinative_gbuffer",
     "rs": "reverse_culling",
-    "z" : "inverse_test_no_write"
+    "z": "inverse_test_no_write"
   },
-  "water" : {
+  "water": {
     "vs_fx": "data/shaders/water.fx",
     "vdecl": "PosNUvT",
-    "noise" : "data/textures/noise_cloud2.dds"
+    "noise": "data/textures/noise_cloud2.dds"
   },
   "ao": {
     "vs_fx": "data/shaders/ao.fx",
     "vdecl": "PosColor",
     "z": "disable_all"
+  },
+  "blur": {
+    "vs_fx": "data/shaders/blur.fx",
+    "vdecl": "PosColor",
+    "z": "disable_all"
+  },
+  "focus": {
+    "vs_fx": "data/shaders/focus.fx",
+    "vdecl": "PosColor",
+    "z" : "disable_all"
+  },
+  "bloom_filter": {
+    "desc" : "Selects which pixels will create the bloom effect",
+    "vs_fx": "data/shaders/screen_quad.fx",
+    "ps_fx": "data/shaders/bloom.fx",
+    "ps": "PS_filter",
+    "vdecl": "PosColor",
+    "z" : "disable_all"
+  },
+  "bloom_add": {
+    "desc" : "Combines all blurred steps of the bloom into the final stage",
+    "vs_fx": "data/shaders/screen_quad.fx",
+    "ps_fx": "data/shaders/bloom.fx",
+    "ps": "PS_add",
+    "vdecl": "PosColor",
+    "z" : "disable_all",
+    "blend" : "additive"
+  },
+  "cs_particles_orbit" : {
+    "cs" : "cs_particles_orbit",
+    "cs_fx" : "data/shaders/gpu_particles_orbit.fx"
+  },
+  "cs_cull_instances" : {
+    "cs" : "cs_cull_instances",
+    "cs_fx" : "data/shaders/gpu_culling.fx"
   }
 }
 

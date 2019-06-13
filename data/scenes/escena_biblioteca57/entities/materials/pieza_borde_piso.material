@@ -1,0 +1,16 @@
+{
+  "textures":
+  {
+    "albedo": "entities/textures/1001_Base_Color.dds"
+    ,
+    "roughness": "data/textures/defaults/white.dds"
+    ,
+    "metallic": "entities/textures/1001_Roughness.dds"
+    ,
+    "normal": "entities/textures/1001_Normal_DirectX.dds"
+    ,
+    "emissive": "data/textures/defaults/black.dds"
+    ,
+    "ao": "entities/textures/1001_Mixed_AO.dds"
+  }
+}

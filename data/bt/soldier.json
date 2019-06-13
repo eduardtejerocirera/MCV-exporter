@@ -1,0 +1,91 @@
+{
+	"type": "Sequence",
+	"name": "rootNode",
+	"properties": [
+		{
+			"name": "Name",
+			"value": "soldier"
+		}
+	],
+	"childNodes": [
+		{
+			"type": "status",
+			"properties": [
+				{
+					"name": "status",
+					"value": "trying to escape"
+				}
+			],
+			"services": [
+				{
+					"type": "test_escape"
+				}
+			]
+		},
+		{
+			"type": "Sequence",
+			"properties": [
+				{
+					"name": "Name",
+					"value": "combat"
+				}
+			],
+			"childNodes": [
+				{
+					"type": "status",
+					"properties": [
+						{
+							"name": "status",
+							"value": "chasing enemy"
+						}
+					]
+				},
+				{
+					"type": "Random",
+					"properties": [
+						{
+							"name": "Name",
+							"value": "combat"
+						},
+						{
+							"name": "Ratios",
+							"value": "10 1"
+						}
+					],
+					"childNodes": [
+						{
+							"type": "shoot",
+							"decorators": [
+								{
+									"type": "equip_weapon"
+								}
+							]
+						},
+						{
+							"type": "shoot",
+							"decorators": [
+								{
+									"type": "equip_weapon",
+									"properties": [
+										{
+											"name": "weapon",
+											"value": "grenade"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "status"
+		}
+	],
+	"decorators": [
+		{
+			"type": "announce_soldier_name"
+		}
+	]
+}

@@ -7,7 +7,7 @@ float3 toneMappingReinhard(float3 hdr, float k = 1.0) {
 }
 
 float3 gammaCorrect( float3 linear_color ) {
-  return pow( abs(linear_color), 1. / 2.2 ); 
+  return pow( linear_color, 1. / 2.2 ); 
 }
 
 // -------------------------------------------------
@@ -31,6 +31,11 @@ float3 toneMappingUncharted2(float3 x) {
   return color;
 }
 
+float3 applyLUT( float3 in_color ) { 
+  float3 out_color = txLUT.Sample(samClampLinear, in_color.xyz);
+  return lerp( in_color, out_color, GlobalLUTAmount );
+}
+
 // -------------------------------------------------
 // What we actually present to the final backbuffer.
 float4 PS( 
@@ -41,21 +46,27 @@ float4 PS(
 
   int3 ss_load_coords = uint3(iPosition.xy, 0);
 
-  float3 hdrColor = txAlbedo.Load(ss_load_coords).xyz;
+  float3 hdrColor = txAlbedo.Sample(samLinear, iUV).xyz;
 
   hdrColor *= GlobalExposureAdjustment;
 
   float3 tmColorReinhard = toneMappingReinhard( hdrColor );
   float3 tmColorUC2 = toneMappingUncharted2( hdrColor );
-  float3 tmColor = tmColorReinhard;
+  float3 tmColor = tmColorUC2;
 
   float3 gammaCorrectedColor = gammaCorrect( tmColor );
 
   GBuffer g;
   decodeGBuffer( iPosition.xy, g );
 
-  if( GlobalRenderOutput == RO_COMPLETE )
-    return float4( gammaCorrectedColor, 1 );
+  if( GlobalRenderOutput == RO_COMPLETE ){
+    float3 out_color = applyLUT( gammaCorrectedColor );
+    return float4(out_color,1);
+    
+    float noise = txWhiteNoise.Sample(samLinear, iUV*4);
+    out_color += lerp(-0.5/255.0, 0.5/255.0, noise) * GlobalColorBanding;
+    return float4( out_color, 1 );
+  }
 
   if( GlobalRenderOutput == RO_ALBEDO )
     return txGAlbedo.Load(ss_load_coords);
@@ -77,8 +88,13 @@ float4 PS(
   }
   
   if( GlobalRenderOutput == RO_AO ) {
-    float  ao = txAO.Load(ss_load_coords).x;
+    float ao = txAO.Sample( samLinear, iUV).x * txGEmissive.Sample( samLinear, iUV).w;
     return ao;
+  }
+
+  if( GlobalRenderOutput == RO_EMISSIVE ) {
+    float4  emissive = txGEmissive.Load(ss_load_coords);
+    return emissive;
   }
 
   if( GlobalRenderOutput == RO_METALLIC ) {

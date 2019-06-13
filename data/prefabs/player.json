@@ -30,6 +30,10 @@
         "total_minions": 150,
         "initial_minions": 150,
         "recover_rate": 1
+      },      
+      "skel_lookat": {
+        "target": "0 0 5",
+        "amount":0
       },
       "minion_bar": {},
       "health_manager":{},

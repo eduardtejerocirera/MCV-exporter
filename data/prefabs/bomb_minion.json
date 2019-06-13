@@ -6,7 +6,7 @@
       },
       "name": "bomb_minion",
       "render": {
-        "mesh": "data/meshes/minion.mesh",
+        "mesh": "data/meshes/minion_ball.mesh",
         "material": "data/materials/minion2.material"
       }
     }

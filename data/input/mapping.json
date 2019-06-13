@@ -8,7 +8,7 @@
   {
     "name":"melee",
     "check":"any",
-    "buttons":["e"]
+    "buttons":["e", "gamepad_b"]
   },
   {
     "name" : "walk",
@@ -17,6 +17,21 @@
   },
   {
     "name" : "jump",
+    "check" : "any",
+    "buttons" : ["space"]
+  },
+  {
+    "name" : "menu_next",
+    "check" : "any",
+    "buttons" : ["down"]
+  },
+  {
+    "name" : "menu_prev",
+    "check" : "any",
+    "buttons" : ["up"]
+  },
+  {
+    "name" : "menu_confirm",
     "check" : "any",
     "buttons" : ["space"]
   },
@@ -111,27 +126,27 @@
   {
     "name":"grab",
     "check":"any",
-    "buttons":["g"]
+    "buttons":["g","gamepad_rbutton"]
   },  
   {
     "name":"grab_forward",
     "check":"any",
-    "buttons":["up"]
+    "buttons":["up", "gamepad_dpad_up"]
   },
   {
     "name":"grab_left",
     "check":"any",
-    "buttons":["left"]
+    "buttons":["left", "gamepad_dpad_left"]
   },
   {
     "name":"grab_backward",
     "check":"any",
-    "buttons":["down"]
+    "buttons":["down", "gamepad_dpad_down"]
   },
   {
     "name":"grab_right",
     "check":"any",
-    "buttons":["right"]
+    "buttons":["right", "gamepad_dpad_right"]
   },
 
 

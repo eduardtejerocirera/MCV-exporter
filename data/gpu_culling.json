@@ -1,0 +1,55 @@
+{
+    
+    "compute" : {
+        "cs" : "cs_cull_instances.compute",
+        "sizes" : [1, 1, 1]
+    },
+
+    "buffers" : {
+        "instances" : {
+            "bytes_per_elem" : 96,
+            "num_elems" : 2048,
+            "desc" : "Hold each obj instance candidate to be culled and rendered"
+        },
+        "culled_instances" : {
+            "bytes_per_elem" : 64,
+            "num_elems" : 8192,
+            "desc" : "Hold each obj instance which has been culled"
+        },
+        "prefabs" : {
+            "bytes_per_elem" : 48,
+            "num_elems" : 64,
+            "desc" : "Array of Prefabs. Each prefabs defines which draw calls must be rendered"
+        },
+        "TCullingPlanes" : {
+            "total_bytes" : 112,
+            "slot" : 11,
+            "desc" : "Planes to perform the culling test"
+        },
+        "draw_datas" : {
+            "bytes_per_elem" : 32,
+            "num_elems" : 64,
+            "is_indirect" : true,
+            "desc" : "Holds how many instances of each type have passes the culling test"
+        },
+        "TCtesInstancing" : {
+            "total_bytes" : 16,
+            "slot" : 12,
+            "desc" : "Notify the CS how many instances must handle"
+        }
+    },
+
+    "sample_data" : {
+        "radius" : 250.0,
+        "num_instances" : 1024,
+        "prefabs" : [
+            "data/prefabs/european_linden/european_linden_hi.json",
+            "data/prefabs/red_maple/red_maple_hi.json",
+            "data/prefabs/white_oak/white_oak_hi.json"
+        ]
+    },
+
+    "show_debug" : true,
+    "xcamera" : "light_dir",
+    "camera" : "Camera"
+}

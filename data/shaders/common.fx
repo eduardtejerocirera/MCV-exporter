@@ -1,3 +1,6 @@
+
+#ifndef _COMMON_
+#define _COMMON_
 //--------------------------------------------------------------------------------------
 // Constant Buffer Variables
 //--------------------------------------------------------------------------------------
@@ -9,6 +12,8 @@ Texture2D    txAlbedo         TEXTURE_SLOT(TS_ALBEDO);
 Texture2D    txNormal         TEXTURE_SLOT(TS_NORMAL);
 Texture2D    txMetallic       TEXTURE_SLOT(TS_METALLIC);
 Texture2D    txRoughness      TEXTURE_SLOT(TS_ROUGHNESS);
+Texture2D    txEmissive       TEXTURE_SLOT(TS_EMISSIVE);
+Texture2D    txAOC            TEXTURE_SLOT(TS_AO);
 
 Texture2D    txProjector      TEXTURE_SLOT(TS_PROJECTOR);
 Texture2D    txLightShadowMap TEXTURE_SLOT(TS_LIGHT_SHADOW_MAP);
@@ -16,6 +21,10 @@ TextureCube  txEnvironmentMap TEXTURE_SLOT(TS_ENVIRONMENT_MAP);
 TextureCube  txIrradianceMap  TEXTURE_SLOT(TS_IRRADIANCE_MAP);
 
 Texture2D    txNoise          TEXTURE_SLOT(TS_NOISE_MAP);
+Texture2D    txDFG            TEXTURE_SLOT(TS_PBR_DFG);
+
+Texture3D    txLUT            TEXTURE_SLOT(TS_LUT_COLOR_GRADING);
+Texture2D    txWhiteNoise     TEXTURE_SLOT(TS_WHITE_NOISE);
 
 // Output from deferred
 Texture2D    txGAlbedo        TEXTURE_SLOT(TS_DEFERRED_ALBEDOS);
@@ -23,7 +32,36 @@ Texture2D    txGNormal        TEXTURE_SLOT(TS_DEFERRED_NORMALS);
 Texture2D    txGLinearDepth   TEXTURE_SLOT(TS_DEFERRED_LINEAR_DEPTH);
 Texture2D    txAccLights      TEXTURE_SLOT(TS_DEFERRED_ACC_LIGHTS);
 Texture2D    txAO             TEXTURE_SLOT(TS_DEFERRED_AO);
+Texture2D    txGEmissive      TEXTURE_SLOT(TS_DEFERRED_EMISSIVE);
 
+// Bloom
+Texture2D    txBloom0         TEXTURE_SLOT(0);
+Texture2D    txBloom1         TEXTURE_SLOT(1);
+Texture2D    txBloom2         TEXTURE_SLOT(2);
+Texture2D    txBloom3         TEXTURE_SLOT(3);
+
+// --------------------------------------------
+// Mix Material Extra Textures
+// 2nd material
+Texture2D    txAlbedo1         TEXTURE_SLOT( TS_ALBEDO1 );
+Texture2D    txNormal1         TEXTURE_SLOT( TS_NORMAL1 );
+//Texture2D    txMetallic1     TEXTURE_SLOT( TS_METALLIC1 );
+//Texture2D    txRoughness1    TEXTURE_SLOT( TS_ROUGHNESS1 );
+//Texture2D    txEmissive1     TEXTURE_SLOT( TS_EMISSIVE1 );
+//Texture2D    txAO1           TEXTURE_SLOT( TS_AO1 );
+
+// 3rd material
+Texture2D    txAlbedo2         TEXTURE_SLOT( TS_ALBEDO2 );
+Texture2D    txNormal2         TEXTURE_SLOT( TS_NORMAL2 );
+//Texture2D    txMetallic2       TEXTURE_SLOT( TS_METALLIC2 );
+//Texture2D    txRoughness2      TEXTURE_SLOT( TS_ROUGHNESS2 );
+//Texture2D    txEmissive2     TEXTURE_SLOT( TS_EMISSIVE2 );
+//Texture2D    txAO2           TEXTURE_SLOT( TS_AO2 );
+
+Texture2D    txMixBlendWeights TEXTURE_SLOT( TS_MIX_BLEND_WEIGHTS );
+// --------------------------------------------
+
+// Samplers
 SamplerState samLinear        : register(s0);
 SamplerState samBorderColor   : register(s1);
 SamplerComparisonState samPCF : register(s2);
@@ -64,6 +102,7 @@ float4x4 getSkinMtx( VS_SKINNING skin ) {
 
 //--------------------------------------------------------------------------------------
 float2 hash2(float n) { return frac(sin(float2(n, n + 1.0))*float2(43758.5453123, 22578.1459123)); }
+float rand( float x ) { return frac( sin(x) * 43758.5453 ); }
 
 float2 vogelDiskSample(int sampleIndex, int samplesCount, float phi)
 {
@@ -152,6 +191,14 @@ float3 decodeNormal( float3 n ) {
   return ( n.xyz * 2. - 1. );
 }
 
+float3x3 computeTBN( float3 inputN, float4 inputT ) {
+  // Prepare a 3x3 matrix to convert from tangent space to world space
+  float3 N = inputN; 
+  float3 T = inputT.xyz;
+  float3 B = cross( N, T ) * inputT.w;
+  return float3x3( T, B, N );
+}
+
 //--------------------------------------------------------------------------------------
 // screen_coords va entre 0..1024
 //--------------------------------------------------------------------------------------
@@ -190,3 +237,28 @@ float3 getWorldCoords(float2 screen_coords, float zlinear_normalized) {
   float3 view_dir = mul( float4( screen_coords, 1, 1 ), CameraScreenToWorld ).xyz;
   return view_dir * zlinear_normalized + CameraPosition;
 }
+
+
+
+
+
+//--------------------------------------------------------------------------------------
+void computeBlendWeights( float t1_a
+                        , float t2_a
+                        , float t3_a
+                        , out float w1
+                        , out float w2 
+                        , out float w3 
+                        ) {
+  float depth = 0.05;
+  float ma = max( t1_a, max( t2_a, t3_a ) ) - depth;
+  float b1 = max( t1_a - ma, 0 );
+  float b2 = max( t2_a - ma, 0 );
+  float b3 = max( t3_a - ma, 0 );
+  float b_total = b1 + b2 + b3;
+  w1 = b1 / ( b_total );
+  w2 = b2 / ( b_total );
+  w3 = b3 / ( b_total );
+}
+
+#endif

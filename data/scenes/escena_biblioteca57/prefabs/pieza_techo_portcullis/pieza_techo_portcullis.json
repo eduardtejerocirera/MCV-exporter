@@ -1,0 +1,83 @@
+[
+  {
+    "entity":
+    {
+      "name": "techo_portcullis001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_techo_portcullis_techo_portcullis001.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_techo_portcullis_techo_portcullis001.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.6 0.894118 0.6 1.0"
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "name": "pieza_portcullis001"
+      ,
+      "transform":
+      {
+        "pos": "1.47007 -0.541375 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_techo_portcullis_pieza_portcullis001.col_mesh"
+            ,
+            "group": "wall"
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_techo_portcullis_pieza_portcullis001.mesh"
+        ,
+        "materials":
+        [
+          "pieza_portcullis.material"
+        ]
+      }
+    }
+  }
+]

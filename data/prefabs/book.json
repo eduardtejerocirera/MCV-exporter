@@ -12,14 +12,21 @@
                 "mesh": "data/meshes/Box001_PosNUvT.mesh",
                 "color": "1.0 1.0 1.0 1.0",
                 "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
-            },
+            },"render": {
+              "mesh": "data/meshes/Box001_PosNUvT.mesh",
+              "color": "0.0 0.0 1.0 1.0",
+              "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
+          },
             "collider":
             {
               "shapes":
               [
                 {
                   "shape": "box",
-                  "half_size": "0.5 0.5 0.5"
+                  "half_size": "0.5 0.5 0.5",
+                  "offset": {
+                    "pos":"0 0.5 0.0"
+                  }
                 }
               ],
               "dynamic": true,

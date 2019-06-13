@@ -1,0 +1,83 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_piso_portcullis001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_piso_portcullis_pieza_piso_portcullis001.col_mesh"
+            ,
+            "group": "floor"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_piso_portcullis_pieza_piso_portcullis001.mesh"
+        ,
+        "materials":
+        [
+          "pieza_piso_portcullis.material"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "xentity":
+    {
+      "name": "pieza_portcullis_piso001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_piso_portcullis_pieza_portcullis_piso001.col_mesh"
+            ,
+            "group": "wall"
+            ,
+            "kinematic": true
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_piso_portcullis_pieza_portcullis_piso001.mesh"
+        ,
+        "materials":
+        [
+          "pieza_portcullis_piso.material"
+        ]
+      }
+    }
+  }
+]

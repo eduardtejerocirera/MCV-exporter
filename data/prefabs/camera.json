@@ -1,22 +1,35 @@
 [
 	{
-		"entity" : {
-			"transform" : {
-				"pos" : "35 35 -20",
-        "lookat" : "0 0 0"
-			},
+    "entity": {
+      "transform": {
+        "pos": "35 35 -20",
+        "lookat": "0 0 0"
+      },
       "name": "Camera",
       "culling": {},
-			"camera" : {
-			},
+      "camera": {
+      },
       "render_ao": {
         "enabled": true
       },
       "camera_flyover": {
         "key": "1"
-      }, 
-			"sensor" : {
-			}
-		}
+      },
+      "sensor": {
+      },
+      "render_blur": {
+        "enabled": false
+      },
+      "render_focus": {
+        "enabled": false
+      },
+      "render_bloom": {
+        "max_steps" : 4
+      },
+      "color_grading": {
+        "lut" : "data/textures/lut/lut1.dds",
+        "enabled": false
+      }
+    }
 	}
 ]

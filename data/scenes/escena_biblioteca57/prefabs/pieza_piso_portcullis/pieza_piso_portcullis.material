@@ -1,0 +1,16 @@
+{
+  "textures":
+  {
+    "albedo": "pieza_piso_porticullis_Base_Color.dds"
+    ,
+    "roughness": "pieza_piso_porticullis_Metallic.dds"
+    ,
+    "metallic": "pieza_piso_porticullis_Roughness.dds"
+    ,
+    "normal": "pieza_piso_porticullis_Normal_DirectX.dds"
+    ,
+    "emissive": "data/textures/defaults/black.dds"
+    ,
+    "ao": "pieza_piso_porticullis_Mixed_AO.dds"
+  }
+}

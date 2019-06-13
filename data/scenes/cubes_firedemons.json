@@ -1,0 +1,65 @@
+[
+  {
+    "entity":
+    {
+      "prefab": "data/prefabs/firedemon.json"
+      ,
+      "name": "Enemy_Box_1"
+      ,
+      "transform":
+      {
+        "pos": "0.259151 4.11392e-07 9.41156"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  }
+  ,
+  {
+    "xentity":
+    {
+      "prefab": "data/prefabs/firedemon.json"
+      ,
+      "name": "Box002"
+      ,
+      "transform":
+      {
+        "pos": "-50.8888 1.78623e-06 40.8642"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  }
+  ,
+  {
+    "xentity":
+    {
+      "prefab": "data/prefabs/firedemon.json"
+      ,
+      "name": "Box003"
+      ,
+      "transform":
+      {
+        "pos": "-50.1169 -2.03274e-06 -46.5036"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  }
+  ,
+  {
+    "xentity":
+    {
+      "prefab": "data/prefabs/firedemon.json"
+      ,
+      "name": "Box004"
+      ,
+      "transform":
+      {
+        "pos": "49.4825 -2.20772e-06 -50.5066"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  }
+]

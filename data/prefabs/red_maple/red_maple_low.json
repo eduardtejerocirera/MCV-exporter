@@ -1,0 +1,18 @@
+[
+  {
+    "entity": {
+      "name": "red_maple_low",
+      "render": {
+        "mesh": "data/prefabs/red_maple/red_maple_low.mesh",
+        "materials": [
+          "data/prefabs/red_maple/cap_03.material",
+          "data/prefabs/red_maple/leaf.material",
+          "data/prefabs/red_maple/bark.material"
+        ]
+      },
+      "transform": {
+        "scale": 0.1
+      }
+    }
+  }
+]

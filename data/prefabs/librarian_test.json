@@ -30,7 +30,7 @@
               "kinematic": true
             },
             "bt_librarian":{
-              "speed": 2,
+              "speed": 5,
               "waypoints" : [
                   "0 5 0",
                   "10 5 0",
@@ -57,7 +57,25 @@
           "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
       },
       "book_spawner":{
-        "librarian": "librarian01"
+        "librarian": "librarian01",
+        "spawning_point": "-8 0 0"
+      },
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box",
+            "half_size": "0.5 0.5 0.5",
+            "group":"floor",
+            "offset": {
+              "pos":"0 0.5 0.0"
+            }
+            
+          }
+        ],
+        "dynamic":true,
+        "kinematic": true
       }
   
     }

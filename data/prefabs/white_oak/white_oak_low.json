@@ -1,0 +1,17 @@
+[
+  {
+    "entity": {
+      "name": "white_oak_low",
+      "render": {
+        "mesh": "data/prefabs/white_oak/white_oak_low.mesh",
+        "materials": [
+          "data/prefabs/white_oak/bark.material",
+          "data/prefabs/white_oak/leaf_Mobile.material"
+        ]
+      },
+      "transform": {
+        "scale": 0.02
+      }
+    }
+  }
+]

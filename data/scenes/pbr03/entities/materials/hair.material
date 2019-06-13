@@ -1,0 +1,16 @@
+{
+  "textures":
+  {
+    "albedo": "data/scenes/pbr03/entities/textures/hair_albedo.dds"
+    ,
+    "roughness": "data/textures/defaults/white.dds"
+    ,
+    "metallic": "data/textures/defaults/metal004.dds"
+    ,
+    "normal": "data/scenes/pbr03/entities/textures/hair_normal.dds"
+    ,
+    "emissive": "data/textures/defaults/black.dds"
+    ,
+    "ao": "data/scenes/pbr03/entities/textures/hair_uA.dds"
+  }
+}

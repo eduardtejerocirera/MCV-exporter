@@ -9,7 +9,9 @@
           "controller": true,
           "radius": 0.5,
           "height": 1.5,
-          "group":"enemy"
+          "group":"enemy",
+          "xmask": "all",
+          "xgroup": "all"
         },
         "render": {
           "mesh": "data/skeletons/firedemon/fdbody_low.mesh",

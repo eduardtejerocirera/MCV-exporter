@@ -1,0 +1,16 @@
+{
+  "textures":
+  {
+    "albedo": "piso_lava_basecolor.dds"
+    ,
+    "roughness": "piso_lava_metallic.dds"
+    ,
+    "metallic": "piso_lava_roughness.dds"
+    ,
+    "normal": "piso_lava_normal.dds"
+    ,
+    "emissive": "piso_lava_emissive.dds"
+    ,
+    "ao": "data/textures/defaults/white.dds"
+  }
+}

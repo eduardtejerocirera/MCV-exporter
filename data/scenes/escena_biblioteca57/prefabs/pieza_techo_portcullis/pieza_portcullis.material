@@ -1,0 +1,16 @@
+{
+  "textures":
+  {
+    "albedo": "pieza_portcullis_Base_Color.dds"
+    ,
+    "roughness": "data/textures/defaults/white.dds"
+    ,
+    "metallic": "pieza_portcullis_Roughness.dds"
+    ,
+    "normal": "pieza_portcullis_Normal_DirectX.dds"
+    ,
+    "emissive": "data/textures/defaults/black.dds"
+    ,
+    "ao": "pieza_portcullis_Mixed_AO.dds"
+  }
+}

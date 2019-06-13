@@ -18,7 +18,9 @@
     "render",
     "logic_manager",
     "test_instancing",
-    "test_cameras"
+    "test_cameras",
+    "ui",
+    "gpu_culling"
   ],
   "render_debug": [
     "splash",
@@ -33,9 +35,11 @@
     "physics",
     "sample_objs",
     "camera_mixer",
+    "gpu_culling",
+    "test_cameras",
     "camera_manager",
     "checkpoints",
     "logic_manager",
-	"boids"
+	  "boids"
   ]
 }

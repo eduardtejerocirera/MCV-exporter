@@ -1,0 +1,39 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_bilbioteca_plano_esquina001"
+      ,
+      "transform":
+      {
+        "pos": "15.2354 1.42236e-06 32.5398"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "pieza_bilbioteca_plano_esquina_pieza_bilbioteca_plano_esquina001.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "pieza_bilbioteca_plano_esquina_pieza_bilbioteca_plano_esquina001.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/minion.material"
+        ]
+        ,
+        "color": "0.627451 0.627451 0.627451 1.0"
+      }
+    }
+  }
+]

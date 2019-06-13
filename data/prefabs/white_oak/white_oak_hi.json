@@ -1,0 +1,23 @@
+[
+  {
+    "entity": {
+      "name": "white_oak_hi",
+      "render": {
+        "mesh": "data/prefabs/white_oak/white_oak_hi.mesh",
+        "materials": [
+          "data/prefabs/white_oak/cap_02.material",
+          "data/prefabs/white_oak/bark.material",
+          "data/prefabs/white_oak/leaf_1.material",
+          "data/prefabs/white_oak/leaf_3.material"
+        ]
+      },
+      "transform": {
+        "scale": 0.02
+      },
+      "lod" : {
+        "replacement_prefab" : "data/prefabs/white_oak/white_oak_low.json",
+        "threshold" : 50.0
+      }
+    }
+  }
+]

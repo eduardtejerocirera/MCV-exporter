@@ -1,0 +1,19 @@
+{
+    "name":"test_animations",
+    "meshes":[ 
+        "dark_princess"
+    ],
+    "folder": "test_animations",
+    "csf": "dark_princess.csf",
+
+    "anims":[
+	{ "name": "dark_princess_combatidle" },
+	{ "name": "dark_princess_idle1" },
+	{ "name": "dark_princess_idle2" },
+	{ "name": "dark_princess_jump" },
+	{ "name": "dark_princess_shoot" },
+	{ "name": "dark_princess_wall" }
+
+    ],
+    "extra":[ "Face"]
+}

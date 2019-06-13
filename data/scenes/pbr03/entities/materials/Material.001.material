@@ -1,0 +1,7 @@
+{
+  "technique":"pbr_test.tech",
+  "textures":
+  {
+    "albedo": "data/textures/defaults/white.dds"
+  }
+}

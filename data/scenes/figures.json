@@ -19,7 +19,7 @@
         ,
         "materials":
         [
-          "data/textures/sculptedfloorboards4/sculptedfloorboards4.material"
+          "data/materials/mix.material"
         ]
       }
     }

@@ -1,0 +1,134 @@
+{
+	"name" : "main_menu",
+	"alias" :"root",
+	"children" : 
+	[
+		{
+			"name" : "background",
+			"type" : "image",
+			"texture" : "data/ui/textures/menu_anim_background.dds",
+			"size" : "1280 640",
+			"maxUV" : "0.5 1.0",
+			"effects" : [
+				{
+					"type" : "animate_uv",
+					"speed" : "0.02 0.0"
+				}
+			]
+		},
+		{
+			"name" : "foreground",
+			"type" : "image",
+			"texture" : "data/ui/textures/menu_logo.dds",
+			"size" : "1280 640",
+			"scale" : "0.5 0.5",
+			"effects" : [
+				{
+					"type" : "scale",
+					"duration" : 2.0,
+					"scale" : "1.0 1.0",
+					"mode" : "ping_pong",
+					"interpolator" : "quad"
+				}
+			]
+		},
+		{
+			"name" : "logo",
+			"type" : "image",
+			"texture" : "data/ui/textures/menu_foreground.dds",
+			"size" : "1024 480",
+			"additive" : true
+		},
+		{
+			"name" : "life",
+			"position" : "800 20",
+			"children" : 
+			[
+				{
+					"name" : "progress_back",
+					"type" : "image",
+					"texture" : "data/ui/textures/battery_empty.dds",
+					"size" : "146 38"
+				},
+				{
+					"name" : "progress_fill",
+					"alias" : "life_bar",
+					"type" : "progress",
+					"texture" : "data/ui/textures/battery_full.dds",
+					"size" : "146 38",
+					"var" : "life"
+				}
+			]
+		},
+		{
+			"name" : "buttons",
+			"position" : "800 400",
+			"children" :
+			[
+				{
+					"name" : "bt_start",
+					"alias" : "bt_start",
+					"position" : "0 0",
+					"type" : "button",
+					"text" :  "START",
+					"texture" : "data/ui/textures/menu_boton.dds",
+					"font_texture" : "data/ui/textures/font.dds",
+					"size" : "224 24",
+					"font_size" : "20 20",
+					"states" : [
+						{
+							"name" : "enabled",
+							"color" : "255 255 255 128"
+						},
+						{
+							"name" : "selected",
+							"color" : "255 255 255 255"
+						}
+					]
+				},
+				{
+					"name" : "bt_continue",
+					"alias" : "bt_continue",
+					"position" : "0 30",
+					"type" : "button",
+					"text" :  "CONTINUE",
+					"texture" : "data/ui/textures/menu_boton.dds",
+					"font_texture" : "data/ui/textures/font.dds",
+					"size" : "224 24",
+					"font_size" : "20 20",
+					"states" : [
+						{
+							"name" : "enabled",
+							"color" : "255 255 255 128"
+						},
+						{
+							"name" : "selected",
+							"color" : "255 255 255 255"
+						}
+					]
+				},
+				{
+					"name" : "bt_exit",
+					"alias" : "bt_exit",
+					"position" : "0 60",
+					"type" : "button",
+					"text" :  "EXIT",
+					"texture" : "data/ui/textures/menu_boton.dds",
+					"font_texture" : "data/ui/textures/font.dds",
+					"size" : "224 24",
+					"font_size" : "20 20",
+					"states" : [
+						{
+							"name" : "enabled",
+							"color" : "255 255 255 128"
+						},
+						{
+							"name" : "selected",
+							"color" : "255 255 255 255"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -35,7 +35,7 @@ VS_OUTPUT VS(
 //--------------------------------------------------------------------------------------
 float4 PS(VS_OUTPUT input) : SV_Target
 {
-//  return float4(input.Uv, 0, 1);
-  float4 texture_color = txAlbedo.Sample(samLinear, input.Uv);
-  return texture_color * input.Color;
+  float2 final_uv = lerp(UIminUV, UImaxUV, input.Uv);
+  float4 texture_color = txAlbedo.Sample(samLinear, final_uv.xy);
+  return texture_color * input.Color * UItint;
 }

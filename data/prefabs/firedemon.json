@@ -1,14 +1,13 @@
 [{
     "entity": {
-        "name": "Enemy2",
-        "prefab": "data/prefabs/enemy.json",
+        "name": "FireDemon",
         "transform": {},
         "bt_basic_melee": {
             "waypoints": [
-                "10 0 10",
-                "-10 0 10",
-                "-10 0 -10",
-                "10 0 -10"
+              "-1 0 5",
+                "0 0 10",
+                "1 0 5",
+                "0 0 0"
             ]
         },
         "fsm": {
@@ -16,7 +15,38 @@
             "autoplay": true
         },
         "melee_task":{
-            "damage":5
-        }
-    }
+            "damage": 20
+        },
+        "collider": {
+          "shape": "capsule",
+          "controller": true,
+          "radius": 0.5,
+          "height": 1.5,
+          "group":"enemy"
+        },
+        "abs_aabb":{},
+        "xlocal_aabb":{},
+        "render": {
+          "mesh": "data/skeletons/firedemon/fdbody_low.mesh",
+          "materials": [
+            "data/materials/fd/fdbody.material",
+            "data/materials/fd/fdchains.material"            
+          ],
+          "color": "1.0 1.0 1.0 1.0"
+        },
+        "armature": {
+          "src": "data/skeletons/firedemon/firedemon.skeleton"
+        },
+        "vulnerability": {
+          "recover_rate": 0.0,
+          "max_health": 50,
+          "initial_health": 50
+        },
+        "destructive_death": {},
+        "character_controller": {},
+        "shooter": {},
+        "msg_logger": true,
+        "grabbable": {},
+        "targetable":{}
+      }
 }]

@@ -15,6 +15,13 @@
         "group": "enemy"
       },
       "render": {
+        "mesh": "data/meshes/Teapot001.mesh",
+        "color": "1.0 1.0 1.0 1.0",
+        "materials": [
+          "data/materials/iron.material"
+        ]
+      },
+      "Xrender": {
         "mesh": "data/skeletons/Bip001/fdbody_low.mesh",
         "materials": [
           "data/materials/fd/fdbody.material",
@@ -22,7 +29,7 @@
         ],
         "color": "1.0 1.0 1.0 1.0"
       },
-      "armature": {
+      "Xarmature": {
         "src": "data/skeletons/Bip001/Bip001.skeleton"
       },
       "character_controller": {},

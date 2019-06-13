@@ -1,0 +1,76 @@
+{
+	"start" : "idle",
+	"states" :
+	[
+		{
+			"name" : "idle",
+			"type" : "idleAction"
+		},
+		{
+			"name" : "walk",
+			"type" : "walkAction"
+		},
+		{
+			"name" : "jump",
+			"type" : "jumpAction"
+		}
+	],
+	"transitions":
+	[
+		{
+			"source" : "idle",
+			"target" : "walk",
+			"type" : "checkVariable",
+			"operator" : "greater",
+			"variable" :
+			{
+				"name" : "speed",
+				"type" : "float",
+				"value" : 0.0
+			}
+		},
+		{
+			"source" : "walk",
+			"target" : "idle",
+			"type" : "checkVariable",
+			"operator" : "equal",
+			"variable" :
+			{
+				"name" : "speed",
+				"type" : "float",
+				"value" : 0.0
+			}
+		},
+		{
+			"source" : "idle",
+			"target" : "jump",
+			"type" : "checkVariable",
+			"operator" : "equal",
+			"variable" :
+			{
+				"name" : "jump",
+				"type" : "boolean",
+				"value" : true
+			}
+		},
+		{
+			"source" : "jump",
+			"target" : "idle",
+			"type" : "checkTime",
+			"duration" : 3.0
+		}
+	],
+	"variables" :
+	[
+		{
+			"name" : "speed",
+			"type" : "float",
+			"value" : 0.0
+		},
+		{
+			"name" : "jump",
+			"type" : "boolean",
+			"value" : false
+		}
+	]
+}

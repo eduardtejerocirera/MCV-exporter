@@ -1,0 +1,16 @@
+{
+  "textures":
+  {
+    "albedo": "entities/textures/mat_pieza_borde_plataformas_Base_Color.dds"
+    ,
+    "roughness": "data/textures/defaults/white.dds"
+    ,
+    "metallic": "entities/textures/mat_pieza_borde_plataformas_Roughness.dds"
+    ,
+    "normal": "entities/textures/mat_pieza_borde_plataformas_Normal_DirectX.dds"
+    ,
+    "emissive": "data/textures/defaults/black.dds"
+    ,
+    "ao": "entities/textures/mat_pieza_borde_plataformas_Mixed_AO.dds"
+  }
+}

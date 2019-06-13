@@ -1,0 +1,8 @@
+{
+  "technique" : "objs_alpha_culled_by_gpu.tech",
+  "textures":
+  {
+    "albedo": "data/prefabs/red_maple/T_Leaves_BaseColor.dds",
+    "normal": "data/prefabs/red_maple/T_Leaves_Normal.dds"
+  }
+}

@@ -1,0 +1,83 @@
+{
+    "nodes": [
+        {   "name":"MCV_ENGINE_NODE",            
+            "isAbstract": true,
+            "isComposite": true,
+            "description": "{{Name}}",
+            "properties":[
+                {"name": "Name",
+                  "default": "",
+                  "type": "string"
+                }
+            ]
+        },
+        {   "name": "Random",
+            "base": "MCV_ENGINE_NODE",
+            "icon": "random",
+            "description": "{{Name}}\nRatios: {{Ratios}}",
+            "properties":[
+                {"name": "Ratios",
+                "default": "1",
+                "type": "string"
+                }
+            ]
+        },
+        {   "name": "Selector",
+            "base": "MCV_ENGINE_NODE",
+            "icon": "balance-scale"
+        },
+        {   "name": "Sequence",
+            "base": "MCV_ENGINE_NODE",
+            "icon": "arrow-right"
+        },
+        {   "name": "MCV_ENGINE_ACTION",
+            "base": "MCV_ENGINE_NODE",
+            "icon": "leaf",
+            "color": "green",
+            "isAbstract": true,
+            "isComposite": false
+        },        
+        {   "name": "shoot",
+            "base":  "MCV_ENGINE_ACTION"
+        },
+        {   "name": "status",
+            "base":  "MCV_ENGINE_ACTION",
+            "properties":[
+                {"name": "status",
+                    "default": "idle",
+                    "type": "string"
+                }
+            ]
+        }
+
+    ],
+    "decorators": [
+        {
+            "name": "MCV_ENGINE_DECORATOR",
+            "isAbstract": true,
+            "icon": "thumb-tack"
+        },
+        {   "name": "equip_weapon",
+            "base": "MCV_ENGINE_DECORATOR",
+            "properties":[
+                {"name": "weapon",
+                    "default": "gun",
+                    "type": "string"
+                }
+            ]
+        },
+        {   "name": "announce_soldier_name",
+            "base": "MCV_ENGINE_DECORATOR"
+        }        
+    ],
+    "services": [
+        {
+            "name": "MCV_ENGINE_CONDITION",
+            "isAbstract": true,
+            "icon": "question"
+        },
+        {   "name": "test_escape",
+            "base": "MCV_ENGINE_CONDITION"
+        }
+    ]
+}

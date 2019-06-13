@@ -1,0 +1,50 @@
+[
+  {
+    "entity":
+    {
+      "name": "Box002"
+      ,
+      "transform":
+      {
+        "pos": "0.0 0.0 0.192139"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "2.5 4.1 3.0"
+            ,
+            "offset":
+            {
+              "pos": "0.0 4.1 0.0"
+            }
+            ,
+            "kinematic": true
+          }
+        ]
+        ,
+        "dynamic": true
+        ,
+        "kinematic": true
+      }
+      ,
+      "render":
+      {
+        "mesh": "BibliotecarioS8_Box002.mesh"
+        ,
+        "materials":
+        [
+          "bibliotecario.material"
+        ]
+        ,
+        "color": "0.839216 0.898039 0.65098 1.0"
+      }
+    }
+  }
+]

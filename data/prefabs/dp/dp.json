@@ -1,11 +1,14 @@
-[
+[ 
   {
     "entity":
-    {
+    { "xowlbt_soldier": {
+        "file": "data/bt/soldier.json"
+      },
       "name": "Player"
       ,
       "transform": {
-        "pos": "0.6 0 0.9"
+        "pos": "0.3 0 0.18",
+        "rotation": "0 1 0 0"
       }
       ,
       "input_handler": {},
@@ -50,9 +53,31 @@
         "height": 1,
         "group": "player"
       },
-      "melee_task":{},
+      "melee_task":{
+        "damage":25
+      },
       "bomb_task":{},
       "shoot_task": {}
+    }
+  },
+  {
+    "entity":
+    {
+      "name": "PlayerPointlight"
+      ,
+      "transform":
+      {
+        "pos": "0.0 3.0 0.0"
+      }
+      ,
+      "light_point": {
+        "target":"Player",
+        "color": "1 1 1",
+        "intensity" : 0.1,
+        "radius" :  4,
+        "offset":"0 1.5 0"
+      }
+
     }
   }
 ]

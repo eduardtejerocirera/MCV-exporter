@@ -1,0 +1,33 @@
+[
+  {
+    "entity":
+    {
+      "name": "Test Compute",
+      "transform": {
+        "pos": "0 0 0",
+        "rotation": "0.0 0.0 0.0 1.0"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/figures_GeoSphere001.mesh",
+        "color": "1 1 1 1",
+        "materials":
+        [
+          "data/textures/rustediron2/rustediron2_num_instances.material"
+        ]
+      },
+      "buffers" : {
+        "instances" : {
+          "bytes_per_elem" : 16,
+          "num_elems" : 1024
+        }
+      },
+      "compute" : {
+        "cs" : "cs_particles_orbit.compute",
+        "sizes" : [16, 1, 1]
+      },
+      "num_instances": 4
+    }
+  }
+]

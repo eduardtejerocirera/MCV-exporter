@@ -1,0 +1,112 @@
+[
+  {
+    "entity":
+    {
+      "name": "ROOT_enemies_group_4",
+      "transform":
+      {
+        "pos": "0.0 0.0 0.0",
+        "rotation": "0.0 0.0 0.0"
+      }
+    }
+  },
+  {
+    "entity":
+    {
+      "prefab": "data/prefabs/firedemon.json"
+      ,
+      "name": "Esqueleto017"
+      ,
+      "transform":
+      {
+        "pos": "-31.9568 93.432 -3.09463"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "bt_basic_melee": {
+        "waypoints":
+        [
+          "-33.0537 93.432 -6.69117"
+          ,
+          "-20.8167 93.432 -5.75489"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "data/prefabs/firedemon.json"
+      ,
+      "name": "Esqueleto018"
+      ,
+      "transform":
+      {
+        "pos": "-23.7 93.432 -4.01222"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "bt_basic_melee": {
+        "waypoints":
+        [
+          "-21.5278 93.432 -1.48365"
+          ,
+          "-32.7645 93.432 -1.7439"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "data/prefabs/firedemon.json"
+      ,
+      "name": "Esqueleto019"
+      ,
+      "transform":
+      {
+        "pos": "-27.6414 93.432 -10.1378"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "bt_basic_melee": {
+        "waypoints":
+        [
+          "-30.7676 93.432 -11.1314"
+          ,
+          "-19.801 93.432 -9.62647"
+        ]
+      }
+    }
+  }
+  ,
+  {
+    "entity":
+    {
+      "prefab": "data/prefabs/firedemon.json"
+      ,
+      "name": "Esqueleto020"
+      ,
+      "transform":
+      {
+        "pos": "-22.0337 93.432 -12.198"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+      ,
+      "bt_basic_melee": {
+        "waypoints":
+        [
+          "-17.7734 93.432 -12.9739"
+          ,
+          "-23.8076 93.432 -17.5555"
+        ]
+      }
+    }
+  }
+]

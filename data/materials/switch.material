@@ -1,8 +1,9 @@
 {
-	"technique" : "data/techniques/objs.tech",
-	"shadows": false,
+	"technique" : "switch.tech",
+	"shadows": true,
 	"textures":
 	{
-		"albedo" : "data/textures/wood_d.dds"
+		"albedo" : "data/textures/defaults/white.dds",
+		"emissive" :  "data/textures/defaults/white.dds"
 	}
 }
