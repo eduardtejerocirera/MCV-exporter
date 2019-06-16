@@ -1,0 +1,27 @@
+[
+	{
+		"entity": {
+            "name": "kinematic_box",
+            "transform":
+            {
+              "pos": "0.0 0.0 0.0"
+              ,
+              "scale" : "1 1 1"
+            },
+            "render": {
+                "mesh": "data/meshes/Box001_PosNUvT.mesh",
+                "color": "1.0 1.0 1.0 1.0",
+                "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
+            },
+            "collider": {
+              "shape": "capsule",
+              "controller": true,
+              "radius": 0.5,
+              "height": 1,
+              "group": "player"
+            },
+            "character_controller":{}
+        }
+	}
+
+]

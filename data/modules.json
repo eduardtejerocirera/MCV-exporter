@@ -19,6 +19,7 @@
     "logic_manager",
     "test_instancing",
     "test_cameras",
+    "navmesh",
     "ui",
     "gpu_culling"
   ],
@@ -40,6 +41,7 @@
     "camera_manager",
     "checkpoints",
     "logic_manager",
-	  "boids"
+	"boids",
+    "navmesh"
   ]
 }

@@ -1,0 +1,15 @@
+[
+  {
+    "entity":
+    {
+      "name": "NavMesh_Holder"
+      ,
+      "navmesh":
+      {
+        "file": "data/navmesh/solo_navmesh.navmesh"
+      },
+      "navmesh_test":{}
+    }
+  }
+  
+]

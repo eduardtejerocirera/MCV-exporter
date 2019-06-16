@@ -61,8 +61,9 @@
     "bomb_task",
     "render_focus",
     "eject_task",
-    
-    "owlbt_soldier"
+    "navmesh_test",
+    "owlbt_soldier",
+    "crowd_target"
   ],
   "render_debug": [
     "fsm",
@@ -90,6 +91,10 @@
     "bt_librarian",
     "bt_basic_melee",
     "melee_task",
-    "book_spawner"
-  ]
+    "navmesh_test",
+    "crowd_agent"
+  ],
+
+  "test_to_copy":{"update":[], "render_debug":[]},
+  "ai":{"update":["ai_patrol","ai_turret","ai_tank"], "render_debug":["ai_patrol","ai_turret","ai_tank"]}
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{71e14547-7ac9-4577-8bb8-c6d1a8aab05d}">
+		<property name="assetPath">
+			<value>crypteque.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>165.69469387755103</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d79ff7c4-83b3-4832-8ba0-c4703443c088}</destination>
+		</relationship>
+	</object>
+</objects>

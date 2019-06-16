@@ -1,7 +1,8 @@
 [ 
   {
     "entity":
-    { "xowlbt_soldier": {
+    { 
+      "owlbt_soldier": {
         "file": "data/bt/soldier.json"
       },
       "name": "Player"

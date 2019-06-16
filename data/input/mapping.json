@@ -211,6 +211,31 @@
     "check":"any",
     "buttons":["b","gamepad_x"]
   },
+
+  {
+    "name":"create_crowd_agent",
+    "check":"all",
+    "buttons":["control","q"]
+  },
+
+  {
+    "name":"create_crowd_end",
+    "check":"all",
+    "buttons":["control","w"]
+  },
+
+  {
+    "name":"crowd_start",
+    "check":"all",
+    "buttons":["control","e"]
+  },
+
+  {
+    "name":"crowd_stop",
+    "check":"all",
+    "buttons":["control","r"]
+  },
+
   ["--------------------------------------------- DEBUG SKILLS ---------------------------------------"],
   {
     "name":"dbg_spawn",
