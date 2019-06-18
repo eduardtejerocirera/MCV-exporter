@@ -104,6 +104,20 @@ struct TSceneExporter (
 	),
 
 	----------------------------------------------------------
+	fn extractPosRotFromTransform transform &pos &rot= (
+		--directly stolen from exportTransform
+		local max2mcv = rotateXMatrix -90
+		local mcv2max = rotateXMatrix 90
+		local mcv_position = transform.translation * max2mcv
+		local mcv_transform = mcv2max * transform * max2mcv
+
+		-- Take just the rotation as quaterion
+		local mcv_quat = mcv_transform.rotationPart as quat
+		pos = mcv_position
+		rot = mcv_quat
+	),
+
+	----------------------------------------------------------
 	fn exportTransform obj = (
 		fs.writeComma()
 		fs.writeKey "transform" 
@@ -243,7 +257,11 @@ struct TSceneExporter (
 			fs.writeComma()
 			fs.writeKey "offset"
 			fs.beginObj()
-				fs.writeKeyValue "pos" [0, half_size.y, 0]
+				local pos
+				local rot
+				extractPosRotFromTransform obj.transform &pos &rot
+				fs.writeKeyValue "pos" [pos.x, pos.y+half_size.y, pos.z]
+
 			fs.endObj()
 		
 			convexmes
