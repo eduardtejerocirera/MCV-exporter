@@ -34,6 +34,9 @@ Texture2D    txAccLights      TEXTURE_SLOT(TS_DEFERRED_ACC_LIGHTS);
 Texture2D    txAO             TEXTURE_SLOT(TS_DEFERRED_AO);
 Texture2D    txGEmissive      TEXTURE_SLOT(TS_DEFERRED_EMISSIVE);
 
+//Saving old frame for distorsions
+Texture2D    txOldFrame       TEXTURE_SLOT(TS_OLD_FRAME);
+
 // Bloom
 Texture2D    txBloom0         TEXTURE_SLOT(0);
 Texture2D    txBloom1         TEXTURE_SLOT(1);

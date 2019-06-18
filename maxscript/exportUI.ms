@@ -202,8 +202,15 @@ utility MyMCVExporter "MCV Exporter"
 
 	rollout exporter "The Exporter"
 	(
-		button btn_scene "Export All as Scene"
-		button btn_selection_scene "Export Selection as Scene"
+		group "Export as Scene"(
+			dropdownlist dd_export "" items:#("All as Scene", "Selection as Scene")
+			checkbox cb_withPrefabs "export Prefabs too" checked:true
+			checkbox cb_useDummyMats "use Dummy Mats" checked:false
+			button btn_exportScene "Export"
+		)
+
+		--button btn_scene "Export All as Scene"
+		--button btn_selection_scene "Export Selection as Scene"
 		button btn_export_prefab "Export as Prefab"
 		button btn_mesh "Export Mesh"
 		button btn_prefab_atts "Add Prefab Attributes"
@@ -212,7 +219,7 @@ utility MyMCVExporter "MCV Exporter"
 		button btn_reset "Reset Model" tooltip:"Attaches model to sphere to reset it and then deletes sphere"
 		
 		
-		fn exportObjectsWithMessageBoxes objs is_prefab:false = (
+		fn exportObjectsWithMessageBoxes objs exportPrefabs useDummyMats is_prefab:false = (
 			try (
 				gc()
 				
@@ -222,14 +229,14 @@ utility MyMCVExporter "MCV Exporter"
 				local export_path = getSavePath caption:"Export Scene to path:"\
 					historyCategory: "ExportScene"
 				
-				-- if not entered path, cancel export
+				-- if notentered  path, cancel export
 				if export_path == undefined then return false
 				
 				export_path = export_path + "\\"
-				local baseName = getFilenameFile(maxfilename)
-				local basePath = baseName + "/"
+				local baseName = getFilenameFile(maxfilename) -- escena_biblioteca57
+				local basePath = baseName + "/" -- escena_biblioteca57/
 
-				exportSceneObjs objs baseName export_path basePath is_prefab:is_prefab
+				exportSceneObjs objs baseName export_path basePath exportPrefabs useDummyMats is_prefab:is_prefab
 				MessageBox "All exported OK"
 			) catch (
 				MessageBox ("Error Exporting:\n" + getCurrentException() + "\n --- Stuff for devs:\n " + getCurrentExceptionStackTrace())
@@ -239,17 +246,35 @@ utility MyMCVExporter "MCV Exporter"
 			theHold.Accept "ResetModel"
 		)
 
-		on btn_scene pressed do
+		on btn_exportScene pressed do (
+
+			local index = dd_export.selection
+			local exportPrefabs = cb_withPrefabs.checked
+			local useDummyMats = cb_useDummyMats.checked
+
+			format "index : % , exportPrefabs: %\n" index exportPrefabs
+
+			if index == 1 then ( --all as scene
+				exportObjectsWithMessageBoxes $* exportPrefabs useDummyMats
+			) else if index == 2 then ( --selection as scene
+				exportObjectsWithMessageBoxes selection exportPrefabs useDummyMats
+			)
+
+		)
+
+		/*on btn_scene pressed do
 		(
 			exportObjectsWithMessageBoxes $*
 		)
 		
 		on btn_selection_scene pressed do(
 			exportObjectsWithMessageBoxes selection
-		)
+		)*/
 
 		on btn_export_prefab pressed do(
-			exportObjectsWithMessageBoxes $* is_prefab:true 
+			local useDummyMats = cb_useDummyMats.checked
+			-- export prefabs recursively in case we need it
+			exportObjectsWithMessageBoxes $* true useDummyMats is_prefab:true 
 		)
 		
 		-- Exports the current selection mesh to file

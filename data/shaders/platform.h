@@ -6,6 +6,7 @@
 #define float4 VEC4
 #define float3 VEC3
 #define float2 VEC2
+#define float2x2 MAT2
 
 #else
 

@@ -8,26 +8,22 @@
       "name": "Player"
       ,
       "transform": {
-        "pos": "0.3 0 0.18",
+        "pos": "10.5 0 24",
         "rotation": "0 1 0 0"
       }
       ,
-      "input_handler": {},
-      "character_controller": {},
-      "eject_manager": {},
-      "wall_manager": {},
-      "shoot_manager": {},
-      "health_manager": {},
-      "msg_logger": true,
-      "player_death": {},
-      "minion_manager": {
-        "total_minions": 150,
-        "initial_minions": 150,
-        "recover_rate": 1
+      "collider": {
+        "shape": "capsule",
+        "controller": true,
+        "radius": 0.5,
+        "height": 1,
+        "group": "player"
       },
-      "minion_bar": {},
-      "send_minions":{},
-      
+      "character_controller": {},
+      "input_handler": {},
+
+      "msg_logger": true,
+ 
       "armature":{
         "src": "data/skeletons/dp/dp.skeleton"
       }
@@ -47,18 +43,29 @@
         "autoplay" : true
       },
       "fsm_player_input" : {},
-      "collider": {
-        "shape": "capsule",
-        "controller": true,
-        "radius": 0.5,
-        "height": 1,
-        "group": "player"
-      },
+
+
+      "minion_task_manager": {},
       "melee_task":{
         "damage":25
       },
       "bomb_task":{},
-      "shoot_task": {}
+      "shoot_task": {},
+      "send_minions":{},
+
+      "player_death": {},
+      "vulnerability":{
+        "initial_health":100,
+        "max_health": 100,
+        "recover_rate":0
+      },
+      "health_bar":{},
+
+      "minion_bar": {},
+      "minion_skill_manager":{
+        "recover_rate": 2
+      }
+
     }
   },
   {

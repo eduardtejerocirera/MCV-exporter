@@ -1,0 +1,19 @@
+{
+    "start":"meditate",
+    "states": [
+        {
+            "anim": "fd_meditate",
+            "default": true,
+            "id": "n0",
+            "name": "meditate",
+            "pos": [
+                216.22195434570313,
+                209.53147888183594
+            ],
+            "shape": "ellipse",
+            "type": "meditateAction"
+        }
+    ],
+    "transitions": [],
+    "variables": []
+}

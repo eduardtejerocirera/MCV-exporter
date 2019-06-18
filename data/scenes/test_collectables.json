@@ -1,0 +1,101 @@
+[
+
+  {
+    "entity": {
+      "name": "group parent"
+    }
+  },
+  {
+    "entity":
+    {
+      "prefab": "data/prefabs/collectable_health.json"
+      ,
+      "name": "Health Collectable"
+      ,
+      "transform":
+      {
+        "pos": "10 -2 10"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  },
+  {
+    "entity":
+    {
+      "prefab": "data/prefabs/collectable_minion.json"
+      ,
+      "name": "Minion Collectable"
+      ,
+      "transform":
+      {
+        "pos": "-10 -2 -10"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  },
+  {
+    "entity":
+    {
+      "prefab": "data/prefabs/collectable_minion_expansor.json"
+      ,
+      "name": "Minion Collectable Expansor"
+      ,
+      "transform":
+      {
+        "pos": "10 -2 -10"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      }
+    }
+  },
+
+  {
+    "entity":
+    {
+      "name": "Area of Minion Damage"
+      ,
+      "transform":
+      {
+        "pos": "5 -2 5"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0"
+      },
+      "render": {
+        "mesh": "data/meshes/Box001_PosNUvT.mesh",
+        "color": "0.0 0.0 0.0 1.0",
+        "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
+      },
+      "damage_on_contact":
+      {
+        "damage": 50,
+        "damage_flags":[
+          "minions"
+        ]
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "box"
+            ,
+            "half_size": "0.5 0.5 0.5"
+            ,
+            "offset":
+            {
+              "pos": "0.0 0.5 0.0"
+            }
+            ,
+            "group": "player"
+            ,
+            "trigger": true
+          }
+        ]
+      }
+    }
+  }
+  
+]

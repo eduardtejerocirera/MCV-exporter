@@ -72,24 +72,27 @@ fn isSpecialPrefab obj = (
 struct TSceneExporter (
 
 	fs = TJsonFormatter(), 
-	baseName = "",
-	export_path = getDir #export + "\\",
-	base_path = "data/",
+	baseName = "", -- escena_biblioteca57
+	export_path = getDir #export + "\\", -- C:/Users/.../exportDir/
+	base_path = "", -- escena_biblioteca57/
 	
-	scenes_dir = "",
-	scenes_export_path = base_path  + scenes_dir,
+	scenes_dir = "", -- where .json scenes are stored
+	scenes_export_path = base_path  + scenes_dir, -- escena_biblioteca57/
 
 	
-	mesh_dir = "entities/meshes/",
-	mesh_export_path = base_path + mesh_dir,
+	mesh_dir = "meshes/", -- where .mesh meshes are stored
+	mesh_export_path = base_path + mesh_dir, -- escena_biblioteca57/meshes/
 
 
-	mats_dir = "entities/materials/",
-	mats_export_path = base_path + mats_dir,
+	mats_dir = "materials/", -- where .material files are stored
+	mats_export_path = base_path + mats_dir, -- escena_biblioteca57/materials/
 
 
-	textures_dir = "entities/textures/",
-	textures_export_path = base_path + textures_dir,
+	textures_dir = "textures/", --where .dds textures are stored
+	textures_export_path = base_path + textures_dir, -- escena_biblioteca57/textures/
+
+	exportPrefabs = false,
+	useDummyMats = false,
 
 	
 	fn exportCompName obj = (
@@ -147,7 +150,7 @@ struct TSceneExporter (
 
 	fn exportPrefabEntry obj = (
 		local filename = getFilenameFile obj.filename
-		local prefabPath = "prefabs/" + filename + "/" + filename + ".json" -- prebabs/MyPrefab/MyPrefab.json
+		local prefabPath = "prefabs/" + filename + ".json" -- prebabs/MyPrefab.json
 		fs.writeKeyValue "prefab" prefabPath
 	),
 	---------------------------------------------------------
@@ -166,28 +169,45 @@ struct TSceneExporter (
 		fs.writeKeyValue "mesh" mesh_JSON_path
 		fs.writeComma()
 		
-		-- Export the real mesh: we convert it to editable_mesh if necessary in exportMesh
-		exportMesh obj full_mesh_path undefined
-		
-		-- Export material(s)
-		local mat = obj.material
-		if mat == undefined then (
-			throw ("Obj " + obj.name + " does NOT have a material")
-		)
 
-		local me = TMaterialExporter export_path:export_path base_path:base_path \
-		 mats_dir:mats_dir mats_export_path:mats_export_path \
-		 textures_dir:textures_dir textures_export_path:textures_export_path
-
-		-- for this to work obj needs to be editable mesh
+		-- for this to work obj needs to be editable mesh. Wer create a copy of the object and convert it into editable Mesh
 		local edMesh = obj
 		if classof obj != Editable_mesh then (
 			edMesh = copy obj
 			convertToMesh edMesh
 		)
 
+		local mat = edMesh.material
+
+		-- if object does NOt have a mat...
+		if mat == undefined then(
+			if useDummyMats == true then (
+				--If using DummyMats make sure all mat ids are set to the same value so that all faces are visible!
+				format "forcing all faces to mat id\n"
+				forceAllFacesToMatID edMesh
+
+				local num_faces = getNumFaces edMesh
+				for face_id = 1 to num_faces do (
+					local mat_id = getFaceMatID edMesh face_id
+					format "face % has matID %\n" face_id mat_id
+				)
+			)else(
+				-- If NOT using dummy mats, throw error
+				throw ("Obj " + obj.name + " does NOT have a material")
+			)
+		)
+
+		-- Export the real mesh
+		exportMesh edMesh full_mesh_path undefined
+		
+		--Export materials
+		local me = TMaterialExporter export_path:export_path base_path:base_path \
+		 mats_dir:mats_dir mats_export_path:mats_export_path \
+		 textures_dir:textures_dir textures_export_path:textures_export_path
+
 		local exported_materials = me.exportMaterial mat edMesh
 
+		-- in case we created a copy, delete it
 		if obj != edMesh then delete edMesh
 		
 		fs.writeKey "materials"
@@ -433,15 +453,19 @@ struct TSceneExporter (
 			local fullxrName = xrefPaths.getFullFilePath xrName
 			format "fullxrName : %\n" fullxrName
 			mergeMaxFile fullxrName #noredraw #autoRenameDups #useMergedMtlDups mergedNodes:&objects
-			local new_export_path = export_path + base_path + "prefabs/" -- C:/usrs/.../MyScene/prefabs/
-			local baseName = getFileNameFile xrName
+			local new_export_path = export_path + base_path -- C:/usrs/.../escena_biblioteca57/
+			local prefabBaseName = getFileNameFile xrName
 			local prefabBasePath = baseName + "/" -- myPrefab/
 			format "exporting prefab: %\n" prefabBasePath
 			format "objs: %\n" objects.count
-			format "basname: %, new_export_path: %, prefabBasePath: %\n" baseName new_export_path prefabBasePath
+			format "basname: %, new_export_path: %, prefabBasePath: %\n" prefabBaseName new_export_path prefabBasePath
 			local deleted = false
 			try(
-				exportSceneObjs objects baseName new_export_path prefabBasePath is_prefab:true 
+				--exportSceneObjs objects baseName new_export_path prefabBasePath true useDummyMats is_prefab:true 
+				exporter = TSceneExporter exportPrefabs:true baseName:prefabBaseName export_path:new_export_path base_path:"prefabs/"\
+		 			scenes_dir:"" mesh_dir: "../meshes/" mats_dir: "../materials/" textures_dir: "../textures/" useDummyMats:useDummyMats 
+
+		 		exporter.exportObjects(objects)
 			)catch(
 				delete objects -- in case of error delete merged objects
 				deleted = true
@@ -523,9 +547,10 @@ struct TSceneExporter (
 		fs.endArray()
 		fs.end()
 
-
-		print xrefNames
-		exportXrefObjects xrefNames
+		if exportPrefabs then(
+			print xrefNames
+			exportXrefObjects xrefNames
+		)
 
 		--export minion.material
 		local me = TMaterialExporter export_path: export_path base_path:base_path
@@ -540,15 +565,21 @@ struct TSceneExporter (
 
 --------------------------------------------------------------------------------------
 
-fn exportSceneObjs objs baseName export_path base_path is_prefab:false   = (
-
+fn exportSceneObjs objs baseName export_path base_path export_prefabs useDummyMats is_prefab:false   = (
 
 	local exporter
 	if is_prefab == true then(
-		-- all exported to same directory
-		exporter = TSceneExporter baseName:baseName export_path:export_path base_path:base_path scenes_dir:"" mesh_dir:"" mats_dir:"" textures_dir:"" 
+		-- it's prefab, all exported to same directory
+		--exporter = TSceneExporter exportPrefabs:export_prefabs baseName:baseName export_path:export_path base_path:base_path\
+		 --scenes_dir:"" mesh_dir:"" mats_dir:"" textures_dir:"" useDummyMats:useDummyMats 
+
+		 export_path = export_path + baseName + "/" --C:/Usrs/.../MyPrefab/
+		 exporter = TSceneExporter exportPrefabs:export_prefabs baseName:baseName export_path:export_path base_path:"prefabs/"\
+		 	scenes_dir:"" mesh_dir: "../meshes/" mats_dir: "../materials/" textures_dir: "../textures/" useDummyMats:useDummyMats
 	)else(
-		exporter = TSceneExporter baseName:baseName export_path: export_path base_path:base_path
+		-- not a prefab, export in folder
+		exporter = TSceneExporter exportPrefabs:export_prefabs baseName:baseName export_path: export_path base_path:base_path\
+		 useDummyMats:useDummyMats
 	)
 
 	exporter.exportObjects(objs)

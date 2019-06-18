@@ -1,0 +1,32 @@
+[
+  {
+    "entity":
+    {
+      "name": "Icosphere_Icosphere_001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 1.01 100.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0",
+        "scale":"2 2 2"
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/hexasphere_Icosphere_Icosphere_001.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/None.material"
+        ]
+      }
+    }
+  },
+  { "entity":{
+    "prefab": "data/prefabs/firedemon.json",
+    "armature": {
+      "src": "data/skeletons/firedemon/firedemon.skeleton"
+    }
+  }}
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "entity":
+    {
+      "name": "pieza_estanteria_1_003"
+      ,
+      "transform":
+      {
+        "pos": "-18.1576 4.0 43.9869"
+        ,
+        "rotation": "0.0 -0.382662 0.0 -0.923888"
+      }
+      ,
+      "collider":
+      {
+        "shapes":
+        [
+          {
+            "shape": "trimesh"
+            ,
+            "collision_mesh": "entities/meshes/mapa_biblioteca13_pieza_estanteria_1_003.col_mesh"
+          }
+        ]
+      }
+      ,
+      "render":
+      {
+        "mesh": "entities/meshes/mapa_biblioteca13_pieza_estanteria_1_003.mesh"
+        ,
+        "materials":
+        [
+          "entities/materials/Prueba.material"
+        ]
+        ,
+        "color": "0.0784314 0.0 0.0196078 1.0"
+      }
+    }
+  }
+]

@@ -205,6 +205,9 @@ struct TMaterialExporter (
 
 				exportStdMaterial mat_of_mesh mat_of_mesh.name
 			)
+		-- when using DummyMats, generate 'minion' material on the run
+		) else if mat == undefined then(
+			append exported_materials "data/materials/minion.material"
 		)
 		
 		return exported_materials -- to be written into JSON

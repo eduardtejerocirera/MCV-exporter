@@ -1,0 +1,38 @@
+[
+	{
+		"entity": {
+            "name": "box",
+            "transform":
+            {
+              "pos": "0.0 0.0 0.0"
+              ,
+              "scale" : "1 1 1"
+            },
+            "render": {
+                "mesh": "data/meshes/Box001_PosNUvT.mesh",
+                "color": "0.0 1.0 0.0 1.0",
+                "materials": ["data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material","data/materials/minion.material"]
+            },
+            "collectable_health":{
+              "value": 20
+            },
+            "collider":
+            {
+              "shapes":
+              [
+                {
+                  "shape": "box",
+                  "half_size": "0.5 0.5 0.5",
+                  "mask":"all",
+                  "group":"player",
+                  "offset":
+                  {
+                    "pos": "0.0 0.5 0.0"
+                  },
+                  "trigger": true
+                }
+              ]
+            }
+        }
+	}
+]

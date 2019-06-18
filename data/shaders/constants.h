@@ -33,29 +33,30 @@
 #define TS_DEFERRED_AO           14
 #define TS_DEFERRED_EMISSIVE     15
 
-#define TS_NOISE_MAP         16
+#define TS_NOISE_MAP            16
 
 
 #define TS_LUT_COLOR_GRADING  17
 #define TS_WHITE_NOISE        18
 #define TS_PBR_DFG            19
+#define TS_OLD_FRAME              20
 
 // ---------------------------------------------
 // Mixing material extra texture slots
-#define TS_MIX_BLEND_WEIGHTS          20
+#define TS_MIX_BLEND_WEIGHTS          21
 
 #define TS_FIRST_SLOT_MATERIAL_0      TS_ALBEDO
 #define TS_FIRST_SLOT_MATERIAL_1      TS_ALBEDO1
 #define TS_FIRST_SLOT_MATERIAL_2      TS_ALBEDO2
 
-#define TS_ALBEDO1 21
-#define TS_NORMAL1 22
-// #define TS_METALLIC1 23
-// #define TS_ROUGHNESS1 24
-#define TS_ALBEDO2 25
-#define TS_NORMAL2 26
-// #define TS_METALLIC2 27
-// #define TS_ROUGHNESS2 28
+#define TS_ALBEDO1 22
+#define TS_NORMAL1 23
+// #define TS_METALLIC1 24
+// #define TS_ROUGHNESS1 25
+#define TS_ALBEDO2 26
+#define TS_NORMAL2 27
+// #define TS_METALLIC2 28
+// #define TS_ROUGHNESS2 29
 
 
 
@@ -109,10 +110,10 @@ SHADER_CTE_BUFFER(TCtesShared, CTE_BUFFER_SLOT_SHARED)
   float  GlobalAmbientBoost;
   float  GlobalExposureAdjustment;
 
-  float GlobalFXAmount;
-  float GlobalFXVal1;
-  float GlobalFXVal2;
-  float GlobalFXVal3;
+  float  GlobalFXAmount;
+  float  GlobalFXVal1;
+  float  GlobalFXVal2;
+  float  GlobalFXVal3;
 
   float  GlobalLUTAmount;
 	float  GlobalColorBanding;

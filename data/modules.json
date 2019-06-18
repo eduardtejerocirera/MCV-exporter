@@ -21,7 +21,8 @@
     "test_cameras",
     "navmesh",
     "ui",
-    "gpu_culling"
+    "gpu_culling",
+    "sound"
   ],
   "render_debug": [
     "splash",

@@ -3,11 +3,11 @@
     "default"      : 1024,
     "transform"    : 1024,
     "player_death" : 2,
-    "minion_manager": 2,
+    "minion_task_manager": 2,
     "eject_manager": 2,
     "wall_manager":2,
     "shoot_manager":2,
-    "health_manager":2
+    "minion_skill_manager":2
 	},
   "init_order" : {
     "entity" : 100,
@@ -38,7 +38,7 @@
     "ttl",
     "health",
     "minion_bar",
-    "health_manager",
+    "minion_skill_manager",
     "mover",
     "hierarchy",
     "local_aabb",
@@ -63,7 +63,8 @@
     "eject_task",
     "navmesh_test",
     "owlbt_soldier",
-    "crowd_target"
+    "crowd_target",
+    "health_bar"
   ],
   "render_debug": [
     "fsm",
@@ -84,7 +85,7 @@
     "ai_patrol",
     "ai_turret",
     "ai_tank",
-    "minion_manager",
+    "minion_task_manager",
     "camera_orbit",
     "camera",
     "moving_platform",

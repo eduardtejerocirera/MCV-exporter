@@ -1,0 +1,18 @@
+[{"entity":{
+    "name": "invulnerable",
+    "prefab":"data/prefabs/fd/fd.json",
+    "transform":{ "pos":"10.1 14.275 63.650"},
+    "fsm": {
+        "file": "data/fsm/invulnerable.fsm",
+        "autoplay": true
+    }
+}},
+{"entity":{
+    "name":"energyshield",
+    "prefab":"data/prefabs/hexasphere.json",
+    "hierarchy": {
+        "parent": "invulnerable",
+        "lock_rotation": true,
+        "pos":"0 1.45 0"
+    }
+}}]

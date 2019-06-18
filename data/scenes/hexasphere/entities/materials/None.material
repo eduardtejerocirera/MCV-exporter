@@ -1,0 +1,12 @@
+{
+  "technique": "hexasphere.tech"
+  ,
+  "xshadows": true,
+  "xcasts_shadows" : false,
+  "category" : "distorsions",
+  "textures":
+  {
+    "albedo": "entities/textures/hexasphere.dds",
+    "normal": "acc_light.dds"
+  }
+}

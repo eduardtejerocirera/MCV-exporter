@@ -1,0 +1,36 @@
+[
+  {
+    "entity":
+    {
+      "name": "Icosphere_Icosphere_001"
+      ,
+      "transform":
+      {
+        "pos": "0.0 1.01 100.0"
+        ,
+        "rotation": "0.0 0.0 0.0 -1.0",
+        "scale":"2 2 2"
+      }
+      ,
+      "render":
+      {
+        "mesh": "data/meshes/hexasphere_Icosphere_Icosphere_001.mesh"
+        ,
+        "materials":
+        [
+          "data/materials/hexasphere.material"
+        ]
+      },
+      "collider": {
+        "shape": "capsule",
+        "controller": true,
+        "radius": 1.2,
+        "height": 0.1,
+        "group":"enemy",
+        "offset": {
+            "pos": "0 2 0"
+        }
+      }
+    }
+  }
+]

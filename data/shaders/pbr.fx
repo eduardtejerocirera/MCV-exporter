@@ -200,7 +200,7 @@ void PS_lava(
   df += snoise( pos + vel )*.01+.25;
   
   //a = smoothstep(.75,.75,frac(df * lerp(6,4,horizontal)));
-  a = smoothstep(.5,.5,frac(df * lerp(6,4,horizontal)));
+  //a = smoothstep(.5,.5,frac(df * lerp(6,4,horizontal)));
 
   //o_albedo.xyz = a;// input.Colo(pow(float3( a,a,a ), 1)) + 0.1;// * input.Color;
   o_emissive.xyz = (o_albedo.xyz + (1 - a))*o_albedo.xyz;// input.Colo(pow(float3( a,a,a ), 1)) + 0.1;// * input.Color;

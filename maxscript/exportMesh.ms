@@ -22,6 +22,14 @@ function getMaterialsUsedByMesh obj = (
 )
 
 
+function forceAllFacesToMatID obj matID:1 = (
+	local num_faces = getNumFaces obj
+	for face_id = 1 to num_faces do (
+		setFaceMatID obj face_id matID
+	)
+)
+
+
 function writeChunk fs id nbytes = (
 	WriteLong fs id #unsigned
 	WriteLong fs nbytes #unsigned
