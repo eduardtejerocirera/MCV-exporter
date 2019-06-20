@@ -186,40 +186,48 @@ struct TSceneExporter (
 
 		-- for this to work obj needs to be editable mesh. Wer create a copy of the object and convert it into editable Mesh
 		local edMesh = obj
-		if classof obj != Editable_mesh then (
-			edMesh = copy obj
-			convertToMesh edMesh
-		)
-
-		local mat = edMesh.material
-
-		-- if object does NOt have a mat...
-		if mat == undefined then(
-			if useDummyMats == true then (
-				--If using DummyMats make sure all mat ids are set to the same value so that all faces are visible!
-				format "forcing all faces to mat id\n"
-				forceAllFacesToMatID edMesh
-
-				local num_faces = getNumFaces edMesh
-				for face_id = 1 to num_faces do (
-					local mat_id = getFaceMatID edMesh face_id
-					format "face % has matID %\n" face_id mat_id
-				)
-			)else(
-				-- If NOT using dummy mats, throw error
-				throw ("Obj " + obj.name + " does NOT have a material")
+		try(
+			
+			if classof obj != Editable_mesh then (
+				edMesh = copy obj
+				convertToMesh edMesh
 			)
+
+			local mat = edMesh.material
+
+			-- if object does NOt have a mat...
+			if mat == undefined then(
+				if useDummyMats == true then (
+					--If using DummyMats make sure all mat ids are set to the same value so that all faces are visible!
+					format "forcing all faces to mat id\n"
+					forceAllFacesToMatID edMesh
+
+					local num_faces = getNumFaces edMesh
+					for face_id = 1 to num_faces do (
+						local mat_id = getFaceMatID edMesh face_id
+						format "face % has matID %\n" face_id mat_id
+					)
+				)else(
+					-- If NOT using dummy mats, throw error
+					throw ("Obj " + obj.name + " does NOT have a material")
+				)
+			)
+
+			-- Export the real mesh
+			exportMesh edMesh full_mesh_path undefined
+			
+			--Export materials
+			local me = TMaterialExporter export_path:export_path base_path:base_path \
+			 mats_dir:mats_dir mats_export_path:mats_export_path \
+			 textures_dir:textures_dir textures_export_path:textures_export_path
+
+			local exported_materials = me.exportMaterial mat edMesh
+		)catch(
+			-- in case we created a copy of the obj, delete it. 
+			-- This is important so that no ghost objects are left in the scene if any error occurs during export
+			if obj != edMesh then delete edMesh
+			throw() -- unwind throw error to upper code
 		)
-
-		-- Export the real mesh
-		exportMesh edMesh full_mesh_path undefined
-		
-		--Export materials
-		local me = TMaterialExporter export_path:export_path base_path:base_path \
-		 mats_dir:mats_dir mats_export_path:mats_export_path \
-		 textures_dir:textures_dir textures_export_path:textures_export_path
-
-		local exported_materials = me.exportMaterial mat edMesh
 
 		-- in case we created a copy, delete it
 		if obj != edMesh then delete edMesh
@@ -261,6 +269,8 @@ struct TSceneExporter (
 				local rot
 				extractPosRotFromTransform obj.transform &pos &rot
 				fs.writeKeyValue "pos" [pos.x, pos.y+half_size.y, pos.z]
+				fs.writeComma()
+				fs.writeKeyValue "rotation" rot
 
 			fs.endObj()
 		
@@ -487,7 +497,7 @@ struct TSceneExporter (
 			)catch(
 				delete objects -- in case of error delete merged objects
 				deleted = true
-				throw()
+				throw() -- unwind throw error to upper code
 			)
 
 			if not deleted then delete objects

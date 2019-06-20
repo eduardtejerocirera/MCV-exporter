@@ -228,8 +228,6 @@ function findIndexOrRegister ht vtxs new_vtx = (
 
 function resetModel obj = (
 
-	format "hello\n"
-
 	--thehold controls redo/undo in 3dsMax
 	if not thehold.holding() do thehold.Begin()
 

@@ -1,13 +1,16 @@
 
 
-fn isValidPath aname = (
+fn isValidPath aname checkSpace:true = (
 		-- Add no �, accents, etc.
 		local ok = true
-		ok = ok and findString aname " " == undefined
 
-		if not ok then (
-			throw ("Developers say: Name has a space. Please remove spaces from name:\n" + aname)
+		if checkSpace == true then (
+			ok = ok and findString aname " " == undefined
+			if not ok then (
+				throw ("Developers say: Name has a space. Please remove spaces from name:\n" + aname)
+			)
 		)
+		
 
 		ok = ok and findString aname "á" == undefined
 		ok = ok and findString aname "é" == undefined
@@ -79,8 +82,10 @@ struct TMaterialExporter (
 			return false
 		)
 		
-		-- "C:\users\pep\desktop\download\bricks.dds"
+		-- "C:\users\pep\desktop\download\my_albedo.png"
 		local map_filename = map.filename
+
+		if not doesFileExist map_filename then throw("texture file: '" + map_filename + "' does NOT exist!")
 		
 		-- bricks
 		local base_name = getFilenameFile map_filename
@@ -101,12 +106,25 @@ struct TMaterialExporter (
 		)
 
 		-- check all paths are free from spaces and other symbols!
-		isValidPath(texconv_path)
-		isValidPath(outputDir)
-		isValidPath(map_filename)
+		isValidPath texconv_path checkSpace:true
+		isValidPath outputDir checkSpace:false
+		isValidPath map_filename checkSpace:false
 
+		-- substitute '\' by '/'. This allows the path to contains spaces! (using " " too)
+		outputDir = substituteString outputDir "\\" "/"
+		map_filename = substituteString map_filename "\\" "/"
 
-		local texconv_command = texconv_path + "texconv -o " + outputDir + " " + extraParams + " " + map_filename
+		-- substitute map_file's last "/" by "\". This is necessary because texconv.exe detects the filename by looking for the last "\" 
+		for i = map_filename.count to 1 by -1 do (
+			if map_filename[i] == "/" then (
+				map_filename[i] = "\\"
+				exit
+			)
+		)
+
+		-- D:\...\maxscript\autoboot/../../tools/texconv -o D:\Users\...\outputDir/ -f R8G8B8A8_UNORM_SRGB D:\Users\...\bin\data\textures\my_albedo.png
+		-- working with spaces WIP: texconv -o "D:/Documents/Programming/c++/MCV/h3r/tools/Wrong Path/output/" -f R8G8B8A8_UNORM "D:/Documents/Programming/c++/MCV/h3r/tools/Wrong Path\brown.jpg"
+		local texconv_command = texconv_path + "texconv -o " + "\"" + outputDir + "\"" + " " + extraParams + " " + "\"" + map_filename + "\""
 		format "running command:\n %\n" texconv_command		
 
 		DOSCommand(texconv_command)
