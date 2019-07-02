@@ -16,6 +16,11 @@ fn isTrigger obj = (
 	return false
 )
 
+fn isStandAloneTrigger obj = (
+	local standAloneTrigger = isTrigger obj and obj.parent == undefined
+	return standAloneTrigger
+)
+
 fn isCheckPoint obj = (
 	return obj != undefined and (findString obj.name "trigger_checkpoint_" != undefined)
 )
@@ -93,6 +98,7 @@ struct TSceneExporter (
 
 	exportPrefabs = false,
 	useDummyMats = false,
+	useNullTextures = false,
 
 	
 	fn exportCompName obj = (
@@ -202,11 +208,11 @@ struct TSceneExporter (
 					format "forcing all faces to mat id\n"
 					forceAllFacesToMatID edMesh
 
-					local num_faces = getNumFaces edMesh
+					/*local num_faces = getNumFaces edMesh
 					for face_id = 1 to num_faces do (
 						local mat_id = getFaceMatID edMesh face_id
 						format "face % has matID %\n" face_id mat_id
-					)
+					)*/
 				)else(
 					-- If NOT using dummy mats, throw error
 					throw ("Obj " + obj.name + " does NOT have a material")
@@ -221,7 +227,7 @@ struct TSceneExporter (
 			 mats_dir:mats_dir mats_export_path:mats_export_path \
 			 textures_dir:textures_dir textures_export_path:textures_export_path
 
-			local exported_materials = me.exportMaterial mat edMesh
+			local exported_materials = me.exportMaterial mat edMesh useNullTextures
 		)catch(
 			-- in case we created a copy of the obj, delete it. 
 			-- This is important so that no ghost objects are left in the scene if any error occurs during export
@@ -265,13 +271,18 @@ struct TSceneExporter (
 			fs.writeComma()
 			fs.writeKey "offset"
 			fs.beginObj()
-				local pos
-				local rot
-				extractPosRotFromTransform obj.transform &pos &rot
-				fs.writeKeyValue "pos" [pos.x, pos.y+half_size.y, pos.z]
-				fs.writeComma()
-				fs.writeKeyValue "rotation" rot
-
+				if isStandAloneTrigger obj then (
+					-- export only y half_size offset
+					fs.writeKeyValue "pos" [0, half_size.y, 0]
+				)else(
+					-- export pos and rotation offset 
+					local pos
+					local rot
+					extractPosRotFromTransform obj.transform &pos &rot
+					fs.writeKeyValue "pos" [pos.x, pos.y+half_size.y, pos.z]
+					fs.writeComma()
+					fs.writeKeyValue "rotation" rot
+				)
 			fs.endObj()
 		
 			convexmes
@@ -491,7 +502,8 @@ struct TSceneExporter (
 			try(
 				--exportSceneObjs objects baseName new_export_path prefabBasePath true useDummyMats is_prefab:true 
 				exporter = TSceneExporter exportPrefabs:true baseName:prefabBaseName export_path:new_export_path base_path:"prefabs/"\
-		 			scenes_dir:"" mesh_dir: "../meshes/" mats_dir: "../materials/" textures_dir: "../textures/" useDummyMats:useDummyMats 
+		 			scenes_dir:"" mesh_dir: "../meshes/" mats_dir: "../materials/" textures_dir: "../textures/" useDummyMats:useDummyMats\
+		 			useNullTextures: useNullTextures 
 
 		 		exporter.exportObjects(objects)
 			)catch(
@@ -593,7 +605,7 @@ struct TSceneExporter (
 
 --------------------------------------------------------------------------------------
 
-fn exportSceneObjs objs baseName export_path base_path export_prefabs useDummyMats is_prefab:false   = (
+fn exportSceneObjs objs baseName export_path base_path export_prefabs useDummyMats useNullTextures is_prefab:false   = (
 
 	local exporter
 	if is_prefab == true then(
@@ -603,11 +615,12 @@ fn exportSceneObjs objs baseName export_path base_path export_prefabs useDummyMa
 
 		 export_path = export_path + baseName + "/" --C:/Usrs/.../MyPrefab/
 		 exporter = TSceneExporter exportPrefabs:export_prefabs baseName:baseName export_path:export_path base_path:"prefabs/"\
-		 	scenes_dir:"" mesh_dir: "../meshes/" mats_dir: "../materials/" textures_dir: "../textures/" useDummyMats:useDummyMats
+		 	scenes_dir:"" mesh_dir: "../meshes/" mats_dir: "../materials/" textures_dir: "../textures/" useDummyMats:useDummyMats\
+		 	useNullTextures:useNullTextures
 	)else(
 		-- not a prefab, export in folder
 		exporter = TSceneExporter exportPrefabs:export_prefabs baseName:baseName export_path: export_path base_path:base_path\
-		 useDummyMats:useDummyMats
+		 useDummyMats:useDummyMats useNullTextures:useNullTextures
 	)
 
 	exporter.exportObjects(objs)

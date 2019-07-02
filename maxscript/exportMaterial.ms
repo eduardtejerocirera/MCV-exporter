@@ -194,12 +194,16 @@ struct TMaterialExporter (
 	),
 	
 	-- Will return an array of all the materials names used by obj and exported by us
-	fn exportMaterial mat obj = (
+	fn exportMaterial mat obj useNullTextures = (
 		
 		local exported_materials = #()
 		local mats_JSON_path = mats_dir 
 
-		if classof mat == StandardMaterial then (
+		-- when using DummyMats or useNullTextures, generate 'minion' material on the run
+		if mat == undefined or useNullTextures then(
+			append exported_materials "data/materials/minion.material"
+		)
+		else if classof mat == StandardMaterial then (
 			local mat_JSON_name = mats_JSON_path + mat.name + ".material"
 			if mat.name == "minion" then mat_JSON_name = "data/materials/minion.material" --change to engine path if using minion material
 			append exported_materials mat_JSON_name
@@ -223,10 +227,8 @@ struct TMaterialExporter (
 
 				exportStdMaterial mat_of_mesh mat_of_mesh.name
 			)
-		-- when using DummyMats, generate 'minion' material on the run
-		) else if mat == undefined then(
-			append exported_materials "data/materials/minion.material"
 		)
+		
 		
 		return exported_materials -- to be written into JSON
 	)

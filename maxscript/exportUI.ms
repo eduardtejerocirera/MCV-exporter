@@ -206,6 +206,8 @@ utility MyMCVExporter "MCV Exporter"
 			dropdownlist dd_export "" items:#("All as Scene", "Selection as Scene")
 			checkbox cb_withPrefabs "export Prefabs too" checked:true
 			checkbox cb_useDummyMats "use Dummy Mats" checked:false
+			checkbox cb_useNullTextures "use Null Textures" checked:false
+
 			button btn_exportScene "Export"
 		)
 
@@ -219,7 +221,7 @@ utility MyMCVExporter "MCV Exporter"
 		button btn_reset "Reset Model" tooltip:"Attaches model to sphere to reset it and then deletes sphere"
 		
 		
-		fn exportObjectsWithMessageBoxes objs exportPrefabs useDummyMats is_prefab:false = (
+		fn exportObjectsWithMessageBoxes objs exportPrefabs useDummyMats useNullTextures is_prefab:false = (
 			try (
 				gc()
 				
@@ -236,7 +238,7 @@ utility MyMCVExporter "MCV Exporter"
 				local baseName = getFilenameFile(maxfilename) -- escena_biblioteca57
 				local basePath = baseName + "/" -- escena_biblioteca57/
 
-				exportSceneObjs objs baseName export_path basePath exportPrefabs useDummyMats is_prefab:is_prefab
+				exportSceneObjs objs baseName export_path basePath exportPrefabs useDummyMats useNullTextures is_prefab:is_prefab
 				MessageBox "All exported OK"
 			) catch (
 				MessageBox ("Error Exporting:\n" + getCurrentException() + "\n --- Stuff for devs:\n " + getCurrentExceptionStackTrace())
@@ -251,13 +253,14 @@ utility MyMCVExporter "MCV Exporter"
 			local index = dd_export.selection
 			local exportPrefabs = cb_withPrefabs.checked
 			local useDummyMats = cb_useDummyMats.checked
+			local useNullTextures = cb_useNullTextures.checked
 
 			format "index : % , exportPrefabs: %\n" index exportPrefabs
 
 			if index == 1 then ( --all as scene
-				exportObjectsWithMessageBoxes $* exportPrefabs useDummyMats
+				exportObjectsWithMessageBoxes $* exportPrefabs useDummyMats useNullTextures
 			) else if index == 2 then ( --selection as scene
-				exportObjectsWithMessageBoxes selection exportPrefabs useDummyMats
+				exportObjectsWithMessageBoxes selection exportPrefabs useDummyMats useNullTextures
 			)
 
 		)
