@@ -218,6 +218,7 @@ utility MyMCVExporter "MCV Exporter"
 		button btn_prefab_atts "Add Prefab Attributes"
 		button btn_skeleton "Export Skeleton & Meshes"
 		button btn_skel_anims "Export Animation" tooltip:"Uses max animation range and frame rate to specify the range to export"
+		button btn_notes "Export Notes"
 		button btn_reset "Reset Model" tooltip:"Attaches model to sphere to reset it and then deletes sphere"
 		
 		
@@ -276,8 +277,9 @@ utility MyMCVExporter "MCV Exporter"
 
 		on btn_export_prefab pressed do(
 			local useDummyMats = cb_useDummyMats.checked
+			local useNullTextures = cb_useNullTextures.checked
 			-- export prefabs recursively in case we need it
-			exportObjectsWithMessageBoxes $* true useDummyMats is_prefab:true 
+			exportObjectsWithMessageBoxes $* true useDummyMats useNullTextures is_prefab:true 
 		)
 		
 		-- Exports the current selection mesh to file
@@ -327,6 +329,19 @@ utility MyMCVExporter "MCV Exporter"
 				MessageBox ("Error Exporting Skeleton Animation:\n" + getCurrentException())
 			)
 		)
+
+		on btn_notes pressed do
+			(
+				
+				try (
+					gc()
+					local se = TNotesExporter()
+					if se.exportNotes() then MessageBox "Notes Exported OK"
+				) catch (
+					MessageBox ("Error Exporting Notes:\n" + getCurrentException())
+				)
+			)
+		
 
 		on btn_reset pressed do(
 			try (

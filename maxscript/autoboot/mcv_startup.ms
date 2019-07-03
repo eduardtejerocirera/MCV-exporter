@@ -7,6 +7,7 @@ filein (mcv_scripts_path + "jsonFormatter.ms")
 filein (mcv_scripts_path + "exportMaterial.ms")
 filein (mcv_scripts_path + "exportScene.ms")
 filein (mcv_scripts_path + "exportSkeletons.ms")
+filein (mcv_scripts_path + "exportNoteTrack.ms")
 filein (mcv_scripts_path + "exportUI.ms")
 
 --filein (mcv_scripts_path + "export_ui.ms")
